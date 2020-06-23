@@ -8,7 +8,18 @@ namespace CompanyManagmentProject.Repo
 {
     public static class TaskRepository
     {
-        public static List<Task> tasks { get; } = new List<Task>();
+        public static List<Task> tasks { get; set; }
+
+
+        public static void init()
+        {
+            tasks = new List<Task> {
+                new Task("Transport Nestle Rzeszów - Nestle Kraków"),
+                new Task("Transport beczek x881 do Oslo"),
+                new Task("Serwis samochodu"),
+                new Task("Odstawienie samochodu"),
+            };
+        }
 
 
         // GETTERS

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CompanyManagmentProject.Repo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +18,11 @@ namespace CompanyManagmentProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+
+            // zainicjowanie repozytoriow
+            EmployeeRepository.init();
+            TaskRepository.init();
         }
     }
 }

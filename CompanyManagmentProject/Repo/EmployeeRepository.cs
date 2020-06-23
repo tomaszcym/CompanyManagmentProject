@@ -10,8 +10,19 @@ namespace CompanyManagmentProject.Repo
 {
     public static class EmployeeRepository
     {
-        public static List<Employee> employees { get; } = new List<Employee>();
+        public static List<Employee> employees { get; set;  }
 
+
+        public static void init()
+        {
+            employees = new List<Employee> {
+                new Employee("Tomek", "Cymerys"),
+                new Employee("Arek", "Wójcik"),
+                new Employee("Mariusz", "Kardaś"),
+                new Employee("Marian", "Kowalski"),
+                new Employee("Jan", "Nowak"),
+            };
+        }
 
         // GETTERS
         public static Employee getById(int id)
