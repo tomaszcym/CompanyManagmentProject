@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="Model\CompanyDetails.cs" />
     <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\Task.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\EmployeeRepository.cs" />
@@ -94,6 +95,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Tests\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
