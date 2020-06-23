@@ -426,6 +426,7 @@
             this.Controls.Add(this.employeeIsFired);
             this.Controls.Add(this.flowLayoutPanel4);
             this.Name = "EmployeeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeForm";
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel4.PerformLayout();
