@@ -8,7 +8,7 @@ namespace CompanyManagmentProject.Model
 {
     public class Employee
     {
-        private static int employeeId = 0;
+        
 
         public int id { get; set; }
         public String firstName { get; set; }
@@ -17,16 +17,22 @@ namespace CompanyManagmentProject.Model
         public String phone { get; set; }
         public String position { get; set; }
         public Double salary { get; set; }
-        public DateTime date { get; set; }
+        public DateTime dateHired { get; set; }
         public Boolean fired { get; set; }
 
         public Employee() {
-            this.id = ++employeeId;
+            this.dateHired = DateTime.Now;
         }
+
         public Employee(String firstName, String lastName) : this()
         {
             this.firstName = firstName;
             this.lastName = lastName;
+        }
+
+        public Boolean isFired()
+        {
+            return this.fired;
         }
     }
 }

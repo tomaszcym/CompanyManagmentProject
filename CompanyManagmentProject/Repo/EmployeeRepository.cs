@@ -10,18 +10,17 @@ namespace CompanyManagmentProject.Repo
 {
     public static class EmployeeRepository
     {
-        public static List<Employee> employees { get; set;  }
+        public static List<Employee> employees { get; set; } = new List<Employee>();
+        private static int employeeId = 0;
 
 
         public static void init()
         {
-            employees = new List<Employee> {
-                new Employee("Tomek", "Cymerys"),
-                new Employee("Arek", "Wójcik"),
-                new Employee("Mariusz", "Kardaś"),
-                new Employee("Marian", "Kowalski"),
-                new Employee("Jan", "Nowak"),
-            };
+            EmployeeRepository.add(new Employee("Tomek", "Cymerys"));
+            EmployeeRepository.add(new Employee("Arek", "Wójcik"));
+            EmployeeRepository.add(new Employee("Mariusz", "Kardaś"));
+            EmployeeRepository.add(new Employee("Marian", "Kowalski"));
+            EmployeeRepository.add(new Employee("Jan", "Nowak"));
         }
 
         // GETTERS
@@ -40,6 +39,7 @@ namespace CompanyManagmentProject.Repo
         // MODIFIERS
         public static void add(Employee employee)
         {
+            employee.id = ++employeeId;
             employees.Add(employee);
         }
 

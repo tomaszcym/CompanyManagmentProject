@@ -411,6 +411,7 @@
             this.employeeSave.TabIndex = 0;
             this.employeeSave.Text = "Zapisz";
             this.employeeSave.UseVisualStyleBackColor = true;
+            this.employeeSave.Click += new System.EventHandler(this.employeeSave_Click);
             // 
             // EmployeeForm
             // 

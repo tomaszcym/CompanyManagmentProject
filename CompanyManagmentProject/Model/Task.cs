@@ -8,8 +8,6 @@ namespace CompanyManagmentProject.Model
 {
     public class Task
     {
-        private static int taskId = 0; 
-
         public int id { get; set; }
         public String name { get; set; }
         public String description { get; set; }
@@ -22,7 +20,6 @@ namespace CompanyManagmentProject.Model
 
         public Task()
         {
-            this.id = ++taskId;
         }
 
         public Task(String name) : this()

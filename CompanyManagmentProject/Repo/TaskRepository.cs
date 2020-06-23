@@ -8,17 +8,16 @@ namespace CompanyManagmentProject.Repo
 {
     public static class TaskRepository
     {
-        public static List<Task> tasks { get; set; }
+        public static List<Task> tasks { get; set; } = new List<Task>();
+        private static int taskId = 0;
 
 
         public static void init()
         {
-            tasks = new List<Task> {
-                new Task("Transport Nestle Rzeszów - Nestle Kraków"),
-                new Task("Transport beczek x881 do Oslo"),
-                new Task("Serwis samochodu"),
-                new Task("Odstawienie samochodu"),
-            };
+            TaskRepository.add(new Task("Transport Nestle Rzeszów - Nestle Kraków"));
+            TaskRepository.add(new Task("Transport beczek x881 do Oslo"));
+            TaskRepository.add(new Task("Serwis samochodu"));
+            TaskRepository.add(new Task("Odstawienie samochodu"));
         }
 
 
@@ -50,22 +49,23 @@ namespace CompanyManagmentProject.Repo
 
 
         // MODIFIERS
-        public static void add(Task employee)
+        public static void add(Task task)
         {
-            tasks.Add(employee);
+            task.id = ++taskId;
+            tasks.Add(task);
         }
 
-        public static Boolean update(int id, Task employee)
+        public static Boolean update(int id, Task task)
         {
-            if (id != employee.id)
+            if (id != task.id)
             {
                 return false;
             }
 
             try
             {
-                int position = tasks.FindIndex(i => i.id == employee.id);
-                tasks[position] = employee;
+                int position = tasks.FindIndex(i => i.id == task.id);
+                tasks[position] = task;
                 return true;
             }
             catch (Exception e)

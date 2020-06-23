@@ -20,9 +20,7 @@ namespace CompanyManagmentProject
             Application.Run(new Form1());
 
 
-            // zainicjowanie repozytoriow
-            EmployeeRepository.init();
-            TaskRepository.init();
+            
         }
     }
 }

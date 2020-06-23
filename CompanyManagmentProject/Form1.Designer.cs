@@ -69,6 +69,7 @@
             this.employees = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.employeeListView = new System.Windows.Forms.ListView();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
@@ -81,7 +82,6 @@
             this.newTaskButton = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.employeeRepositoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.mainTabControl.SuspendLayout();
             this.dashboard.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
@@ -116,6 +116,7 @@
             this.mainTabControl.SelectedIndex = 0;
             this.mainTabControl.Size = new System.Drawing.Size(990, 529);
             this.mainTabControl.TabIndex = 1;
+            this.mainTabControl.Selected += new System.Windows.Forms.TabControlEventHandler(this.mainTabControl_Selected);
             // 
             // dashboard
             // 
@@ -133,7 +134,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.85714F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.14286F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 634F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 641F));
             this.tableLayoutPanel8.Controls.Add(this.overviewCompanyName, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.activeTaskCounter, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.finishTaskCounter, 0, 2);
@@ -159,7 +160,7 @@
             this.overviewCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.overviewCompanyName.Location = new System.Drawing.Point(3, 0);
             this.overviewCompanyName.Name = "overviewCompanyName";
-            this.overviewCompanyName.Size = new System.Drawing.Size(250, 46);
+            this.overviewCompanyName.Size = new System.Drawing.Size(159, 83);
             this.overviewCompanyName.TabIndex = 0;
             this.overviewCompanyName.Text = "Nazwa firmy";
             // 
@@ -212,7 +213,7 @@
             // 
             this.overviewCounterActiveTask.AutoSize = true;
             this.overviewCounterActiveTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.overviewCounterActiveTask.Location = new System.Drawing.Point(263, 98);
+            this.overviewCounterActiveTask.Location = new System.Drawing.Point(258, 98);
             this.overviewCounterActiveTask.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.overviewCounterActiveTask.Name = "overviewCounterActiveTask";
             this.overviewCounterActiveTask.Size = new System.Drawing.Size(38, 25);
@@ -223,7 +224,7 @@
             // 
             this.overviewCounterFinishTask.AutoSize = true;
             this.overviewCounterFinishTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.overviewCounterFinishTask.Location = new System.Drawing.Point(263, 181);
+            this.overviewCounterFinishTask.Location = new System.Drawing.Point(258, 181);
             this.overviewCounterFinishTask.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.overviewCounterFinishTask.Name = "overviewCounterFinishTask";
             this.overviewCounterFinishTask.Size = new System.Drawing.Size(38, 25);
@@ -234,7 +235,7 @@
             // 
             this.overviewCounteremployee.AutoSize = true;
             this.overviewCounteremployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.overviewCounteremployee.Location = new System.Drawing.Point(263, 264);
+            this.overviewCounteremployee.Location = new System.Drawing.Point(258, 264);
             this.overviewCounteremployee.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.overviewCounteremployee.Name = "overviewCounteremployee";
             this.overviewCounteremployee.Size = new System.Drawing.Size(38, 25);
@@ -579,6 +580,15 @@
             this.employeeListView.Size = new System.Drawing.Size(969, 432);
             this.employeeListView.TabIndex = 0;
             this.employeeListView.UseCompatibleStateImageBehavior = false;
+            this.employeeListView.Click += new System.EventHandler(this.employeeListView_Click);
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(978, 3);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox1.TabIndex = 1;
             // 
             // flowLayoutPanel6
             // 
@@ -689,14 +699,6 @@
             // employeeRepositoryBindingSource
             // 
             this.employeeRepositoryBindingSource.DataSource = typeof(CompanyManagmentProject.Repo.EmployeeRepository);
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(978, 3);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBox1.TabIndex = 1;
             // 
             // Form1
             // 
