@@ -15,5 +15,6 @@ namespace CompanyManagmentProject.Model
         public Boolean finished { get; set; }
         
         public int employeeId { get; set; }
+        public Employee employee { get; set; }
     }
 }
