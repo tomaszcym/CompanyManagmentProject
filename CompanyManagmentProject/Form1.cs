@@ -16,5 +16,10 @@ namespace CompanyManagmentProject
         {
             InitializeComponent();
         }
+
+        private void newEmployee_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
