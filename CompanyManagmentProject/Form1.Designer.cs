@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.dashboard = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
@@ -78,8 +79,9 @@
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.newTaskButton = new System.Windows.Forms.Button();
-            this.products = new System.Windows.Forms.TabPage();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.employeeRepositoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.mainTabControl.SuspendLayout();
             this.dashboard.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
@@ -100,6 +102,7 @@
             this.flowLayoutPanel5.SuspendLayout();
             this.tasks.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeRepositoryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -108,7 +111,6 @@
             this.mainTabControl.Controls.Add(this.companyDetails);
             this.mainTabControl.Controls.Add(this.employees);
             this.mainTabControl.Controls.Add(this.tasks);
-            this.mainTabControl.Controls.Add(this.products);
             this.mainTabControl.Location = new System.Drawing.Point(0, 1);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
@@ -131,7 +133,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.85714F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.14286F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 632F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 634F));
             this.tableLayoutPanel8.Controls.Add(this.overviewCompanyName, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.activeTaskCounter, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.finishTaskCounter, 0, 2);
@@ -210,7 +212,7 @@
             // 
             this.overviewCounterActiveTask.AutoSize = true;
             this.overviewCounterActiveTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.overviewCounterActiveTask.Location = new System.Drawing.Point(264, 98);
+            this.overviewCounterActiveTask.Location = new System.Drawing.Point(263, 98);
             this.overviewCounterActiveTask.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.overviewCounterActiveTask.Name = "overviewCounterActiveTask";
             this.overviewCounterActiveTask.Size = new System.Drawing.Size(38, 25);
@@ -221,7 +223,7 @@
             // 
             this.overviewCounterFinishTask.AutoSize = true;
             this.overviewCounterFinishTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.overviewCounterFinishTask.Location = new System.Drawing.Point(264, 181);
+            this.overviewCounterFinishTask.Location = new System.Drawing.Point(263, 181);
             this.overviewCounterFinishTask.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.overviewCounterFinishTask.Name = "overviewCounterFinishTask";
             this.overviewCounterFinishTask.Size = new System.Drawing.Size(38, 25);
@@ -232,7 +234,7 @@
             // 
             this.overviewCounteremployee.AutoSize = true;
             this.overviewCounteremployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.overviewCounteremployee.Location = new System.Drawing.Point(264, 264);
+            this.overviewCounteremployee.Location = new System.Drawing.Point(263, 264);
             this.overviewCounteremployee.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.overviewCounteremployee.Name = "overviewCounteremployee";
             this.overviewCounteremployee.Size = new System.Drawing.Size(38, 25);
@@ -561,6 +563,7 @@
             // 
             this.flowLayoutPanel7.AutoSize = true;
             this.flowLayoutPanel7.Controls.Add(this.employeeListView);
+            this.flowLayoutPanel7.Controls.Add(this.checkedListBox1);
             this.flowLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel7.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel7.Location = new System.Drawing.Point(0, 33);
@@ -683,14 +686,17 @@
             this.newTaskButton.Text = "Nowe zadanie\r\n";
             this.newTaskButton.UseVisualStyleBackColor = true;
             // 
-            // products
+            // employeeRepositoryBindingSource
             // 
-            this.products.Location = new System.Drawing.Point(4, 22);
-            this.products.Name = "products";
-            this.products.Size = new System.Drawing.Size(982, 503);
-            this.products.TabIndex = 3;
-            this.products.Text = "Produkty";
-            this.products.UseVisualStyleBackColor = true;
+            this.employeeRepositoryBindingSource.DataSource = typeof(CompanyManagmentProject.Repo.EmployeeRepository);
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(978, 3);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox1.TabIndex = 1;
             // 
             // Form1
             // 
@@ -736,6 +742,7 @@
             this.tasks.PerformLayout();
             this.flowLayoutPanel8.ResumeLayout(false);
             this.flowLayoutPanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeRepositoryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -780,7 +787,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button newTaskButton;
-        private System.Windows.Forms.TabPage products;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label9;
@@ -794,6 +800,8 @@
         private System.Windows.Forms.Label overviewCounterActiveTask;
         private System.Windows.Forms.Label overviewCounterFinishTask;
         private System.Windows.Forms.Label overviewCounteremployee;
+        private System.Windows.Forms.BindingSource employeeRepositoryBindingSource;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }
 

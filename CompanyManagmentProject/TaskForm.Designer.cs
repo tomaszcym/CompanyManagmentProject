@@ -403,6 +403,7 @@
             this.Controls.Add(this.taskCheckboxDelegation);
             this.Controls.Add(this.flowLayoutPanel4);
             this.Name = "TaskForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TaskForm";
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel4.PerformLayout();
