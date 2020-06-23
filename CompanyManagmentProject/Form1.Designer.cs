@@ -30,6 +30,15 @@
         {
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.dashboard = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.overviewCompanyName = new System.Windows.Forms.Label();
+            this.activeTaskCounter = new System.Windows.Forms.Label();
+            this.finishTaskCounter = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.thisShitxD = new System.Windows.Forms.Label();
+            this.overviewCounterActiveTask = new System.Windows.Forms.Label();
+            this.overviewCounterFinishTask = new System.Windows.Forms.Label();
+            this.overviewCounteremployee = new System.Windows.Forms.Label();
             this.companyDetails = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -45,6 +54,9 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.companyCountry = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.companyNIP = new System.Windows.Forms.TextBox();
@@ -67,21 +79,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.newTaskButton = new System.Windows.Forms.Button();
             this.products = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.overviewCompanyName = new System.Windows.Forms.Label();
-            this.activeTaskCounter = new System.Windows.Forms.Label();
-            this.finishTaskCounter = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.mainTabControl.SuspendLayout();
             this.dashboard.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
             this.companyDetails.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -89,6 +90,7 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -98,8 +100,6 @@
             this.flowLayoutPanel5.SuspendLayout();
             this.tasks.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -125,6 +125,119 @@
             this.dashboard.TabIndex = 0;
             this.dashboard.Text = "Przegląd";
             this.dashboard.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 3;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.85714F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.14286F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 632F));
+            this.tableLayoutPanel8.Controls.Add(this.overviewCompanyName, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.activeTaskCounter, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.finishTaskCounter, 0, 2);
+            this.tableLayoutPanel8.Controls.Add(this.label11, 0, 3);
+            this.tableLayoutPanel8.Controls.Add(this.thisShitxD, 2, 4);
+            this.tableLayoutPanel8.Controls.Add(this.overviewCounterActiveTask, 1, 1);
+            this.tableLayoutPanel8.Controls.Add(this.overviewCounterFinishTask, 1, 2);
+            this.tableLayoutPanel8.Controls.Add(this.overviewCounteremployee, 1, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 5;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(982, 503);
+            this.tableLayoutPanel8.TabIndex = 0;
+            // 
+            // overviewCompanyName
+            // 
+            this.overviewCompanyName.AutoSize = true;
+            this.overviewCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.overviewCompanyName.Location = new System.Drawing.Point(3, 0);
+            this.overviewCompanyName.Name = "overviewCompanyName";
+            this.overviewCompanyName.Size = new System.Drawing.Size(250, 46);
+            this.overviewCompanyName.TabIndex = 0;
+            this.overviewCompanyName.Text = "Nazwa firmy";
+            // 
+            // activeTaskCounter
+            // 
+            this.activeTaskCounter.AutoSize = true;
+            this.activeTaskCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.activeTaskCounter.Location = new System.Drawing.Point(3, 98);
+            this.activeTaskCounter.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
+            this.activeTaskCounter.Name = "activeTaskCounter";
+            this.activeTaskCounter.Size = new System.Drawing.Size(197, 25);
+            this.activeTaskCounter.TabIndex = 1;
+            this.activeTaskCounter.Text = "Aktywne zadania:";
+            // 
+            // finishTaskCounter
+            // 
+            this.finishTaskCounter.AutoSize = true;
+            this.finishTaskCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.finishTaskCounter.Location = new System.Drawing.Point(3, 181);
+            this.finishTaskCounter.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
+            this.finishTaskCounter.Name = "finishTaskCounter";
+            this.finishTaskCounter.Size = new System.Drawing.Size(237, 25);
+            this.finishTaskCounter.TabIndex = 2;
+            this.finishTaskCounter.Text = "Zakończone zadania:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label11.Location = new System.Drawing.Point(3, 264);
+            this.label11.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(210, 25);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Ilość pracowników:";
+            // 
+            // thisShitxD
+            // 
+            this.thisShitxD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thisShitxD.AutoSize = true;
+            this.thisShitxD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.thisShitxD.Location = new System.Drawing.Point(682, 463);
+            this.thisShitxD.Margin = new System.Windows.Forms.Padding(15, 0, 25, 15);
+            this.thisShitxD.Name = "thisShitxD";
+            this.thisShitxD.Size = new System.Drawing.Size(275, 25);
+            this.thisShitxD.TabIndex = 4;
+            this.thisShitxD.Text = "Tego nie będzie kurwa mać";
+            // 
+            // overviewCounterActiveTask
+            // 
+            this.overviewCounterActiveTask.AutoSize = true;
+            this.overviewCounterActiveTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.overviewCounterActiveTask.Location = new System.Drawing.Point(264, 98);
+            this.overviewCounterActiveTask.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
+            this.overviewCounterActiveTask.Name = "overviewCounterActiveTask";
+            this.overviewCounterActiveTask.Size = new System.Drawing.Size(38, 25);
+            this.overviewCounterActiveTask.TabIndex = 5;
+            this.overviewCounterActiveTask.Text = "10";
+            // 
+            // overviewCounterFinishTask
+            // 
+            this.overviewCounterFinishTask.AutoSize = true;
+            this.overviewCounterFinishTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.overviewCounterFinishTask.Location = new System.Drawing.Point(264, 181);
+            this.overviewCounterFinishTask.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
+            this.overviewCounterFinishTask.Name = "overviewCounterFinishTask";
+            this.overviewCounterFinishTask.Size = new System.Drawing.Size(38, 25);
+            this.overviewCounterFinishTask.TabIndex = 6;
+            this.overviewCounterFinishTask.Text = "13";
+            // 
+            // overviewCounteremployee
+            // 
+            this.overviewCounteremployee.AutoSize = true;
+            this.overviewCounteremployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.overviewCounteremployee.Location = new System.Drawing.Point(264, 264);
+            this.overviewCounteremployee.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
+            this.overviewCounteremployee.Name = "overviewCounteremployee";
+            this.overviewCounteremployee.Size = new System.Drawing.Size(38, 25);
+            this.overviewCounteremployee.TabIndex = 7;
+            this.overviewCounteremployee.Text = "14";
             // 
             // companyDetails
             // 
@@ -309,6 +422,41 @@
             this.companyCountry.Name = "companyCountry";
             this.companyCountry.Size = new System.Drawing.Size(200, 23);
             this.companyCountry.TabIndex = 1;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.AutoSize = true;
+            this.tableLayoutPanel7.ColumnCount = 1;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel7.Controls.Add(this.label9, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.textBox1, 0, 1);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 200);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 2;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(206, 48);
+            this.tableLayoutPanel7.TabIndex = 6;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 0);
+            this.label9.Name = "label9";
+            this.label9.Padding = new System.Windows.Forms.Padding(3);
+            this.label9.Size = new System.Drawing.Size(54, 19);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Państwo";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.textBox1.Location = new System.Drawing.Point(3, 22);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 23);
+            this.textBox1.TabIndex = 1;
             // 
             // tableLayoutPanel6
             // 
@@ -544,152 +692,6 @@
             this.products.Text = "Produkty";
             this.products.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.AutoSize = true;
-            this.tableLayoutPanel7.ColumnCount = 1;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel7.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.textBox1, 0, 1);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 200);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(206, 48);
-            this.tableLayoutPanel7.TabIndex = 6;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 0);
-            this.label9.Name = "label9";
-            this.label9.Padding = new System.Windows.Forms.Padding(3);
-            this.label9.Size = new System.Drawing.Size(54, 19);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Państwo";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.textBox1.Location = new System.Drawing.Point(3, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 23);
-            this.textBox1.TabIndex = 1;
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.ColumnCount = 3;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.85714F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.14286F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 631F));
-            this.tableLayoutPanel8.Controls.Add(this.overviewCompanyName, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.activeTaskCounter, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.finishTaskCounter, 0, 2);
-            this.tableLayoutPanel8.Controls.Add(this.label11, 0, 3);
-            this.tableLayoutPanel8.Controls.Add(this.label12, 2, 4);
-            this.tableLayoutPanel8.Controls.Add(this.label10, 1, 1);
-            this.tableLayoutPanel8.Controls.Add(this.label13, 1, 2);
-            this.tableLayoutPanel8.Controls.Add(this.label14, 1, 3);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 5;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(982, 503);
-            this.tableLayoutPanel8.TabIndex = 0;
-            // 
-            // overviewCompanyName
-            // 
-            this.overviewCompanyName.AutoSize = true;
-            this.overviewCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.overviewCompanyName.Location = new System.Drawing.Point(3, 0);
-            this.overviewCompanyName.Name = "overviewCompanyName";
-            this.overviewCompanyName.Size = new System.Drawing.Size(250, 46);
-            this.overviewCompanyName.TabIndex = 0;
-            this.overviewCompanyName.Text = "Nazwa firmy";
-            // 
-            // activeTaskCounter
-            // 
-            this.activeTaskCounter.AutoSize = true;
-            this.activeTaskCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.activeTaskCounter.Location = new System.Drawing.Point(3, 98);
-            this.activeTaskCounter.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
-            this.activeTaskCounter.Name = "activeTaskCounter";
-            this.activeTaskCounter.Size = new System.Drawing.Size(197, 25);
-            this.activeTaskCounter.TabIndex = 1;
-            this.activeTaskCounter.Text = "Aktywne zadania:";
-            // 
-            // finishTaskCounter
-            // 
-            this.finishTaskCounter.AutoSize = true;
-            this.finishTaskCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.finishTaskCounter.Location = new System.Drawing.Point(3, 181);
-            this.finishTaskCounter.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
-            this.finishTaskCounter.Name = "finishTaskCounter";
-            this.finishTaskCounter.Size = new System.Drawing.Size(237, 25);
-            this.finishTaskCounter.TabIndex = 2;
-            this.finishTaskCounter.Text = "Zakończone zadania:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(3, 264);
-            this.label11.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(210, 25);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Ilość pracowników:";
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(938, 490);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "label12";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(265, 98);
-            this.label10.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 25);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "10";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.Location = new System.Drawing.Point(265, 181);
-            this.label13.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 25);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "13";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label14.Location = new System.Drawing.Point(265, 264);
-            this.label14.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(38, 25);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "14";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -701,6 +703,8 @@
             this.Text = "Form1";
             this.mainTabControl.ResumeLayout(false);
             this.dashboard.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
             this.companyDetails.ResumeLayout(false);
             this.companyDetails.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -715,6 +719,8 @@
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
@@ -730,10 +736,6 @@
             this.tasks.PerformLayout();
             this.flowLayoutPanel8.ResumeLayout(false);
             this.flowLayoutPanel8.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -788,10 +790,10 @@
         private System.Windows.Forms.Label activeTaskCounter;
         private System.Windows.Forms.Label finishTaskCounter;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label thisShitxD;
+        private System.Windows.Forms.Label overviewCounterActiveTask;
+        private System.Windows.Forms.Label overviewCounterFinishTask;
+        private System.Windows.Forms.Label overviewCounteremployee;
     }
 }
 
