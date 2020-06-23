@@ -9,7 +9,7 @@ namespace CompanyManagmentProject.Model
     public static class CompanyDetails
     {
         public static int id { get; set; }
-        public static String name { get; set; }
+        public static String name { get; set; } = "Ustaw nazwę firmy.";
         public static String nip { get; set; }
         public static String address { get; set; }
         public static String city { get; set; }

@@ -428,7 +428,7 @@
             this.Controls.Add(this.flowLayoutPanel4);
             this.Name = "EmployeeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EmployeeForm";
+            this.Text = "Nowy pracownik";
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel4.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);

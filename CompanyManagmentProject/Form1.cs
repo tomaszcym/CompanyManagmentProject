@@ -21,6 +21,8 @@ namespace CompanyManagmentProject
             // zainicjowanie repozytoriow
             EmployeeRepository.init();
             TaskRepository.init();
+
+            renderDashboardTab();
         }
 
         private void newEmployee_Click(object sender, EventArgs e)
@@ -34,10 +36,10 @@ namespace CompanyManagmentProject
             switch(e.TabPage.Name.ToString())
             {
                 case "dashboard":
-                    //
+                    renderDashboardTab();
                     break;
                 case "companyDetails":
-                    //
+                    renderCompanyDetailsTab();
                     break;
                 case "employees":
                     renderEmployeesTab();
@@ -46,6 +48,23 @@ namespace CompanyManagmentProject
                     //
                     break;
             }
+        }
+
+        private void renderDashboardTab()
+        {
+            overviewCompanyName.Text = CompanyDetails.name;
+            overviewCounterEmployee.Text = EmployeeRepository.getAll().Count().ToString();
+            overviewTime.Text = DateTime.Now.ToString();
+        }
+
+        private void renderCompanyDetailsTab()
+        {
+            companyName.Text = CompanyDetails.name;
+            companyNIP.Text = CompanyDetails.nip;
+            companyAddress.Text = CompanyDetails.address;
+            companyCity.Text = CompanyDetails.city;
+            companyPostcode.Text = CompanyDetails.postcode;
+            companyCountry.Text = CompanyDetails.country;
         }
 
         public void renderEmployeesTab()
@@ -92,6 +111,16 @@ namespace CompanyManagmentProject
 
             EmployeeForm employeeForm = new EmployeeForm(this, employee);
             employeeForm.Show(this);
+        }
+
+        private void companyDetailsSaveButton_Click(object sender, EventArgs e)
+        {
+            CompanyDetails.name = companyName.Text;
+            CompanyDetails.nip = companyNIP.Text;
+            CompanyDetails.address = companyAddress.Text;
+            CompanyDetails.city = companyCity.Text;
+            CompanyDetails.postcode = companyPostcode.Text;
+            CompanyDetails.country = companyCountry.Text;
         }
     }
 }

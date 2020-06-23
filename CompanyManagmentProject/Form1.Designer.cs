@@ -36,10 +36,10 @@
             this.activeTaskCounter = new System.Windows.Forms.Label();
             this.finishTaskCounter = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.thisShitxD = new System.Windows.Forms.Label();
+            this.overviewTime = new System.Windows.Forms.Label();
             this.overviewCounterActiveTask = new System.Windows.Forms.Label();
             this.overviewCounterFinishTask = new System.Windows.Forms.Label();
-            this.overviewCounteremployee = new System.Windows.Forms.Label();
+            this.overviewCounterEmployee = new System.Windows.Forms.Label();
             this.companyDetails = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -54,10 +54,10 @@
             this.companyCity = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.companyCountry = new System.Windows.Forms.TextBox();
+            this.companyPostcode = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.companyCountry = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.companyNIP = new System.Windows.Forms.TextBox();
@@ -134,15 +134,15 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.85714F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.14286F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 641F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 679F));
             this.tableLayoutPanel8.Controls.Add(this.overviewCompanyName, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.activeTaskCounter, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.finishTaskCounter, 0, 2);
             this.tableLayoutPanel8.Controls.Add(this.label11, 0, 3);
-            this.tableLayoutPanel8.Controls.Add(this.thisShitxD, 2, 4);
+            this.tableLayoutPanel8.Controls.Add(this.overviewTime, 2, 4);
             this.tableLayoutPanel8.Controls.Add(this.overviewCounterActiveTask, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.overviewCounterFinishTask, 1, 2);
-            this.tableLayoutPanel8.Controls.Add(this.overviewCounteremployee, 1, 3);
+            this.tableLayoutPanel8.Controls.Add(this.overviewCounterEmployee, 1, 3);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 5;
@@ -182,7 +182,7 @@
             this.finishTaskCounter.Location = new System.Drawing.Point(3, 181);
             this.finishTaskCounter.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.finishTaskCounter.Name = "finishTaskCounter";
-            this.finishTaskCounter.Size = new System.Drawing.Size(237, 25);
+            this.finishTaskCounter.Size = new System.Drawing.Size(147, 50);
             this.finishTaskCounter.TabIndex = 2;
             this.finishTaskCounter.Text = "Zakończone zadania:";
             // 
@@ -197,23 +197,23 @@
             this.label11.TabIndex = 3;
             this.label11.Text = "Ilość pracowników:";
             // 
-            // thisShitxD
+            // overviewTime
             // 
-            this.thisShitxD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.thisShitxD.AutoSize = true;
-            this.thisShitxD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.thisShitxD.Location = new System.Drawing.Point(682, 463);
-            this.thisShitxD.Margin = new System.Windows.Forms.Padding(15, 0, 25, 15);
-            this.thisShitxD.Name = "thisShitxD";
-            this.thisShitxD.Size = new System.Drawing.Size(275, 25);
-            this.thisShitxD.TabIndex = 4;
-            this.thisShitxD.Text = "Tego nie będzie kurwa mać";
+            this.overviewTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.overviewTime.AutoSize = true;
+            this.overviewTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.overviewTime.Location = new System.Drawing.Point(682, 463);
+            this.overviewTime.Margin = new System.Windows.Forms.Padding(15, 0, 25, 15);
+            this.overviewTime.Name = "overviewTime";
+            this.overviewTime.Size = new System.Drawing.Size(275, 25);
+            this.overviewTime.TabIndex = 4;
+            this.overviewTime.Text = "Tego nie będzie kurwa mać";
             // 
             // overviewCounterActiveTask
             // 
             this.overviewCounterActiveTask.AutoSize = true;
             this.overviewCounterActiveTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.overviewCounterActiveTask.Location = new System.Drawing.Point(258, 98);
+            this.overviewCounterActiveTask.Location = new System.Drawing.Point(229, 98);
             this.overviewCounterActiveTask.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.overviewCounterActiveTask.Name = "overviewCounterActiveTask";
             this.overviewCounterActiveTask.Size = new System.Drawing.Size(38, 25);
@@ -224,23 +224,23 @@
             // 
             this.overviewCounterFinishTask.AutoSize = true;
             this.overviewCounterFinishTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.overviewCounterFinishTask.Location = new System.Drawing.Point(258, 181);
+            this.overviewCounterFinishTask.Location = new System.Drawing.Point(229, 181);
             this.overviewCounterFinishTask.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.overviewCounterFinishTask.Name = "overviewCounterFinishTask";
             this.overviewCounterFinishTask.Size = new System.Drawing.Size(38, 25);
             this.overviewCounterFinishTask.TabIndex = 6;
             this.overviewCounterFinishTask.Text = "13";
             // 
-            // overviewCounteremployee
+            // overviewCounterEmployee
             // 
-            this.overviewCounteremployee.AutoSize = true;
-            this.overviewCounteremployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.overviewCounteremployee.Location = new System.Drawing.Point(258, 264);
-            this.overviewCounteremployee.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
-            this.overviewCounteremployee.Name = "overviewCounteremployee";
-            this.overviewCounteremployee.Size = new System.Drawing.Size(38, 25);
-            this.overviewCounteremployee.TabIndex = 7;
-            this.overviewCounteremployee.Text = "14";
+            this.overviewCounterEmployee.AutoSize = true;
+            this.overviewCounterEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.overviewCounterEmployee.Location = new System.Drawing.Point(229, 264);
+            this.overviewCounterEmployee.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
+            this.overviewCounterEmployee.Name = "overviewCounterEmployee";
+            this.overviewCounterEmployee.Size = new System.Drawing.Size(38, 25);
+            this.overviewCounterEmployee.TabIndex = 7;
+            this.overviewCounterEmployee.Text = "14";
             // 
             // companyDetails
             // 
@@ -397,7 +397,7 @@
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel5.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.companyCountry, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.companyPostcode, 0, 1);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 123);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -418,13 +418,13 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Kod pocztowy";
             // 
-            // companyCountry
+            // companyPostcode
             // 
-            this.companyCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.companyCountry.Location = new System.Drawing.Point(3, 22);
-            this.companyCountry.Name = "companyCountry";
-            this.companyCountry.Size = new System.Drawing.Size(200, 23);
-            this.companyCountry.TabIndex = 1;
+            this.companyPostcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.companyPostcode.Location = new System.Drawing.Point(3, 22);
+            this.companyPostcode.Name = "companyPostcode";
+            this.companyPostcode.Size = new System.Drawing.Size(200, 23);
+            this.companyPostcode.TabIndex = 1;
             // 
             // tableLayoutPanel7
             // 
@@ -432,7 +432,7 @@
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel7.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.textBox1, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.companyCountry, 0, 1);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 200);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -453,13 +453,13 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Państwo";
             // 
-            // textBox1
+            // companyCountry
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.textBox1.Location = new System.Drawing.Point(3, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 23);
-            this.textBox1.TabIndex = 1;
+            this.companyCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.companyCountry.Location = new System.Drawing.Point(3, 22);
+            this.companyCountry.Name = "companyCountry";
+            this.companyCountry.Size = new System.Drawing.Size(200, 23);
+            this.companyCountry.TabIndex = 1;
             // 
             // tableLayoutPanel6
             // 
@@ -538,6 +538,7 @@
             this.companyDetailsSaveButton.TabIndex = 0;
             this.companyDetailsSaveButton.Text = "Zapisz";
             this.companyDetailsSaveButton.UseVisualStyleBackColor = true;
+            this.companyDetailsSaveButton.Click += new System.EventHandler(this.companyDetailsSaveButton_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -767,7 +768,7 @@
         private System.Windows.Forms.TextBox companyCity;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox companyCountry;
+        private System.Windows.Forms.TextBox companyPostcode;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox companyNIP;
@@ -792,16 +793,16 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox companyCountry;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label overviewCompanyName;
         private System.Windows.Forms.Label activeTaskCounter;
         private System.Windows.Forms.Label finishTaskCounter;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label thisShitxD;
+        private System.Windows.Forms.Label overviewTime;
         private System.Windows.Forms.Label overviewCounterActiveTask;
         private System.Windows.Forms.Label overviewCounterFinishTask;
-        private System.Windows.Forms.Label overviewCounteremployee;
+        private System.Windows.Forms.Label overviewCounterEmployee;
         private System.Windows.Forms.BindingSource employeeRepositoryBindingSource;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
     }

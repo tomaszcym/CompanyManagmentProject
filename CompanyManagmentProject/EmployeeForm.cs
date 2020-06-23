@@ -29,15 +29,12 @@ namespace CompanyManagmentProject
             {
                 initEmployee(employee);
             }
-            else
-            {
-                this.employee = new Employee();
-            }
         }
 
         private void initEmployee(Employee employee)
         {
             this.employee = employee;
+            this.Text = employee.firstName + " " + employee.lastName;
 
             this.employeeFirstName.Text = employee.firstName;
             this.employeeLastName.Text = employee.lastName;
@@ -71,12 +68,13 @@ namespace CompanyManagmentProject
             empToSave.salary = salary;
             empToSave.fired = this.employeeIsFired.Checked;
 
-            //empToSave.salary = Double.Parse(this.employeeSalary.Text);
+
 
             if(this.employee.id != 0)
                 EmployeeRepository.update(this.employee.id, empToSave);
             else
                 EmployeeRepository.add(empToSave);
+
 
             this.formParent.renderEmployeesTab();
             this.Close();
