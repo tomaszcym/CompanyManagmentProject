@@ -8,31 +8,31 @@ using System.Threading.Tasks;
 
 namespace CompanyManagmentProject.Repo
 {
-    public class EmployeeRepository
+    public static class EmployeeRepository
     {
-        public List<Employee> employees { get; } = new List<Employee>();
+        public static List<Employee> employees { get; } = new List<Employee>();
 
 
         // GETTERS
-        public Employee getById(int id)
+        public static Employee getById(int id)
         {
-            return this.employees.Find(e => e.id == id);
+            return employees.Find(e => e.id == id);
         }
 
-        public List<Employee> getAll()
+        public static List<Employee> getAll()
         {
-            return this.employees;
+            return employees;
         }
 
 
 
         // MODIFIERS
-        public void add(Employee employee)
+        public static void add(Employee employee)
         {
-            this.employees.Add(employee);
+            employees.Add(employee);
         }
 
-        public Boolean update(int id, Employee employee)
+        public static Boolean update(int id, Employee employee)
         {
             if(id != employee.id)
             {
@@ -41,8 +41,8 @@ namespace CompanyManagmentProject.Repo
 
             try
             {
-                int position = this.employees.FindIndex(i => i.id == employee.id);
-                this.employees[position] = employee;
+                int position = employees.FindIndex(i => i.id == employee.id);
+                employees[position] = employee;
                 return true;
             }
             catch(Exception e)
@@ -51,12 +51,12 @@ namespace CompanyManagmentProject.Repo
             }
         }
 
-        public Boolean delete(int id)
+        public static Boolean delete(int id)
         {
             int position = -1;
             try
             {
-                position = this.employees.FindIndex(i => i.id == id);
+                position = employees.FindIndex(i => i.id == id);
             }
             catch(ArgumentNullException e)
             {
@@ -65,7 +65,7 @@ namespace CompanyManagmentProject.Repo
 
             if(position > -1)
             {
-                this.employees.RemoveAt(position);
+                employees.RemoveAt(position);
                 return true;
             }
             return false;
