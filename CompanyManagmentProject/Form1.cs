@@ -140,7 +140,7 @@ namespace CompanyManagmentProject
             taskListView.Columns.Add("Zadanie");
             taskListView.Columns.Add("Data rozpoczęcia");
             taskListView.Columns.Add("Data zakończenia");
-            taskListView.Columns.Add("Delegacja");
+            taskListView.Columns.Add("Zakończone");
 
             tasks.ForEach(e => {
                 string[] row = {
@@ -152,7 +152,8 @@ namespace CompanyManagmentProject
                     e.isFinished() ? "Tak" : "Nie",
                 };
                 ListViewItem item = new ListViewItem(row);
-
+                taskListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+                taskListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 taskListView.Items.Add(item);
 
             });
