@@ -81,16 +81,12 @@
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.employeeListView = new System.Windows.Forms.ListView();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
             this.newEmployee = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tasks = new System.Windows.Forms.TabPage();
             this.listView1 = new System.Windows.Forms.ListView();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.newTaskButton = new System.Windows.Forms.Button();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.iconlist = new System.Windows.Forms.ImageList(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -109,6 +105,8 @@
             this.overviewCompanyName = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.newTaskButton = new System.Windows.Forms.Button();
+            this.DeleteTaskButton = new System.Windows.Forms.Button();
             this.mainTabControl.SuspendLayout();
             this.dashboard.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -128,7 +126,6 @@
             this.panel20.SuspendLayout();
             this.employees.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
-            this.flowLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.tasks.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
@@ -180,9 +177,9 @@
             this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(5, 0);
+            this.panel2.Location = new System.Drawing.Point(2, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1069, 650);
+            this.panel2.Size = new System.Drawing.Size(1062, 628);
             this.panel2.TabIndex = 0;
             // 
             // panel14
@@ -298,7 +295,7 @@
             this.panel3.Controls.Add(this.overviewCounterEmployee);
             this.panel3.Controls.Add(this.overviewCounterActiveTask);
             this.panel3.Controls.Add(this.panel17);
-            this.panel3.Location = new System.Drawing.Point(800, 0);
+            this.panel3.Location = new System.Drawing.Point(754, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(274, 650);
             this.panel3.TabIndex = 0;
@@ -307,7 +304,7 @@
             // 
             this.overviewCounterEmployee.Font = new System.Drawing.Font("Century Gothic", 45.8F, System.Drawing.FontStyle.Bold);
             this.overviewCounterEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(7)))), ((int)(((byte)(63)))));
-            this.overviewCounterEmployee.Location = new System.Drawing.Point(3, 410);
+            this.overviewCounterEmployee.Location = new System.Drawing.Point(7, 411);
             this.overviewCounterEmployee.Name = "overviewCounterEmployee";
             this.overviewCounterEmployee.Size = new System.Drawing.Size(255, 228);
             this.overviewCounterEmployee.TabIndex = 2;
@@ -337,7 +334,7 @@
             // 
             this.overviewCounterFinishTask.Font = new System.Drawing.Font("Century Gothic", 45.8F, System.Drawing.FontStyle.Bold);
             this.overviewCounterFinishTask.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(7)))), ((int)(((byte)(63)))));
-            this.overviewCounterFinishTask.Location = new System.Drawing.Point(-1, -14);
+            this.overviewCounterFinishTask.Location = new System.Drawing.Point(3, -13);
             this.overviewCounterFinishTask.Name = "overviewCounterFinishTask";
             this.overviewCounterFinishTask.Size = new System.Drawing.Size(259, 202);
             this.overviewCounterFinishTask.TabIndex = 2;
@@ -380,8 +377,9 @@
             // 
             // companyDetailsSaveButton
             // 
+            this.companyDetailsSaveButton.FlatAppearance.BorderSize = 3;
             this.companyDetailsSaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.companyDetailsSaveButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.companyDetailsSaveButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.companyDetailsSaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(7)))), ((int)(((byte)(63)))));
             this.companyDetailsSaveButton.Location = new System.Drawing.Point(355, 65);
             this.companyDetailsSaveButton.Name = "companyDetailsSaveButton";
@@ -617,7 +615,6 @@
             // employees
             // 
             this.employees.Controls.Add(this.flowLayoutPanel7);
-            this.employees.Controls.Add(this.flowLayoutPanel6);
             this.employees.Controls.Add(this.flowLayoutPanel5);
             this.employees.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.employees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(38)))), ((int)(((byte)(41)))));
@@ -637,19 +634,21 @@
             this.flowLayoutPanel7.Controls.Add(this.checkedListBox1);
             this.flowLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel7.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(0, 41);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(0, 52);
             this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            this.flowLayoutPanel7.Size = new System.Drawing.Size(1067, 558);
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(1067, 583);
             this.flowLayoutPanel7.TabIndex = 7;
             // 
             // employeeListView
             // 
+            this.employeeListView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.employeeListView.ForeColor = System.Drawing.Color.White;
             this.employeeListView.HideSelection = false;
             this.employeeListView.Location = new System.Drawing.Point(4, 4);
             this.employeeListView.Margin = new System.Windows.Forms.Padding(4);
             this.employeeListView.Name = "employeeListView";
-            this.employeeListView.Size = new System.Drawing.Size(1291, 531);
+            this.employeeListView.Size = new System.Drawing.Size(1059, 570);
             this.employeeListView.TabIndex = 0;
             this.employeeListView.UseCompatibleStateImageBehavior = false;
             this.employeeListView.Click += new System.EventHandler(this.employeeListView_Click);
@@ -657,69 +656,57 @@
             // checkedListBox1
             // 
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(1303, 4);
+            this.checkedListBox1.Location = new System.Drawing.Point(1071, 4);
             this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(159, 96);
             this.checkedListBox1.TabIndex = 1;
             // 
-            // flowLayoutPanel6
-            // 
-            this.flowLayoutPanel6.AutoSize = true;
-            this.flowLayoutPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel6.Controls.Add(this.button1);
-            this.flowLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(0, 599);
-            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(1067, 36);
-            this.flowLayoutPanel6.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(963, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Zapisz";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // flowLayoutPanel5
             // 
             this.flowLayoutPanel5.AutoSize = true;
             this.flowLayoutPanel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel5.Controls.Add(this.label7);
+            this.flowLayoutPanel5.BackColor = System.Drawing.Color.Black;
             this.flowLayoutPanel5.Controls.Add(this.newEmployee);
+            this.flowLayoutPanel5.Controls.Add(this.button1);
             this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(1067, 41);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(1067, 52);
             this.flowLayoutPanel5.TabIndex = 5;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label7.Location = new System.Drawing.Point(4, 4);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 12);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(122, 25);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Pracownicy";
             // 
             // newEmployee
             // 
-            this.newEmployee.Location = new System.Drawing.Point(134, 4);
-            this.newEmployee.Margin = new System.Windows.Forms.Padding(4);
+            this.newEmployee.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.newEmployee.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.newEmployee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.newEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.newEmployee.Font = new System.Drawing.Font("Junegull", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(7)))), ((int)(((byte)(63)))));
+            this.newEmployee.Location = new System.Drawing.Point(987, 1);
+            this.newEmployee.Margin = new System.Windows.Forms.Padding(1, 1, 30, 1);
             this.newEmployee.Name = "newEmployee";
-            this.newEmployee.Size = new System.Drawing.Size(219, 28);
+            this.newEmployee.Size = new System.Drawing.Size(50, 50);
             this.newEmployee.TabIndex = 2;
-            this.newEmployee.Text = "Nowy pracownik";
+            this.newEmployee.Text = "+";
             this.newEmployee.UseVisualStyleBackColor = true;
             this.newEmployee.Click += new System.EventHandler(this.newEmployee_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 3;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(7)))), ((int)(((byte)(63)))));
+            this.button1.Location = new System.Drawing.Point(817, 1);
+            this.button1.Margin = new System.Windows.Forms.Padding(1, 1, 30, 1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(139, 50);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Zapisz";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // tasks
             // 
@@ -738,47 +725,31 @@
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.listView1.ForeColor = System.Drawing.Color.White;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 39);
+            this.listView1.Location = new System.Drawing.Point(-4, 56);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1308, 575);
+            this.listView1.Size = new System.Drawing.Size(1067, 579);
             this.listView1.TabIndex = 7;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // flowLayoutPanel8
             // 
             this.flowLayoutPanel8.AutoSize = true;
             this.flowLayoutPanel8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel8.Controls.Add(this.label8);
+            this.flowLayoutPanel8.BackColor = System.Drawing.Color.Black;
             this.flowLayoutPanel8.Controls.Add(this.newTaskButton);
+            this.flowLayoutPanel8.Controls.Add(this.DeleteTaskButton);
             this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel8.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel8.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel8.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
-            this.flowLayoutPanel8.Size = new System.Drawing.Size(1067, 41);
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(1067, 52);
             this.flowLayoutPanel8.TabIndex = 6;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label8.Location = new System.Drawing.Point(4, 4);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 12);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 25);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Zadania\r\n";
-            // 
-            // newTaskButton
-            // 
-            this.newTaskButton.Location = new System.Drawing.Point(102, 4);
-            this.newTaskButton.Margin = new System.Windows.Forms.Padding(4);
-            this.newTaskButton.Name = "newTaskButton";
-            this.newTaskButton.Size = new System.Drawing.Size(219, 28);
-            this.newTaskButton.TabIndex = 2;
-            this.newTaskButton.Text = "Nowe zadanie\r\n";
-            this.newTaskButton.UseVisualStyleBackColor = true;
             // 
             // imageList2
             // 
@@ -809,7 +780,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(415, 673);
+            this.panel1.Size = new System.Drawing.Size(421, 670);
             this.panel1.TabIndex = 2;
             // 
             // overviewCompanyDetails
@@ -939,18 +910,53 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // newTaskButton
+            // 
+            this.newTaskButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.newTaskButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.newTaskButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.newTaskButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.newTaskButton.Font = new System.Drawing.Font("Junegull", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newTaskButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(7)))), ((int)(((byte)(63)))));
+            this.newTaskButton.Location = new System.Drawing.Point(987, 1);
+            this.newTaskButton.Margin = new System.Windows.Forms.Padding(1, 1, 30, 1);
+            this.newTaskButton.Name = "newTaskButton";
+            this.newTaskButton.Size = new System.Drawing.Size(50, 50);
+            this.newTaskButton.TabIndex = 4;
+            this.newTaskButton.Text = "+";
+            this.newTaskButton.UseVisualStyleBackColor = true;
+            // 
+            // DeleteTaskButton
+            // 
+            this.DeleteTaskButton.FlatAppearance.BorderSize = 3;
+            this.DeleteTaskButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteTaskButton.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DeleteTaskButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(7)))), ((int)(((byte)(63)))));
+            this.DeleteTaskButton.Location = new System.Drawing.Point(817, 1);
+            this.DeleteTaskButton.Margin = new System.Windows.Forms.Padding(1, 1, 30, 1);
+            this.DeleteTaskButton.Name = "DeleteTaskButton";
+            this.DeleteTaskButton.Size = new System.Drawing.Size(139, 50);
+            this.DeleteTaskButton.TabIndex = 5;
+            this.DeleteTaskButton.Text = "Usuń";
+            this.DeleteTaskButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1482, 673);
+            this.ClientSize = new System.Drawing.Size(1482, 670);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.mainTabControl);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1500, 717);
+            this.MinimumSize = new System.Drawing.Size(1500, 717);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Company Managment";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.mainTabControl.ResumeLayout(false);
             this.dashboard.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -978,13 +984,10 @@
             this.employees.ResumeLayout(false);
             this.employees.PerformLayout();
             this.flowLayoutPanel7.ResumeLayout(false);
-            this.flowLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel5.ResumeLayout(false);
-            this.flowLayoutPanel5.PerformLayout();
             this.tasks.ResumeLayout(false);
             this.tasks.PerformLayout();
             this.flowLayoutPanel8.ResumeLayout(false);
-            this.flowLayoutPanel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeRepositoryBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -1000,21 +1003,11 @@
         private System.Windows.Forms.TabControl mainTabControl;
         private System.Windows.Forms.TabPage dashboard;
         private System.Windows.Forms.TabPage employees;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
-        private System.Windows.Forms.ListView employeeListView;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button newEmployee;
         private System.Windows.Forms.TabPage tasks;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button newTaskButton;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.BindingSource employeeRepositoryBindingSource;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label overviewCompanyDetails;
         private System.Windows.Forms.Label overviewCompanyNIP;
@@ -1076,6 +1069,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button companyDetailsSaveButton;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
+        private System.Windows.Forms.ListView employeeListView;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.Button newEmployee;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button newTaskButton;
+        private System.Windows.Forms.Button DeleteTaskButton;
     }
 }
 

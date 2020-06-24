@@ -103,7 +103,9 @@ namespace CompanyManagmentProject
                     e.isFired() ? "Tak" : "Nie",
                 };
                 ListViewItem item = new ListViewItem(row);
+
                 employeeListView.Items.Add(item);
+
             });
         }
 
@@ -151,6 +153,21 @@ namespace CompanyManagmentProject
         }
 
         private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employeeListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
