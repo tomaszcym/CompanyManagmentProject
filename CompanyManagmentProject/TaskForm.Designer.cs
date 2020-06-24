@@ -54,8 +54,8 @@
             this.taskEmployeeSelect = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.taskName = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -200,7 +200,7 @@
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.04762F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.95238F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel11.Controls.Add(this.taskLabel5, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.taskDataTimePickerEnd, 1, 1);
             this.tableLayoutPanel11.Controls.Add(this.taskDateTimePickerStart, 0, 1);
@@ -227,7 +227,7 @@
             // 
             this.taskDataTimePickerEnd.Location = new System.Drawing.Point(207, 33);
             this.taskDataTimePickerEnd.Name = "taskDataTimePickerEnd";
-            this.taskDataTimePickerEnd.Size = new System.Drawing.Size(206, 20);
+            this.taskDataTimePickerEnd.Size = new System.Drawing.Size(205, 20);
             this.taskDataTimePickerEnd.TabIndex = 8;
             // 
             // taskDateTimePickerStart
@@ -283,6 +283,7 @@
             this.taskSave.TabIndex = 0;
             this.taskSave.Text = "Zapisz";
             this.taskSave.UseVisualStyleBackColor = true;
+            this.taskSave.Click += new System.EventHandler(this.taskSave_Click);
             // 
             // taskExit
             // 
@@ -371,14 +372,6 @@
             this.label2.TabIndex = 22;
             this.label2.Text = "Nazwa Zadania";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(13, 312);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(765, 47);
-            this.textBox1.TabIndex = 21;
-            // 
             // taskName
             // 
             this.taskName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
@@ -386,6 +379,14 @@
             this.taskName.Name = "taskName";
             this.taskName.Size = new System.Drawing.Size(200, 23);
             this.taskName.TabIndex = 23;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(13, 312);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(765, 47);
+            this.textBox1.TabIndex = 21;
             // 
             // TaskForm
             // 

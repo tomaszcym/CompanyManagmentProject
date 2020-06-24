@@ -19,9 +19,9 @@ namespace CompanyManagmentProject
         public TaskForm()
         {
             InitializeComponent();
-            
+
         }
-        public TaskForm (Form1 form)
+        public TaskForm(Form1 form)
         {
             InitializeComponent();
             this.formParent = form;
@@ -37,13 +37,13 @@ namespace CompanyManagmentProject
         private void initTask(Model.Task task)
         {
             this.task = task;
-            this.Text = task.id + " " + task.name + " " + task.startDate;
+            this.Text = task.id + " " + task.startDate + " " + task.startDate;
 
-            this.taskEmployeeSelect.Text = task.name;
+            this.taskEmployeeSelect.Text = task.name ;
             this.taskPhoneNumber.Text = task.phone;
             this.taskToDo.Text = task.name;
 
-            //this.taskDateTimePickerStart.Format = DateTimePickerFormat.Custom;
+            this.taskDateTimePickerStart.Format = DateTimePickerFormat.Custom;
             //this.taskDateTimePickerStart.CustomFormat = "dd-mm-yyyy HH:mm";
             //this.taskDateTimePickerStart.Value = task.startDate;
 
@@ -52,5 +52,24 @@ namespace CompanyManagmentProject
             //this.taskDataTimePickerEnd.Value = task.endDate;
 
         }
+
+        private void taskSave_Click(object sender, EventArgs e)
+        {
+            Model.Task taskToSave = this.task;
+
+            taskToSave.name = this.taskName.Text;
+            taskToSave.description = this.taskPhoneNumber.Text;
+            taskToSave.startDate = this.taskDateTimePickerStart.Value;
+            taskToSave.endDate = this.taskDataTimePickerEnd.Value;
+            if (this.task.id != 0)
+                Repo.TaskRepository.update(this.task.id, taskToSave);
+            else
+                Repo.TaskRepository.add(taskToSave);
+
+            this.formParent.renderTasksTab();
+            this.Close();
+        }
+
+
+        }
     }
-}
