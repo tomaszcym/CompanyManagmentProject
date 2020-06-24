@@ -33,7 +33,7 @@ namespace CompanyManagmentProject
 
         private void mainTabControl_Selected(object sender, TabControlEventArgs e)
         {
-            switch(e.TabPage.Name.ToString())
+            switch (e.TabPage.Name.ToString())
             {
                 case "dashboard":
                     renderDashboardTab();
@@ -54,7 +54,6 @@ namespace CompanyManagmentProject
         {
             overviewCompanyName.Text = CompanyDetails.name;
             overviewCounterEmployee.Text = EmployeeRepository.getAll().Count().ToString();
-            overviewTime.Text = DateTime.Now.ToString();
         }
 
         private void renderCompanyDetailsTab()
