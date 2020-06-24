@@ -46,7 +46,7 @@ namespace CompanyManagmentProject
                     renderEmployeesTab();
                     break;
                 case "tasks":
-                    //
+                    renderTasksTab();
                     break;
             }
         }
@@ -119,7 +119,44 @@ namespace CompanyManagmentProject
             EmployeeForm employeeForm = new EmployeeForm(this, employee);
             employeeForm.Show(this);
         }
-        
+
+        //
+        public void renderTasksTab()
+        {
+            List<Model.Task> tasks = TaskRepository.getAll();
+
+            taskListView.Clear();
+            taskListView.View = View.Details;
+            taskListView.FullRowSelect = true;
+
+            taskListView.Columns.Add("Id");
+            taskListView.Columns.Add("Imię");
+            taskListView.Columns.Add("Nazwisko");
+            taskListView.Columns.Add("Numer telefonu");
+            taskListView.Columns.Add("Zadanie");
+            taskListView.Columns.Add("Data rozpoczęcia");
+            taskListView.Columns.Add("Data zakończenia");
+            taskListView.Columns.Add("Delegacja");
+
+            tasks.ForEach(e => {
+                string[] row = {
+                    e.id.ToString(),
+                    e.name,
+                    e.description,
+                    e.startDate.ToString(),
+                    e.endDate.ToString(),
+                    e.isFinished() ? "Tak" : "Nie",
+                };
+                ListViewItem item = new ListViewItem(row);
+
+                taskListView.Items.Add(item);
+
+            });
+        }
+
+
+        //
+
         private void companyDetailsSaveButton_Click(object sender, EventArgs e)
         {
             CompanyDetails.name = companyName.Text;
@@ -170,6 +207,23 @@ namespace CompanyManagmentProject
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void newTaskButton_Click(object sender, EventArgs e)
+        {
+            TaskForm taskForm = new TaskForm();
+            taskForm.Show();
+        }
+
+        private void taskListView_Click(object sender, EventArgs e)
+        {
+            var selected = taskListView.SelectedItems[0].SubItems[0];
+            int id = int.Parse(selected.Text);
+
+            Model.Task task = TaskRepository.getById(id);
+
+            TaskForm taskForm = new TaskForm(this, task);
+            taskForm.Show(this);
         }
     }
 }

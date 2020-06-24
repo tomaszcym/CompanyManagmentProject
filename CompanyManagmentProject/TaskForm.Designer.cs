@@ -30,13 +30,6 @@
         {
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.taskLabel1 = new System.Windows.Forms.Label();
-            this.taskFirstName = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.taskLabel2 = new System.Windows.Forms.Label();
-            this.taskLastName = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.taskLabel3 = new System.Windows.Forms.Label();
@@ -52,20 +45,26 @@
             this.taskDateTimePickerStart = new System.Windows.Forms.DateTimePicker();
             this.taskLabel6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.taskCheckboxDelegation = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.taskSave = new System.Windows.Forms.Button();
             this.taskExit = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.taskEmployee = new System.Windows.Forms.Label();
+            this.taskEmployeeSelect = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.taskName = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel4
@@ -89,91 +88,6 @@
             this.label1.Size = new System.Drawing.Size(217, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Dodawanie nowego zadania";
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.AutoSize = true;
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel3, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(7, 39);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(424, 57);
-            this.tableLayoutPanel4.TabIndex = 14;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.AutoSize = true;
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.Controls.Add(this.taskLabel1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.taskFirstName, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(206, 48);
-            this.tableLayoutPanel2.TabIndex = 2;
-            // 
-            // taskLabel1
-            // 
-            this.taskLabel1.AutoSize = true;
-            this.taskLabel1.Location = new System.Drawing.Point(3, 0);
-            this.taskLabel1.Name = "taskLabel1";
-            this.taskLabel1.Padding = new System.Windows.Forms.Padding(3);
-            this.taskLabel1.Size = new System.Drawing.Size(90, 19);
-            this.taskLabel1.TabIndex = 0;
-            this.taskLabel1.Text = "Imię pracownika";
-            // 
-            // taskFirstName
-            // 
-            this.taskFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.taskFirstName.Location = new System.Drawing.Point(3, 22);
-            this.taskFirstName.Name = "taskFirstName";
-            this.taskFirstName.Size = new System.Drawing.Size(200, 23);
-            this.taskFirstName.TabIndex = 1;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.AutoSize = true;
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.Controls.Add(this.taskLabel2, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.taskLastName, 0, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(215, 3);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(206, 48);
-            this.tableLayoutPanel3.TabIndex = 3;
-            // 
-            // taskLabel2
-            // 
-            this.taskLabel2.AutoSize = true;
-            this.taskLabel2.Location = new System.Drawing.Point(3, 0);
-            this.taskLabel2.Name = "taskLabel2";
-            this.taskLabel2.Padding = new System.Windows.Forms.Padding(3);
-            this.taskLabel2.Size = new System.Drawing.Size(117, 19);
-            this.taskLabel2.TabIndex = 0;
-            this.taskLabel2.Text = "Nazwisko pracownika";
-            // 
-            // taskLastName
-            // 
-            this.taskLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.taskLastName.Location = new System.Drawing.Point(3, 22);
-            this.taskLastName.Name = "taskLastName";
-            this.taskLastName.Size = new System.Drawing.Size(200, 23);
-            this.taskLastName.TabIndex = 1;
             // 
             // tableLayoutPanel1
             // 
@@ -286,7 +200,7 @@
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.04762F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.95238F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel11.Controls.Add(this.taskLabel5, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.taskDataTimePickerEnd, 1, 1);
             this.tableLayoutPanel11.Controls.Add(this.taskDateTimePickerStart, 0, 1);
@@ -311,7 +225,7 @@
             // 
             // taskDataTimePickerEnd
             // 
-            this.taskDataTimePickerEnd.Location = new System.Drawing.Point(208, 33);
+            this.taskDataTimePickerEnd.Location = new System.Drawing.Point(207, 33);
             this.taskDataTimePickerEnd.Name = "taskDataTimePickerEnd";
             this.taskDataTimePickerEnd.Size = new System.Drawing.Size(206, 20);
             this.taskDataTimePickerEnd.TabIndex = 8;
@@ -320,13 +234,13 @@
             // 
             this.taskDateTimePickerStart.Location = new System.Drawing.Point(3, 33);
             this.taskDateTimePickerStart.Name = "taskDateTimePickerStart";
-            this.taskDateTimePickerStart.Size = new System.Drawing.Size(199, 20);
+            this.taskDateTimePickerStart.Size = new System.Drawing.Size(198, 20);
             this.taskDateTimePickerStart.TabIndex = 12;
             // 
             // taskLabel6
             // 
             this.taskLabel6.AutoSize = true;
-            this.taskLabel6.Location = new System.Drawing.Point(208, 0);
+            this.taskLabel6.Location = new System.Drawing.Point(207, 0);
             this.taskLabel6.Name = "taskLabel6";
             this.taskLabel6.Padding = new System.Windows.Forms.Padding(3);
             this.taskLabel6.Size = new System.Drawing.Size(197, 19);
@@ -347,16 +261,6 @@
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(0, 0);
             this.tableLayoutPanel10.TabIndex = 17;
-            // 
-            // taskCheckboxDelegation
-            // 
-            this.taskCheckboxDelegation.AutoSize = true;
-            this.taskCheckboxDelegation.Location = new System.Drawing.Point(7, 259);
-            this.taskCheckboxDelegation.Name = "taskCheckboxDelegation";
-            this.taskCheckboxDelegation.Size = new System.Drawing.Size(74, 17);
-            this.taskCheckboxDelegation.TabIndex = 18;
-            this.taskCheckboxDelegation.Text = "Delegacja";
-            this.taskCheckboxDelegation.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel3
             // 
@@ -389,30 +293,118 @@
             this.taskExit.Text = "Anuluj";
             this.taskExit.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.AutoSize = true;
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 51);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(0, 0);
+            this.tableLayoutPanel3.TabIndex = 3;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.AutoSize = true;
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.Controls.Add(this.taskEmployee, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(69, 19);
+            this.tableLayoutPanel2.TabIndex = 2;
+            // 
+            // taskEmployee
+            // 
+            this.taskEmployee.AutoSize = true;
+            this.taskEmployee.Location = new System.Drawing.Point(3, 0);
+            this.taskEmployee.Name = "taskEmployee";
+            this.taskEmployee.Padding = new System.Windows.Forms.Padding(3);
+            this.taskEmployee.Size = new System.Drawing.Size(63, 19);
+            this.taskEmployee.TabIndex = 0;
+            this.taskEmployee.Text = "Pracownik";
+            // 
+            // taskEmployeeSelect
+            // 
+            this.taskEmployeeSelect.FormattingEnabled = true;
+            this.taskEmployeeSelect.Location = new System.Drawing.Point(3, 31);
+            this.taskEmployeeSelect.Name = "taskEmployeeSelect";
+            this.taskEmployeeSelect.Size = new System.Drawing.Size(185, 21);
+            this.taskEmployeeSelect.TabIndex = 21;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.AutoSize = true;
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.taskEmployeeSelect, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel3, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.taskName, 1, 1);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(7, 39);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(424, 68);
+            this.tableLayoutPanel4.TabIndex = 14;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(215, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 13);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Nazwa Zadania";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(13, 312);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(765, 47);
+            this.textBox1.TabIndex = 21;
+            // 
+            // taskName
+            // 
+            this.taskName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.taskName.Location = new System.Drawing.Point(215, 31);
+            this.taskName.Name = "taskName";
+            this.taskName.Size = new System.Drawing.Size(200, 23);
+            this.taskName.TabIndex = 23;
+            // 
             // TaskForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel7);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel10);
-            this.Controls.Add(this.taskCheckboxDelegation);
             this.Controls.Add(this.flowLayoutPanel4);
             this.Name = "TaskForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TaskForm";
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
@@ -423,6 +415,10 @@
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,13 +428,6 @@
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label taskLabel1;
-        private System.Windows.Forms.TextBox taskFirstName;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label taskLabel2;
-        private System.Windows.Forms.TextBox taskLastName;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label taskLabel3;
@@ -454,9 +443,16 @@
         private System.Windows.Forms.DateTimePicker taskDateTimePickerStart;
         private System.Windows.Forms.Label taskLabel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private System.Windows.Forms.CheckBox taskCheckboxDelegation;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Button taskSave;
         private System.Windows.Forms.Button taskExit;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label taskEmployee;
+        private System.Windows.Forms.ComboBox taskEmployeeSelect;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox taskName;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
