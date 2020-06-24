@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace CompanyManagmentProject.Repo
 {
@@ -28,23 +29,26 @@ namespace CompanyManagmentProject.Repo
             try
             {
                 task = tasks.Find(e => e.id == id);
+                if (task != null && task.employeeId != 0)
+                {
+                    task.employee = EmployeeRepository.getById((int)task.employeeId);
+                }
             }
             catch(ArgumentNullException e)
             {
                 return null;
             }
-
-            if (task != null)
-            {
-                task.employee = EmployeeRepository.getById(task.id);
-                return tasks.Find(e => e.id == id);
-            }
-            return null;
+            return task;
         }
 
         public static List<Task> getAll()
         {
             return tasks;
+        }
+
+        public static List<Task> getByFinished(bool finished)
+        {
+            return tasks.FindAll(t => t.finished == finished);
         }
 
 
@@ -76,20 +80,19 @@ namespace CompanyManagmentProject.Repo
 
         public static Boolean delete(int id)
         {
-            int position = -1;
             try
             {
-                position = tasks.FindIndex(i => i.id == id);
+                Task task = tasks.SingleOrDefault(t => t.id == id);
+       
+                if (task != null)
+                {
+                    tasks.Remove(task);
+                    return true;
+                }
             }
             catch (ArgumentNullException e)
             {
                 return false;
-            }
-
-            if (position > -1)
-            {
-                tasks.RemoveAt(position);
-                return true;
             }
             return false;
         }

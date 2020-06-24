@@ -5,6 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CompanyManagmentProject.Repo
 {
@@ -64,20 +65,19 @@ namespace CompanyManagmentProject.Repo
 
         public static Boolean delete(int id)
         {
-            int position = -1;
             try
             {
-                position = employees.FindIndex(i => i.id == id);
+                Employee employee = employees.Find(e => e.id == id);
+
+                if (employee != null)
+                {
+                    employees.Remove(employee);
+                    return true;
+                }
             }
-            catch(ArgumentNullException e)
+            catch (ArgumentNullException e)
             {
                 return false;
-            }
-
-            if(position > -1)
-            {
-                employees.RemoveAt(position);
-                return true;
             }
             return false;
         }

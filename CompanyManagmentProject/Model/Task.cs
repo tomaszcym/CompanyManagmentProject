@@ -12,12 +12,12 @@ namespace CompanyManagmentProject.Model
         public String name { get; set; }
         public String phone { get; set; }
         public String description { get; set; }
-        public DateTime startDate { get; set; }
-        public DateTime endDate { get; set; }
+        public DateTime ?startDate { get; set; }
+        public DateTime ?endDate { get; set; }
         public Boolean finished { get; set; }
-        
-        public int employeeId { get; set; }
-        public Employee employee { get; set; }
+
+        public int? employeeId { get; set; } = 0;
+        public Employee employee { get; set; } = null;
 
         public Task()
         {

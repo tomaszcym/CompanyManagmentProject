@@ -53,12 +53,11 @@ namespace CompanyManagmentProject
 
         private void renderDashboardTab()
         {
-            overviewCompanyName.Text = CompanyDetails.name;
-            overviewCompanyAddres.Text = CompanyDetails.address;
-            overviewCompanyCity.Text = CompanyDetails.city;
-            overviewCompanyPostcode.Text = CompanyDetails.postcode;
-            overviewCompanyDetails.Text = CompanyDetails.country;
-            overviewCompanyNIP.Text = CompanyDetails.nip;
+            int finished = TaskRepository.getByFinished(true).Count();
+            int unfinished = TaskRepository.getByFinished(false).Count();
+
+            overviewCounterActiveTask.Text = unfinished.ToString();
+            overviewCounterFinishTask.Text = finished.ToString();
             overviewCounterEmployee.Text = EmployeeRepository.getAll().Count().ToString();
         }
 
@@ -92,9 +91,10 @@ namespace CompanyManagmentProject
             employeeListView.Columns.Add("Zatrudniony (data)");
             employeeListView.Columns.Add("Zwolniony");
 
+            int i = 1;
             employees.ForEach(e => {
                 string[] row = {
-                    e.id.ToString(),
+                    i++.ToString(),
                     e.firstName,
                     e.lastName,
                     e.email,
@@ -129,6 +129,7 @@ namespace CompanyManagmentProject
         {
             List<Model.Task> tasks = TaskRepository.getAll();
 
+
             taskListView.Clear();
             taskListView.View = View.Details;
             taskListView.FullRowSelect = true;
@@ -142,14 +143,25 @@ namespace CompanyManagmentProject
             taskListView.Columns.Add("Data zakończenia");
             taskListView.Columns.Add("Zakończone");
 
-            tasks.ForEach(e => {
+            int i = 1;
+            tasks.ForEach(t => {
+                
+                Employee employee = EmployeeRepository.getById((int)t.employeeId);
+
+                string firstName = employee != null ? employee.firstName : "";
+                string lastName = employee != null ? employee.lastName : "";
+                string phone = employee != null ? employee.phone : "";
+
                 string[] row = {
-                    e.id.ToString(),
-                    e.name,
-                    e.description,
-                    e.startDate.ToString(),
-                    e.endDate.ToString(),
-                    e.isFinished() ? "Tak" : "Nie",
+                    i++.ToString(),
+                    firstName,
+                    lastName,
+                    phone,
+                    t.name,
+                    t.description,
+                    t.startDate.ToString(),
+                    t.endDate.ToString(),
+                    t.isFinished() ? "Tak" : "Nie",
                 };
                 ListViewItem item = new ListViewItem(row);
                 taskListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
@@ -170,8 +182,10 @@ namespace CompanyManagmentProject
             CompanyDetails.city = companyCity.Text;
             CompanyDetails.postcode = companyPostcode.Text;
             CompanyDetails.country = companyCountry.Text;
-            msg m = new msg();
-            m.Show();
+            //msg m = new msg();
+            //m.Show();
+
+            updateCompanyOverview();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -216,7 +230,7 @@ namespace CompanyManagmentProject
 
         private void newTaskButton_Click(object sender, EventArgs e)
         {
-            TaskForm taskForm = new TaskForm();
+            TaskForm taskForm = new TaskForm(this);
             taskForm.Show();
         }
 
@@ -229,6 +243,16 @@ namespace CompanyManagmentProject
 
             TaskForm taskForm = new TaskForm(this, task);
             taskForm.Show(this);
+        }
+
+        public void updateCompanyOverview()
+        {
+            overviewCompanyName.Text = CompanyDetails.name;
+            overviewCompanyAddres.Text = CompanyDetails.address;
+            overviewCompanyCity.Text = CompanyDetails.city;
+            overviewCompanyPostcode.Text = CompanyDetails.postcode;
+            overviewCompanyDetails.Text = CompanyDetails.country;
+            overviewCompanyNIP.Text = CompanyDetails.nip;
         }
     }
 }
