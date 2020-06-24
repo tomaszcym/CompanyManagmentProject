@@ -14,6 +14,11 @@ namespace CompanyManagmentProject
 {
     public partial class EmployeeForm : Form
     {
+
+        private bool dragging = false;
+        private Point startPoint = new Point(0, 0);
+
+
         private Employee employee;
         private Form1 formParent;
 
@@ -78,6 +83,36 @@ namespace CompanyManagmentProject
 
             this.formParent.renderEmployeesTab();
             this.Close();
+        }
+
+        private void EmployeeForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void label1_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            startPoint = new Point(e.X, e.Y);
+        }
+
+        private void label1_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+
+        private void label1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point p = PointToScreen(e.Location);
+                Location = new Point(p.X - this.startPoint.X, p.Y - this.startPoint.Y);
+            }
         }
     }
 }
