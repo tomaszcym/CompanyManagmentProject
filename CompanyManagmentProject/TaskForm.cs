@@ -42,6 +42,7 @@ namespace CompanyManagmentProject
             this.taskEmployeeSelect.Text = task.name;
             this.taskPhoneNumber.Text = task.phone;
             this.taskToDo.Text = task.name;
+            this.taskIsEnd.Checked = task.isFinished();
 
             //this.taskDateTimePickerStart.Format = DateTimePickerFormat.Custom;
             //this.taskDateTimePickerStart.CustomFormat = "dd-mm-yyyy HH:mm";
@@ -50,6 +51,11 @@ namespace CompanyManagmentProject
             //this.taskDataTimePickerEnd.Format = DateTimePickerFormat.Custom;
             //this.taskDataTimePickerEnd.CustomFormat = "dd-mm-yyyy HH:mm";
             //this.taskDataTimePickerEnd.Value = task.endDate;
+
+        }
+
+        private void TaskForm_Load(object sender, EventArgs e)
+        {
 
         }
     }
