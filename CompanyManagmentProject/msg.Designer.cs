@@ -57,6 +57,7 @@
             // 
             // buttonOK
             // 
+            this.buttonOK.FlatAppearance.BorderSize = 3;
             this.buttonOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOK.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(34)))), ((int)(((byte)(50)))));
