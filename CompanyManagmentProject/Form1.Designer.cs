@@ -51,30 +51,31 @@
             this.panel17 = new System.Windows.Forms.Panel();
             this.overviewCounterFinishTask = new System.Windows.Forms.Label();
             this.companyDetails = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.companyName = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.companyAddress = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.companyCity = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.companyPostcode = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.companyCountry = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.companyNIP = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel27 = new System.Windows.Forms.Panel();
             this.companyDetailsSaveButton = new System.Windows.Forms.Button();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.companyNIP = new System.Windows.Forms.TextBox();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.companyCountry = new System.Windows.Forms.TextBox();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.companyPostcode = new System.Windows.Forms.TextBox();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.companyCity = new System.Windows.Forms.TextBox();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.companyAddress = new System.Windows.Forms.TextBox();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.companyName = new System.Windows.Forms.TextBox();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.employees = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
@@ -90,23 +91,24 @@
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.newTaskButton = new System.Windows.Forms.Button();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.iconlist = new System.Windows.Forms.ImageList(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.employeeRepositoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.overviewCompanyDetails = new System.Windows.Forms.Label();
+            this.overviewCompanyNIP = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.overviewCompanyPostcode = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.overviewCompanyCity = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.overviewCompanyAddres = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.overviewCompanyName = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mainTabControl.SuspendLayout();
             this.dashboard.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -116,16 +118,14 @@
             this.panel3.SuspendLayout();
             this.panel17.SuspendLayout();
             this.companyDetails.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
+            this.panel27.SuspendLayout();
+            this.panel25.SuspendLayout();
+            this.panel26.SuspendLayout();
+            this.panel23.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel22.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel20.SuspendLayout();
             this.employees.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
@@ -149,12 +149,12 @@
             this.mainTabControl.Controls.Add(this.tasks);
             this.mainTabControl.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.mainTabControl.ImageList = this.imageList2;
-            this.mainTabControl.Location = new System.Drawing.Point(409, 0);
+            this.mainTabControl.Location = new System.Drawing.Point(419, 0);
             this.mainTabControl.Margin = new System.Windows.Forms.Padding(4);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.Padding = new System.Drawing.Point(6, 4);
             this.mainTabControl.SelectedIndex = 0;
-            this.mainTabControl.Size = new System.Drawing.Size(1085, 683);
+            this.mainTabControl.Size = new System.Drawing.Size(1075, 683);
             this.mainTabControl.TabIndex = 1;
             this.mainTabControl.Selected += new System.Windows.Forms.TabControlEventHandler(this.mainTabControl_Selected);
             // 
@@ -168,7 +168,7 @@
             this.dashboard.Margin = new System.Windows.Forms.Padding(4);
             this.dashboard.Name = "dashboard";
             this.dashboard.Padding = new System.Windows.Forms.Padding(4);
-            this.dashboard.Size = new System.Drawing.Size(1077, 635);
+            this.dashboard.Size = new System.Drawing.Size(1067, 635);
             this.dashboard.TabIndex = 0;
             this.dashboard.Text = "       Przegląd          ";
             this.dashboard.UseVisualStyleBackColor = true;
@@ -346,8 +346,17 @@
             // 
             // companyDetails
             // 
-            this.companyDetails.Controls.Add(this.flowLayoutPanel1);
-            this.companyDetails.Controls.Add(this.flowLayoutPanel4);
+            this.companyDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.companyDetails.Controls.Add(this.panel27);
+            this.companyDetails.Controls.Add(this.panel25);
+            this.companyDetails.Controls.Add(this.panel26);
+            this.companyDetails.Controls.Add(this.panel23);
+            this.companyDetails.Controls.Add(this.panel24);
+            this.companyDetails.Controls.Add(this.panel22);
+            this.companyDetails.Controls.Add(this.panel21);
+            this.companyDetails.Controls.Add(this.panel20);
+            this.companyDetails.Controls.Add(this.panel19);
+            this.companyDetails.Controls.Add(this.panel18);
             this.companyDetails.Controls.Add(this.flowLayoutPanel3);
             this.companyDetails.Controls.Add(this.flowLayoutPanel2);
             this.companyDetails.Font = new System.Drawing.Font("Century Gothic", 10.2F);
@@ -357,311 +366,243 @@
             this.companyDetails.Margin = new System.Windows.Forms.Padding(4);
             this.companyDetails.Name = "companyDetails";
             this.companyDetails.Padding = new System.Windows.Forms.Padding(4);
-            this.companyDetails.Size = new System.Drawing.Size(1077, 635);
+            this.companyDetails.Size = new System.Drawing.Size(1067, 635);
             this.companyDetails.TabIndex = 1;
             this.companyDetails.Text = "      Edytuj dane firmy          ";
-            this.companyDetails.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel1
+            // panel27
             // 
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel1);
-            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel4);
-            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel5);
-            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel7);
-            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel6);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 45);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1069, 550);
-            this.flowLayoutPanel1.TabIndex = 5;
+            this.panel27.Controls.Add(this.companyDetailsSaveButton);
+            this.panel27.Location = new System.Drawing.Point(108, 450);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(850, 175);
+            this.panel27.TabIndex = 13;
             // 
-            // tableLayoutPanel1
+            // companyDetailsSaveButton
             // 
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.companyName, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 7);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(273, 64);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.companyDetailsSaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.companyDetailsSaveButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.companyDetailsSaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(7)))), ((int)(((byte)(63)))));
+            this.companyDetailsSaveButton.Location = new System.Drawing.Point(355, 65);
+            this.companyDetailsSaveButton.Name = "companyDetailsSaveButton";
+            this.companyDetailsSaveButton.Size = new System.Drawing.Size(140, 45);
+            this.companyDetailsSaveButton.TabIndex = 0;
+            this.companyDetailsSaveButton.Text = "ZAPISZ";
+            this.companyDetailsSaveButton.UseVisualStyleBackColor = true;
+            this.companyDetailsSaveButton.Click += new System.EventHandler(this.companyDetailsSaveButton_Click);
             // 
-            // label2
+            // panel25
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(4);
-            this.label2.Size = new System.Drawing.Size(117, 29);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nazwa firmy";
-            // 
-            // companyName
-            // 
-            this.companyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.companyName.Location = new System.Drawing.Point(4, 33);
-            this.companyName.Margin = new System.Windows.Forms.Padding(4);
-            this.companyName.Name = "companyName";
-            this.companyName.Size = new System.Drawing.Size(265, 27);
-            this.companyName.TabIndex = 1;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.AutoSize = true;
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel3, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 79);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(562, 75);
-            this.tableLayoutPanel4.TabIndex = 4;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.AutoSize = true;
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.companyAddress, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 7);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(273, 64);
-            this.tableLayoutPanel2.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(4);
-            this.label3.Size = new System.Drawing.Size(66, 29);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Adres";
-            // 
-            // companyAddress
-            // 
-            this.companyAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.companyAddress.Location = new System.Drawing.Point(4, 33);
-            this.companyAddress.Margin = new System.Windows.Forms.Padding(4);
-            this.companyAddress.Name = "companyAddress";
-            this.companyAddress.Size = new System.Drawing.Size(265, 27);
-            this.companyAddress.TabIndex = 1;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.AutoSize = true;
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.companyCity, 0, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(285, 4);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 7);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(273, 64);
-            this.tableLayoutPanel3.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 0);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(4);
-            this.label4.Size = new System.Drawing.Size(75, 29);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Miasto";
-            // 
-            // companyCity
-            // 
-            this.companyCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.companyCity.Location = new System.Drawing.Point(4, 33);
-            this.companyCity.Margin = new System.Windows.Forms.Padding(4);
-            this.companyCity.Name = "companyCity";
-            this.companyCity.Size = new System.Drawing.Size(265, 27);
-            this.companyCity.TabIndex = 1;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.AutoSize = true;
-            this.tableLayoutPanel5.ColumnCount = 1;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel5.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.companyPostcode, 0, 1);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 162);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 7);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 3;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(273, 89);
-            this.tableLayoutPanel5.TabIndex = 5;
+            this.panel25.Controls.Add(this.label5);
+            this.panel25.Controls.Add(this.companyNIP);
+            this.panel25.Location = new System.Drawing.Point(533, 350);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(425, 100);
+            this.panel25.TabIndex = 12;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12.2F);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(100, 12);
             this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(4);
-            this.label5.Size = new System.Drawing.Size(137, 29);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Kod pocztowy";
-            // 
-            // companyPostcode
-            // 
-            this.companyPostcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.companyPostcode.Location = new System.Drawing.Point(4, 33);
-            this.companyPostcode.Margin = new System.Windows.Forms.Padding(4);
-            this.companyPostcode.Name = "companyPostcode";
-            this.companyPostcode.Size = new System.Drawing.Size(265, 27);
-            this.companyPostcode.TabIndex = 1;
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.AutoSize = true;
-            this.tableLayoutPanel7.ColumnCount = 1;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel7.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.companyCountry, 0, 1);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(4, 262);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 7);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(273, 64);
-            this.tableLayoutPanel7.TabIndex = 6;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(4, 0);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Padding = new System.Windows.Forms.Padding(4);
-            this.label9.Size = new System.Drawing.Size(89, 29);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Państwo";
-            // 
-            // companyCountry
-            // 
-            this.companyCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.companyCountry.Location = new System.Drawing.Point(4, 33);
-            this.companyCountry.Margin = new System.Windows.Forms.Padding(4);
-            this.companyCountry.Name = "companyCountry";
-            this.companyCountry.Size = new System.Drawing.Size(265, 27);
-            this.companyCountry.TabIndex = 1;
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.AutoSize = true;
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel6.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.companyNIP, 0, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 337);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 7);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(273, 64);
-            this.tableLayoutPanel6.TabIndex = 6;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(4, 0);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(4);
-            this.label6.Size = new System.Drawing.Size(46, 29);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "NIP";
+            this.label5.Size = new System.Drawing.Size(225, 31);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "NIP";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // companyNIP
             // 
-            this.companyNIP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.companyNIP.Location = new System.Drawing.Point(4, 33);
-            this.companyNIP.Margin = new System.Windows.Forms.Padding(4);
+            this.companyNIP.Location = new System.Drawing.Point(100, 46);
             this.companyNIP.Name = "companyNIP";
-            this.companyNIP.Size = new System.Drawing.Size(265, 27);
+            this.companyNIP.Size = new System.Drawing.Size(225, 28);
             this.companyNIP.TabIndex = 1;
             // 
-            // flowLayoutPanel4
+            // panel26
             // 
-            this.flowLayoutPanel4.AutoSize = true;
-            this.flowLayoutPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel4.Controls.Add(this.label1);
-            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(4, 4);
-            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(1069, 41);
-            this.flowLayoutPanel4.TabIndex = 4;
+            this.panel26.Controls.Add(this.label6);
+            this.panel26.Controls.Add(this.companyCountry);
+            this.panel26.Location = new System.Drawing.Point(108, 350);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(425, 100);
+            this.panel26.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12.2F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(100, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(225, 31);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "PAŃSTWO";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // companyCountry
+            // 
+            this.companyCountry.Location = new System.Drawing.Point(100, 46);
+            this.companyCountry.Name = "companyCountry";
+            this.companyCountry.Size = new System.Drawing.Size(225, 28);
+            this.companyCountry.TabIndex = 1;
+            // 
+            // panel23
+            // 
+            this.panel23.Controls.Add(this.label4);
+            this.panel23.Controls.Add(this.companyPostcode);
+            this.panel23.Location = new System.Drawing.Point(533, 250);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(425, 100);
+            this.panel23.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12.2F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(100, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(225, 31);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "KOD POCZTOWY";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // companyPostcode
+            // 
+            this.companyPostcode.Location = new System.Drawing.Point(100, 46);
+            this.companyPostcode.Name = "companyPostcode";
+            this.companyPostcode.Size = new System.Drawing.Size(225, 28);
+            this.companyPostcode.TabIndex = 1;
+            // 
+            // panel24
+            // 
+            this.panel24.Controls.Add(this.label3);
+            this.panel24.Controls.Add(this.companyCity);
+            this.panel24.Location = new System.Drawing.Point(108, 250);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(425, 100);
+            this.panel24.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12.2F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(100, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(225, 31);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "MIASTO";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // companyCity
+            // 
+            this.companyCity.Location = new System.Drawing.Point(100, 46);
+            this.companyCity.Name = "companyCity";
+            this.companyCity.Size = new System.Drawing.Size(225, 28);
+            this.companyCity.TabIndex = 1;
+            // 
+            // panel22
+            // 
+            this.panel22.Controls.Add(this.label2);
+            this.panel22.Controls.Add(this.companyAddress);
+            this.panel22.Location = new System.Drawing.Point(533, 150);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(425, 100);
+            this.panel22.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12.2F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(100, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(225, 31);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "ADRES";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // companyAddress
+            // 
+            this.companyAddress.Location = new System.Drawing.Point(100, 46);
+            this.companyAddress.Name = "companyAddress";
+            this.companyAddress.Size = new System.Drawing.Size(225, 28);
+            this.companyAddress.TabIndex = 1;
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.label1);
+            this.panel21.Controls.Add(this.companyName);
+            this.panel21.Location = new System.Drawing.Point(108, 150);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(425, 100);
+            this.panel21.TabIndex = 7;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label1.Location = new System.Drawing.Point(4, 4);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 12);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12.2F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(100, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Dane firmy";
+            this.label1.Size = new System.Drawing.Size(225, 31);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "NAZWA FIRMY";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // companyName
+            // 
+            this.companyName.Location = new System.Drawing.Point(100, 46);
+            this.companyName.Name = "companyName";
+            this.companyName.Size = new System.Drawing.Size(225, 28);
+            this.companyName.TabIndex = 0;
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.label9);
+            this.panel20.Location = new System.Drawing.Point(108, 0);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(850, 150);
+            this.panel20.TabIndex = 6;
+            // 
+            // label9
+            // 
+            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(7)))), ((int)(((byte)(63)))));
+            this.label9.Location = new System.Drawing.Point(0, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(850, 150);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Wprowadź dane firmy";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // panel19
+            // 
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel19.Location = new System.Drawing.Point(954, 4);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(109, 627);
+            this.panel19.TabIndex = 5;
+            // 
+            // panel18
+            // 
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel18.Location = new System.Drawing.Point(4, 4);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(108, 627);
+            this.panel18.TabIndex = 4;
             // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.AutoSize = true;
             this.flowLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel3.Controls.Add(this.companyDetailsSaveButton);
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(4, 595);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(4, 631);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1069, 36);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1059, 0);
             this.flowLayoutPanel3.TabIndex = 3;
-            // 
-            // companyDetailsSaveButton
-            // 
-            this.companyDetailsSaveButton.Location = new System.Drawing.Point(965, 4);
-            this.companyDetailsSaveButton.Margin = new System.Windows.Forms.Padding(4);
-            this.companyDetailsSaveButton.Name = "companyDetailsSaveButton";
-            this.companyDetailsSaveButton.Size = new System.Drawing.Size(100, 28);
-            this.companyDetailsSaveButton.TabIndex = 0;
-            this.companyDetailsSaveButton.Text = "Zapisz";
-            this.companyDetailsSaveButton.UseVisualStyleBackColor = true;
-            this.companyDetailsSaveButton.Click += new System.EventHandler(this.companyDetailsSaveButton_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -670,7 +611,7 @@
             this.flowLayoutPanel2.Location = new System.Drawing.Point(4, 4);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1069, 0);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1059, 0);
             this.flowLayoutPanel2.TabIndex = 2;
             // 
             // employees
@@ -684,7 +625,7 @@
             this.employees.Location = new System.Drawing.Point(4, 44);
             this.employees.Margin = new System.Windows.Forms.Padding(4);
             this.employees.Name = "employees";
-            this.employees.Size = new System.Drawing.Size(1077, 635);
+            this.employees.Size = new System.Drawing.Size(1067, 635);
             this.employees.TabIndex = 2;
             this.employees.Text = "       Pracownicy          ";
             this.employees.UseVisualStyleBackColor = true;
@@ -699,7 +640,7 @@
             this.flowLayoutPanel7.Location = new System.Drawing.Point(0, 41);
             this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            this.flowLayoutPanel7.Size = new System.Drawing.Size(1077, 558);
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(1067, 558);
             this.flowLayoutPanel7.TabIndex = 7;
             // 
             // employeeListView
@@ -732,12 +673,12 @@
             this.flowLayoutPanel6.Location = new System.Drawing.Point(0, 599);
             this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(1077, 36);
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(1067, 36);
             this.flowLayoutPanel6.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(973, 4);
+            this.button1.Location = new System.Drawing.Point(963, 4);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
@@ -755,7 +696,7 @@
             this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(1077, 41);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(1067, 41);
             this.flowLayoutPanel5.TabIndex = 5;
             // 
             // label7
@@ -790,7 +731,7 @@
             this.tasks.Location = new System.Drawing.Point(4, 44);
             this.tasks.Margin = new System.Windows.Forms.Padding(4);
             this.tasks.Name = "tasks";
-            this.tasks.Size = new System.Drawing.Size(1077, 635);
+            this.tasks.Size = new System.Drawing.Size(1067, 635);
             this.tasks.TabIndex = 4;
             this.tasks.Text = "       Zadania          ";
             this.tasks.UseVisualStyleBackColor = true;
@@ -815,7 +756,7 @@
             this.flowLayoutPanel8.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel8.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
-            this.flowLayoutPanel8.Size = new System.Drawing.Size(1077, 41);
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(1067, 41);
             this.flowLayoutPanel8.TabIndex = 6;
             // 
             // label8
@@ -839,6 +780,15 @@
             this.newTaskButton.Text = "Nowe zadanie\r\n";
             this.newTaskButton.UseVisualStyleBackColor = true;
             // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "icon1.png");
+            this.imageList2.Images.SetKeyName(1, "icon2.png");
+            this.imageList2.Images.SetKeyName(2, "icon3.png");
+            this.imageList2.Images.SetKeyName(3, "icon4.png");
+            // 
             // iconlist
             // 
             this.iconlist.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
@@ -848,8 +798,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.overviewCompanyDetails);
+            this.panel1.Controls.Add(this.overviewCompanyNIP);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
@@ -862,27 +812,27 @@
             this.panel1.Size = new System.Drawing.Size(415, 673);
             this.panel1.TabIndex = 2;
             // 
-            // label16
+            // overviewCompanyDetails
             // 
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(0, 455);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(412, 85);
-            this.label16.TabIndex = 11;
-            this.label16.Text = "Państwo";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.overviewCompanyDetails.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
+            this.overviewCompanyDetails.ForeColor = System.Drawing.Color.White;
+            this.overviewCompanyDetails.Location = new System.Drawing.Point(0, 455);
+            this.overviewCompanyDetails.Name = "overviewCompanyDetails";
+            this.overviewCompanyDetails.Size = new System.Drawing.Size(412, 85);
+            this.overviewCompanyDetails.TabIndex = 11;
+            this.overviewCompanyDetails.Text = "Państwo";
+            this.overviewCompanyDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
+            // overviewCompanyNIP
             // 
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(3, 540);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(412, 81);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "NIP";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.overviewCompanyNIP.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
+            this.overviewCompanyNIP.ForeColor = System.Drawing.Color.White;
+            this.overviewCompanyNIP.Location = new System.Drawing.Point(3, 540);
+            this.overviewCompanyNIP.Name = "overviewCompanyNIP";
+            this.overviewCompanyNIP.Size = new System.Drawing.Size(412, 81);
+            this.overviewCompanyNIP.TabIndex = 10;
+            this.overviewCompanyNIP.Text = "NIP";
+            this.overviewCompanyNIP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
@@ -897,60 +847,60 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.label13);
+            this.panel7.Controls.Add(this.overviewCompanyPostcode);
             this.panel7.Location = new System.Drawing.Point(0, 367);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(415, 85);
             this.panel7.TabIndex = 5;
             // 
-            // label13
+            // overviewCompanyPostcode
             // 
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(7, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(408, 82);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Kod pocztowy";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.overviewCompanyPostcode.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
+            this.overviewCompanyPostcode.ForeColor = System.Drawing.Color.White;
+            this.overviewCompanyPostcode.Location = new System.Drawing.Point(7, 0);
+            this.overviewCompanyPostcode.Name = "overviewCompanyPostcode";
+            this.overviewCompanyPostcode.Size = new System.Drawing.Size(408, 82);
+            this.overviewCompanyPostcode.TabIndex = 8;
+            this.overviewCompanyPostcode.Text = "Kod pocztowy";
+            this.overviewCompanyPostcode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label14);
+            this.panel6.Controls.Add(this.overviewCompanyCity);
             this.panel6.Location = new System.Drawing.Point(0, 282);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(415, 85);
             this.panel6.TabIndex = 4;
             // 
-            // label14
+            // overviewCompanyCity
             // 
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(3, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(412, 85);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "Miasto";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.overviewCompanyCity.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
+            this.overviewCompanyCity.ForeColor = System.Drawing.Color.White;
+            this.overviewCompanyCity.Location = new System.Drawing.Point(3, 0);
+            this.overviewCompanyCity.Name = "overviewCompanyCity";
+            this.overviewCompanyCity.Size = new System.Drawing.Size(412, 85);
+            this.overviewCompanyCity.TabIndex = 9;
+            this.overviewCompanyCity.Text = "Miasto";
+            this.overviewCompanyCity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.overviewCompanyAddres);
             this.panel5.Location = new System.Drawing.Point(0, 197);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(415, 85);
             this.panel5.TabIndex = 3;
             // 
-            // label15
+            // overviewCompanyAddres
             // 
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(3, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(412, 85);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "Adres";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.overviewCompanyAddres.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.overviewCompanyAddres.ForeColor = System.Drawing.Color.White;
+            this.overviewCompanyAddres.Location = new System.Drawing.Point(3, 0);
+            this.overviewCompanyAddres.Name = "overviewCompanyAddres";
+            this.overviewCompanyAddres.Size = new System.Drawing.Size(412, 85);
+            this.overviewCompanyAddres.TabIndex = 7;
+            this.overviewCompanyAddres.Text = "Adres";
+            this.overviewCompanyAddres.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
@@ -983,14 +933,11 @@
             this.label17.Text = "Company Managment";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // imageList2
+            // contextMenuStrip1
             // 
-            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
-            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList2.Images.SetKeyName(0, "icon1.png");
-            this.imageList2.Images.SetKeyName(1, "icon2.png");
-            this.imageList2.Images.SetKeyName(2, "icon3.png");
-            this.imageList2.Images.SetKeyName(3, "icon4.png");
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
@@ -1014,25 +961,20 @@
             this.panel17.ResumeLayout(false);
             this.companyDetails.ResumeLayout(false);
             this.companyDetails.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.flowLayoutPanel4.PerformLayout();
-            this.flowLayoutPanel3.ResumeLayout(false);
+            this.panel27.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
+            this.panel25.PerformLayout();
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel24.PerformLayout();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            this.panel20.ResumeLayout(false);
             this.employees.ResumeLayout(false);
             this.employees.PerformLayout();
             this.flowLayoutPanel7.ResumeLayout(false);
@@ -1057,29 +999,6 @@
 
         private System.Windows.Forms.TabControl mainTabControl;
         private System.Windows.Forms.TabPage dashboard;
-        private System.Windows.Forms.TabPage companyDetails;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox companyName;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox companyAddress;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox companyCity;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox companyPostcode;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox companyNIP;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.Button companyDetailsSaveButton;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.TabPage employees;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
         private System.Windows.Forms.ListView employeeListView;
@@ -1093,22 +1012,19 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button newTaskButton;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox companyCountry;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.BindingSource employeeRepositoryBindingSource;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label overviewCompanyDetails;
+        private System.Windows.Forms.Label overviewCompanyNIP;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label overviewCompanyPostcode;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label overviewCompanyCity;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label overviewCompanyAddres;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label overviewCompanyName;
         private System.Windows.Forms.Label label17;
@@ -1132,6 +1048,34 @@
         private System.Windows.Forms.Label overviewCounterFinishTask;
         private System.Windows.Forms.ImageList iconlist;
         private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.TabPage companyDetails;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.TextBox companyNIP;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.TextBox companyCountry;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.TextBox companyPostcode;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.TextBox companyCity;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.TextBox companyAddress;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox companyName;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button companyDetailsSaveButton;
+        private System.Windows.Forms.Label label9;
     }
 }
 

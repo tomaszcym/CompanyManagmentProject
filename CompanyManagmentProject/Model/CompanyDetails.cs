@@ -9,11 +9,11 @@ namespace CompanyManagmentProject.Model
     public static class CompanyDetails
     {
         public static int id { get; set; }
-        public static String name { get; set; } = "Ustaw nazwę firmy.";
-        public static String nip { get; set; }
-        public static String address { get; set; }
-        public static String city { get; set; }
-        public static String postcode { get; set; }
-        public static String country { get; set; }
+        public static String name { get; set; } = "Ustaw nazwe firmy";
+        public static String nip { get; set; } = "Ustaw NIP firmy";
+        public static String address { get; set; } = "Ustaw adres firmy";
+        public static String city { get; set; } = "Ustaw miasto";
+        public static String postcode { get; set; } = "Ustaw kod pocztowy";
+        public static String country { get; set; } = "Ustaw państwo";
     }
 }

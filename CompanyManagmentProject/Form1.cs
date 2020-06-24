@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CompanyManagmentProject
 {
     public partial class Form1 : Form
@@ -53,6 +54,11 @@ namespace CompanyManagmentProject
         private void renderDashboardTab()
         {
             overviewCompanyName.Text = CompanyDetails.name;
+            overviewCompanyAddres.Text = CompanyDetails.address;
+            overviewCompanyCity.Text = CompanyDetails.city;
+            overviewCompanyPostcode.Text = CompanyDetails.postcode;
+            overviewCompanyDetails.Text = CompanyDetails.country;
+            overviewCompanyNIP.Text = CompanyDetails.nip;
             overviewCounterEmployee.Text = EmployeeRepository.getAll().Count().ToString();
         }
 
@@ -111,7 +117,7 @@ namespace CompanyManagmentProject
             EmployeeForm employeeForm = new EmployeeForm(this, employee);
             employeeForm.Show(this);
         }
-
+        
         private void companyDetailsSaveButton_Click(object sender, EventArgs e)
         {
             CompanyDetails.name = companyName.Text;
@@ -120,6 +126,33 @@ namespace CompanyManagmentProject
             CompanyDetails.city = companyCity.Text;
             CompanyDetails.postcode = companyPostcode.Text;
             CompanyDetails.country = companyCountry.Text;
+            msg m = new msg();
+            m.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
