@@ -76,6 +76,8 @@ namespace CompanyManagmentProject
         {
             List<Employee> employees = EmployeeRepository.getAll();
 
+           
+
             employeeListView.Clear();
             employeeListView.View = View.Details;
             employeeListView.FullRowSelect = true;
@@ -102,6 +104,8 @@ namespace CompanyManagmentProject
                     e.dateHired.ToString(),
                     e.isFired() ? "Tak" : "Nie",
                 };
+                employeeListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+                employeeListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 ListViewItem item = new ListViewItem(row);
 
                 employeeListView.Items.Add(item);
