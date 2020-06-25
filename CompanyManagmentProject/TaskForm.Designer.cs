@@ -34,9 +34,6 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.taskLabel3 = new System.Windows.Forms.Label();
             this.taskPhoneNumber = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.taskLabel4 = new System.Windows.Forms.Label();
-            this.taskToDo = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
@@ -55,11 +52,12 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.taskName = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.taskDescription = new System.Windows.Forms.TextBox();
+            this.taskFinished = new System.Windows.Forms.CheckBox();
+            this.taskDelete = new System.Windows.Forms.Button();
             this.flowLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -96,7 +94,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(7, 102);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -138,41 +135,7 @@
             this.taskPhoneNumber.Name = "taskPhoneNumber";
             this.taskPhoneNumber.Size = new System.Drawing.Size(200, 23);
             this.taskPhoneNumber.TabIndex = 1;
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.AutoSize = true;
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel6.Controls.Add(this.taskLabel4, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.taskToDo, 0, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(215, 3);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(206, 48);
-            this.tableLayoutPanel6.TabIndex = 3;
-            // 
-            // taskLabel4
-            // 
-            this.taskLabel4.AutoSize = true;
-            this.taskLabel4.Location = new System.Drawing.Point(3, 0);
-            this.taskLabel4.Name = "taskLabel4";
-            this.taskLabel4.Padding = new System.Windows.Forms.Padding(3);
-            this.taskLabel4.Size = new System.Drawing.Size(52, 19);
-            this.taskLabel4.TabIndex = 0;
-            this.taskLabel4.Text = "Zadanie";
-            // 
-            // taskToDo
-            // 
-            this.taskToDo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.taskToDo.Location = new System.Drawing.Point(3, 22);
-            this.taskToDo.Name = "taskToDo";
-            this.taskToDo.Size = new System.Drawing.Size(200, 23);
-            this.taskToDo.TabIndex = 1;
+            this.taskPhoneNumber.Text = " ";
             // 
             // tableLayoutPanel7
             // 
@@ -200,7 +163,7 @@
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.04762F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.95238F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel11.Controls.Add(this.taskLabel5, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.taskDataTimePickerEnd, 1, 1);
             this.tableLayoutPanel11.Controls.Add(this.taskDateTimePickerStart, 0, 1);
@@ -227,7 +190,7 @@
             // 
             this.taskDataTimePickerEnd.Location = new System.Drawing.Point(206, 33);
             this.taskDataTimePickerEnd.Name = "taskDataTimePickerEnd";
-            this.taskDataTimePickerEnd.Size = new System.Drawing.Size(205, 20);
+            this.taskDataTimePickerEnd.Size = new System.Drawing.Size(204, 20);
             this.taskDataTimePickerEnd.TabIndex = 8;
             // 
             // taskDateTimePickerStart
@@ -268,6 +231,7 @@
             this.flowLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel3.Controls.Add(this.taskSave);
             this.flowLayoutPanel3.Controls.Add(this.taskExit);
+            this.flowLayoutPanel3.Controls.Add(this.taskDelete);
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 421);
@@ -293,6 +257,7 @@
             this.taskExit.TabIndex = 14;
             this.taskExit.Text = "Anuluj";
             this.taskExit.UseVisualStyleBackColor = true;
+            this.taskExit.Click += new System.EventHandler(this.taskExit_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -379,21 +344,43 @@
             this.taskName.Name = "taskName";
             this.taskName.Size = new System.Drawing.Size(200, 23);
             this.taskName.TabIndex = 23;
+            this.taskName.Text = " ";
             // 
-            // textBox1
+            // taskDescription
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 312);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(765, 47);
-            this.textBox1.TabIndex = 21;
+            this.taskDescription.Location = new System.Drawing.Point(12, 290);
+            this.taskDescription.Multiline = true;
+            this.taskDescription.Name = "taskDescription";
+            this.taskDescription.Size = new System.Drawing.Size(765, 47);
+            this.taskDescription.TabIndex = 21;
+            // 
+            // taskFinished
+            // 
+            this.taskFinished.AutoSize = true;
+            this.taskFinished.Location = new System.Drawing.Point(50, 267);
+            this.taskFinished.Name = "taskFinished";
+            this.taskFinished.Size = new System.Drawing.Size(86, 17);
+            this.taskFinished.TabIndex = 22;
+            this.taskFinished.Text = "Zakończone";
+            this.taskFinished.UseVisualStyleBackColor = true;
+            // 
+            // taskDelete
+            // 
+            this.taskDelete.Location = new System.Drawing.Point(560, 3);
+            this.taskDelete.Name = "taskDelete";
+            this.taskDelete.Size = new System.Drawing.Size(75, 23);
+            this.taskDelete.TabIndex = 15;
+            this.taskDelete.Text = "Usuń";
+            this.taskDelete.UseVisualStyleBackColor = true;
+            this.taskDelete.Click += new System.EventHandler(this.taskDelete_Click);
             // 
             // TaskForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.taskFinished);
+            this.Controls.Add(this.taskDescription);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -403,15 +390,13 @@
             this.Controls.Add(this.flowLayoutPanel4);
             this.Name = "TaskForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TaskForm";
+            this.Text = "Nowe zadanie";
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel4.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
@@ -433,9 +418,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label taskLabel3;
         private System.Windows.Forms.TextBox taskPhoneNumber;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label taskLabel4;
-        private System.Windows.Forms.TextBox taskToDo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
@@ -454,6 +436,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox taskName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox taskDescription;
+        private System.Windows.Forms.CheckBox taskFinished;
+        private System.Windows.Forms.Button taskDelete;
     }
 }
