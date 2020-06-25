@@ -200,7 +200,7 @@
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.04762F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.95238F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14F));
             this.tableLayoutPanel11.Controls.Add(this.taskLabel5, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.taskDataTimePickerEnd, 1, 1);
             this.tableLayoutPanel11.Controls.Add(this.taskDateTimePickerStart, 0, 1);
@@ -225,7 +225,7 @@
             // 
             // taskDataTimePickerEnd
             // 
-            this.taskDataTimePickerEnd.Location = new System.Drawing.Point(207, 33);
+            this.taskDataTimePickerEnd.Location = new System.Drawing.Point(206, 33);
             this.taskDataTimePickerEnd.Name = "taskDataTimePickerEnd";
             this.taskDataTimePickerEnd.Size = new System.Drawing.Size(205, 20);
             this.taskDataTimePickerEnd.TabIndex = 8;
@@ -234,13 +234,13 @@
             // 
             this.taskDateTimePickerStart.Location = new System.Drawing.Point(3, 33);
             this.taskDateTimePickerStart.Name = "taskDateTimePickerStart";
-            this.taskDateTimePickerStart.Size = new System.Drawing.Size(198, 20);
+            this.taskDateTimePickerStart.Size = new System.Drawing.Size(197, 20);
             this.taskDateTimePickerStart.TabIndex = 12;
             // 
             // taskLabel6
             // 
             this.taskLabel6.AutoSize = true;
-            this.taskLabel6.Location = new System.Drawing.Point(207, 0);
+            this.taskLabel6.Location = new System.Drawing.Point(206, 0);
             this.taskLabel6.Name = "taskLabel6";
             this.taskLabel6.Padding = new System.Windows.Forms.Padding(3);
             this.taskLabel6.Size = new System.Drawing.Size(197, 19);

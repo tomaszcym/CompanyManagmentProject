@@ -39,7 +39,7 @@ namespace CompanyManagmentProject
             this.task = task;
             this.Text = task.id + " " + task.startDate + " " + task.startDate;
 
-            this.taskEmployeeSelect.Text = task.name ;
+            this.taskEmployeeSelect.Text = ":dupa" ;
             this.taskPhoneNumber.Text = task.phone;
             this.taskToDo.Text = task.name;
 
