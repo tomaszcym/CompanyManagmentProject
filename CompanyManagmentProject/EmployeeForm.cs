@@ -143,8 +143,7 @@ namespace CompanyManagmentProject
 
         private void employeeDelete_Click(object sender, EventArgs e)
         {
-            var confirm = MessageBox.Show("Czy na pewno chcesz usunąć tego pracownika?",
-                "Potwierdź działanie. Zmiana jest nieodwracalna!", MessageBoxButtons.YesNo);
+            var confirm = MessageBox.Show("Czy na pewno chcesz usunąć tego pracownika? \nZmiana jest nieodwracalna!", "Usuwanie pracownika: " + employee.firstName + " " + employee.lastName, MessageBoxButtons.YesNo);
 
             if (confirm == DialogResult.Yes)
             {
@@ -154,5 +153,7 @@ namespace CompanyManagmentProject
                 this.Close();
             }
         }
+
+
     }
 }

@@ -30,6 +30,11 @@ namespace CompanyManagmentProject.Repo
             return employees.Find(e => e.id == id);
         }
 
+        internal static void delete(object id)
+        {
+            throw new NotImplementedException();
+        }
+
         public static List<Employee> getAll()
         {
             return employees;
