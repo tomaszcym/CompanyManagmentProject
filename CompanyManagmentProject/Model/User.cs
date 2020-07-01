@@ -6,19 +6,22 @@ using System.Threading.Tasks;
 
 namespace CompanyManagmentProject.Model
 {
+    public enum Role
+    {
+        ADMIN,USER
+    }
+
     public class User
     {
         public int id { get; set; }
         public string username { get; set; }
         public string password { get; set; }
-        public int? privileges { get; set; }
+        public Role role { get; set; } = Role.USER;
         public bool active { get; set; }
         public DateTime? createdAt { get; set; }
 
         private User() 
         {
-            if (this.privileges == null)
-                this.privileges = 10;
         }
 
         public User(string username, string password) : this()
@@ -26,9 +29,9 @@ namespace CompanyManagmentProject.Model
             this.username = username;
             this.password = Program.encryptPassword(password);
         }
-        public User(string username, string password, int privileges) : this(username, password)
+        public User(string username, string password, Role role) : this(username, password)
         {
-            this.privileges = privileges;
+            this.role = role;
         }
     }
 }

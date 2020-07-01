@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,14 +29,12 @@ namespace CompanyManagmentProject
             string password = this.password.Text;
 
             User user = UserRepository.authorizeUser(username, password);
-            if(user != null)
+            if (user != null)
             {
                 Program.currentUser = user;
 
-                //MessageBox.Show(user.password);
-
                 Form1 form = new Form1();
-                //form.Show();
+                form.Show();
 
                 this.Close();
             }
@@ -44,5 +43,11 @@ namespace CompanyManagmentProject
                 MessageBox.Show("Błędne hasło lub login!");
             }
         }
+
+        //protected override void OnFormClosed(FormClosedEventArgs e)
+        //{
+        //    base.OnFormClosed(e);
+        //    Application.Exit();
+        //}
     }
 }

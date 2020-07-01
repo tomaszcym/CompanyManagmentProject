@@ -16,7 +16,7 @@ namespace CompanyManagmentProject.Repo
 
         public static void init()
         {
-            UserRepository.add(new User("admin", "admin", 100));
+            UserRepository.add(new User("admin", "admin", Role.ADMIN));
             UserRepository.add(new User("demo", "demo"));
         }
 

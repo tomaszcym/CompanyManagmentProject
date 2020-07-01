@@ -20,8 +20,27 @@ namespace CompanyManagmentProject
         public Form1()
         {
             InitializeComponent();
-
             renderDashboardTab();
+
+            if (Program.currentUser.role == Role.USER)
+            {
+                foreach (TabPage tabPage in this.mainTabControl.TabPages)
+                {
+                    switch(tabPage.Name)
+                    {
+                        case "employees":
+                        case "companyDetails":
+                            this.mainTabControl.TabPages.Remove(tabPage);
+                            break;
+                    }
+                }
+            }
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            base.OnFormClosed(e);
+            Application.Exit();
         }
 
         private void newEmployee_Click(object sender, EventArgs e)

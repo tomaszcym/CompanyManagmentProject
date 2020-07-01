@@ -32,6 +32,8 @@ namespace CompanyManagmentProject
             Application.Run();
         }
 
+
+
         public static string encryptPassword(string password)
         {
             byte[] data = System.Text.Encoding.ASCII.GetBytes(password);
