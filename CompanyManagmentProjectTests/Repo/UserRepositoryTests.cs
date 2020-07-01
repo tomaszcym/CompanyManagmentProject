@@ -16,6 +16,7 @@ namespace CompanyManagmentProject.Repo.Tests
         private User createTestUser(string username, string password)
         {
             User user = new User(username, password);
+            UserRepository.add(user);
             List<User> users = UserRepository.getAll();
             User userInDb = users.Find(u => u.username == user.username);
             return userInDb;
@@ -33,14 +34,14 @@ namespace CompanyManagmentProject.Repo.Tests
         {
             User user = createTestUser("jackowy", "noweSilneHasło!.!%");
             User authorizedUser = UserRepository.authorizeUser("jackowy", "błędneHasło!.!%");
-            Assert.IsNull(user);
+            Assert.IsNull(authorizedUser);
         }
         [TestMethod()]
         public void validAuthoirizeUserTest()
         {
             User user = createTestUser("jackowy", "noweSilneHasło!.!%");
             User authorizedUser = UserRepository.authorizeUser("jackowy", "noweSilneHasło!.!%");
-            Assert.IsNotNull(user);
+            Assert.IsNotNull(authorizedUser);
         }
 
     }
