@@ -28,5 +28,20 @@ namespace CompanyManagmentProject.Repo.Tests
             Assert.IsNotNull(user);
         }
 
+        [TestMethod()]
+        public void invalidAuthoirizeUserTest()
+        {
+            User user = createTestUser("jackowy", "noweSilneHasło!.!%");
+            User authorizedUser = UserRepository.authorizeUser("jackowy", "błędneHasło!.!%");
+            Assert.IsNull(user);
+        }
+        [TestMethod()]
+        public void validAuthoirizeUserTest()
+        {
+            User user = createTestUser("jackowy", "noweSilneHasło!.!%");
+            User authorizedUser = UserRepository.authorizeUser("jackowy", "noweSilneHasło!.!%");
+            Assert.IsNotNull(user);
+        }
+
     }
 }
