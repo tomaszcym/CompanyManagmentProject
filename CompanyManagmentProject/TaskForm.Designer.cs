@@ -45,6 +45,7 @@
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.taskSave = new System.Windows.Forms.Button();
             this.taskExit = new System.Windows.Forms.Button();
+            this.taskDelete = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.taskEmployee = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@
             this.taskName = new System.Windows.Forms.TextBox();
             this.taskDescription = new System.Windows.Forms.TextBox();
             this.taskFinished = new System.Windows.Forms.CheckBox();
-            this.taskDelete = new System.Windows.Forms.Button();
             this.flowLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -163,7 +163,7 @@
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.04762F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.95238F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel11.Controls.Add(this.taskLabel5, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.taskDataTimePickerEnd, 1, 1);
             this.tableLayoutPanel11.Controls.Add(this.taskDateTimePickerStart, 0, 1);
@@ -188,7 +188,7 @@
             // 
             // taskDataTimePickerEnd
             // 
-            this.taskDataTimePickerEnd.Location = new System.Drawing.Point(206, 33);
+            this.taskDataTimePickerEnd.Location = new System.Drawing.Point(205, 33);
             this.taskDataTimePickerEnd.Name = "taskDataTimePickerEnd";
             this.taskDataTimePickerEnd.Size = new System.Drawing.Size(204, 20);
             this.taskDataTimePickerEnd.TabIndex = 8;
@@ -197,13 +197,13 @@
             // 
             this.taskDateTimePickerStart.Location = new System.Drawing.Point(3, 33);
             this.taskDateTimePickerStart.Name = "taskDateTimePickerStart";
-            this.taskDateTimePickerStart.Size = new System.Drawing.Size(197, 20);
+            this.taskDateTimePickerStart.Size = new System.Drawing.Size(196, 20);
             this.taskDateTimePickerStart.TabIndex = 12;
             // 
             // taskLabel6
             // 
             this.taskLabel6.AutoSize = true;
-            this.taskLabel6.Location = new System.Drawing.Point(206, 0);
+            this.taskLabel6.Location = new System.Drawing.Point(205, 0);
             this.taskLabel6.Name = "taskLabel6";
             this.taskLabel6.Padding = new System.Windows.Forms.Padding(3);
             this.taskLabel6.Size = new System.Drawing.Size(197, 19);
@@ -258,6 +258,16 @@
             this.taskExit.Text = "Anuluj";
             this.taskExit.UseVisualStyleBackColor = true;
             this.taskExit.Click += new System.EventHandler(this.taskExit_Click);
+            // 
+            // taskDelete
+            // 
+            this.taskDelete.Location = new System.Drawing.Point(560, 3);
+            this.taskDelete.Name = "taskDelete";
+            this.taskDelete.Size = new System.Drawing.Size(75, 23);
+            this.taskDelete.TabIndex = 15;
+            this.taskDelete.Text = "Usuń";
+            this.taskDelete.UseVisualStyleBackColor = true;
+            this.taskDelete.Click += new System.EventHandler(this.taskDelete_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -363,16 +373,6 @@
             this.taskFinished.TabIndex = 22;
             this.taskFinished.Text = "Zakończone";
             this.taskFinished.UseVisualStyleBackColor = true;
-            // 
-            // taskDelete
-            // 
-            this.taskDelete.Location = new System.Drawing.Point(560, 3);
-            this.taskDelete.Name = "taskDelete";
-            this.taskDelete.Size = new System.Drawing.Size(75, 23);
-            this.taskDelete.TabIndex = 15;
-            this.taskDelete.Text = "Usuń";
-            this.taskDelete.UseVisualStyleBackColor = true;
-            this.taskDelete.Click += new System.EventHandler(this.taskDelete_Click);
             // 
             // TaskForm
             // 
