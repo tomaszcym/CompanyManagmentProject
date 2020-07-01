@@ -38,7 +38,6 @@ namespace CompanyManagmentProject
             this.Text = task.id + " " + task.startDate + " " + task.startDate;
 
             this.taskName.Text = task.name ;
-            this.taskPhoneNumber.Text = task.phone;
             this.taskDescription.Text = task.description;
 
             this.taskDateTimePickerStart.Format = DateTimePickerFormat.Custom;
@@ -59,7 +58,7 @@ namespace CompanyManagmentProject
         {
             Model.Task taskToSave = this.task;
 
-            if (this.taskName.TextLength < 10 || this.taskDescription.TextLength < 10 || this.taskPhoneNumber.TextLength <= 8)
+            if (this.taskName.TextLength < 10 || this.taskDescription.TextLength < 10)
             { 
                 if (this.taskName.TextLength <= 10)
                 {
@@ -67,10 +66,7 @@ namespace CompanyManagmentProject
                 }else if(this.taskDescription.TextLength <= 4)
                 {
                     MessageBox.Show("Prosze uzupełnij poprawnie 'Opis zadania' minimalna długość to 10 znaków! ");
-                }else if(this.taskPhoneNumber.TextLength <= 8)
-                {
-                    MessageBox.Show("Prosze uzupełnij poprawnie 'Numer telefonu' minimalna długość to 9 znaków! ");
-                }               
+                }              
                 return;
             }
 
@@ -78,7 +74,6 @@ namespace CompanyManagmentProject
 
             taskToSave.name = this.taskName.Text;
             taskToSave.description = this.taskDescription.Text;
-            taskToSave.phone = this.taskPhoneNumber.Text;
             taskToSave.startDate = this.taskDateTimePickerStart.Value;
             taskToSave.endDate = this.taskDataTimePickerEnd.Value;
             taskToSave.finished = this.taskFinished.Checked;

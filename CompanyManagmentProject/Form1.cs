@@ -158,7 +158,6 @@ namespace CompanyManagmentProject
                     lastName,
                     phone,
                     t.name,
-                    t.description,
                     t.startDate.ToString(),
                     t.endDate.ToString(),
                     t.isFinished() ? "Tak" : "Nie",
