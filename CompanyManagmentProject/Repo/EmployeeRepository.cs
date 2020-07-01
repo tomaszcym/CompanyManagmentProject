@@ -17,11 +17,29 @@ namespace CompanyManagmentProject.Repo
 
         public static void init()
         {
-            EmployeeRepository.add(new Employee("Tomek", "Cymerys"));
-            EmployeeRepository.add(new Employee("Arek", "Wójcik"));
-            EmployeeRepository.add(new Employee("Mariusz", "Kardaś"));
-            EmployeeRepository.add(new Employee("Marian", "Kowalski"));
-            EmployeeRepository.add(new Employee("Jan", "Nowak"));
+            Employee employee1 = new Employee("Mariusz", "Kardaś");
+            employee1.email = "mariuszkardas@poczta.pl";
+            employee1.phone = "888666444";
+            employee1.position = "Mechanik";
+            employee1.salary = 3200;
+            employee1.dateHired = new DateTime(2018, 1, 7);
+            Employee employee2 = new Employee("Arek", "Wójcik");
+            employee2.email = "arek_wystarczy@poczta.pl";
+            employee2.phone = "737883883";
+            employee2.position = "Kierowca";
+            employee2.salary = 3200;
+            employee2.dateHired = new DateTime(2018, 2, 13);
+            Employee employee3 = new Employee("Tomasz", "Cymerys");
+            employee3.email = "tomaszcymerys@poczta.pl";
+            employee3.phone = "828616425";
+            employee3.position = "Mechanik";
+            employee3.salary = 3200;
+            employee3.dateHired = new DateTime(2018, 2, 10);
+
+            EmployeeRepository.add(employee1);
+            EmployeeRepository.add(employee2);
+            EmployeeRepository.add(employee3);
+
         }
 
         // GETTERS

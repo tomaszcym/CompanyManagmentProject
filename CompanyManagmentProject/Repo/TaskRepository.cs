@@ -15,10 +15,31 @@ namespace CompanyManagmentProject.Repo
 
         public static void init()
         {
-            TaskRepository.add(new Task("Transport Nestle Rzeszów - Nestle Kraków"));
-            TaskRepository.add(new Task("Transport beczek x881 do Oslo"));
-            TaskRepository.add(new Task("Serwis samochodu"));
-            TaskRepository.add(new Task("Odstawienie samochodu"));
+            Task task1 = new Task("Transport Nestle Rzeszów - Nestle Kraków");
+            task1.employeeId = 1;
+            task1.startDate = new DateTime(2020, 5, 20, 8, 00, 00);
+            task1.endDate = new DateTime(2020, 5, 20, 14, 00, 00);
+            task1.finished = true;
+            Task task2 = new Task("Transport beczek x881 do Oslo");
+            task2.employeeId = 2;
+            task2.startDate = new DateTime(2020, 8, 10, 7, 00, 00);
+            task2.endDate = new DateTime(2020, 8, 12, 10, 30, 00);
+            task2.finished = false;
+            Task task3 = new Task("Serwis samochodu - Audi A4");
+            task3.employeeId = 1;
+            task3.startDate = new DateTime(2020, 8, 11, 12, 15, 00);
+            task3.endDate = new DateTime(2020, 8, 11, 14, 30, 00);
+            task3.finished = false;
+            Task task4 = new Task("Odstawienie samochodu - Audi A4");
+            task4.employeeId = 3;
+            task4.startDate = new DateTime(2020, 8, 11, 14, 30, 00);
+            task4.endDate = new DateTime(2020, 5, 20, 15, 30, 00);
+            task4.finished = false;
+
+            TaskRepository.add(task1);
+            TaskRepository.add(task2);
+            TaskRepository.add(task3);
+            TaskRepository.add(task4);
         }
 
 
