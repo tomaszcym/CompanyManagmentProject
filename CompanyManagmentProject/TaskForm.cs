@@ -16,7 +16,7 @@ namespace CompanyManagmentProject
     {
         private Model.Task task;
         private Form1 formParent;
-
+        
         public TaskForm(Form1 form)
         {
             InitializeComponent();
@@ -58,6 +58,21 @@ namespace CompanyManagmentProject
         private void taskSave_Click(object sender, EventArgs e)
         {
             Model.Task taskToSave = this.task;
+
+            if (this.taskName.TextLength < 10 || this.taskDescription.TextLength < 10 || this.taskPhoneNumber.TextLength <= 8)
+            { 
+                if (this.taskName.TextLength <= 10)
+                {
+                    MessageBox.Show("Prosze uzupełnij poprawnie 'Zadanie' minimalna długość to 10 znaków! ");
+                }else if(this.taskDescription.TextLength <= 4)
+                {
+                    MessageBox.Show("Prosze uzupełnij poprawnie 'Opis zadania' minimalna długość to 10 znaków! ");
+                }else if(this.taskPhoneNumber.TextLength <= 8)
+                {
+                    MessageBox.Show("Prosze uzupełnij poprawnie 'Numer telefonu' minimalna długość to 9 znaków! ");
+                }               
+                return;
+            }
 
             EmployeeSelectItem selectedEmployee = this.taskEmployeeSelect.SelectedItem as EmployeeSelectItem; 
 
@@ -110,6 +125,7 @@ namespace CompanyManagmentProject
                 this.Close();
             }
         }
+
     }
 
 
@@ -129,4 +145,6 @@ namespace CompanyManagmentProject
             return this.name;
         }
     }
+
+    
 }

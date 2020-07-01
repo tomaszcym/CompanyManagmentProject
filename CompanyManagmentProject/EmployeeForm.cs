@@ -57,6 +57,32 @@ namespace CompanyManagmentProject
 
         private void employeeSave_Click(object sender, EventArgs e)
         {
+
+            if (this.employeeFirstName.TextLength <= 4 || this.employeeLastName.TextLength <= 4  || this.employeePosition.TextLength <= 5 || this.employeePhoneNumber.TextLength <= 8 || this.employeeEmail.Text.Contains("@") != true)
+            {
+                if (this.employeeFirstName.TextLength <= 4)
+                {
+                    MessageBox.Show("Prosze uzupełnij poprawnie 'Imię pracownika' minimalna długość to 5 znaków! ");
+                }
+                else if (this.employeeLastName.TextLength <= 4)
+                {
+                    MessageBox.Show("Prosze uzupełnij poprawnie 'Nazwisko pracownika' minimalna długość to 5 znaków! ");
+                }
+                else if (this.employeePosition.TextLength <= 5)
+                {
+                    MessageBox.Show("Prosze uzupełnij poprawnie 'Stanowisko' minimalna długość to 6 znaków! ");
+                }
+                else if (this.employeePhoneNumber.TextLength <= 8)
+                {
+                    MessageBox.Show("Prosze uzupełnij poprawnie 'Numer telefonu' minimalna długość to 9 znaków! ");
+                }
+                else if (this.employeeEmail.Text.Contains("@") != true)
+                {
+                    MessageBox.Show("Prosze uzupełnij poprawnie 'Email' powinien zawierać znak '@' !");
+                }
+                return;
+            }
+
             Employee empToSave = this.employee;
 
             empToSave.firstName = this.employeeFirstName.Text;
@@ -117,8 +143,7 @@ namespace CompanyManagmentProject
 
         private void employeeDelete_Click(object sender, EventArgs e)
         {
-            var confirm = MessageBox.Show("Czy na pewno chcesz usunąć tego pracownika?",
-                "Potwierdź działanie. Zmiana jest nieodwracalna!", MessageBoxButtons.YesNo);
+            var confirm = MessageBox.Show("Czy na pewno chcesz usunąć tego pracownika? \nZmiana jest nieodwracalna!", "Usuwanie pracownika: " + employee.firstName + " " + employee.lastName, MessageBoxButtons.YesNo);
 
             if (confirm == DialogResult.Yes)
             {
@@ -128,5 +153,7 @@ namespace CompanyManagmentProject
                 this.Close();
             }
         }
+
+
     }
 }

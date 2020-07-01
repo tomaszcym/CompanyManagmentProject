@@ -223,10 +223,6 @@ namespace CompanyManagmentProject
 
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void newTaskButton_Click(object sender, EventArgs e)
         {

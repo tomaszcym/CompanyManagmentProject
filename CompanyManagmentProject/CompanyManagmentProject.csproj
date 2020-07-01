@@ -61,12 +61,6 @@
     <Compile Include="Model\CompanyDetails.cs" />
     <Compile Include="Model\Employee.cs" />
     <Compile Include="Model\Task.cs" />
-    <Compile Include="msg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="msg.Designer.cs">
-      <DependentUpon>msg.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\EmployeeRepository.cs" />
@@ -83,9 +77,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="msg.resx">
-      <DependentUpon>msg.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -98,6 +89,9 @@
     <EmbeddedResource Include="TaskForm.resx">
       <DependentUpon>TaskForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="Properties\DataSources\CompanyManagmentProject.Repo.EmployeeRepository.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

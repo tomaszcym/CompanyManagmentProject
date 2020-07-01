@@ -29,113 +29,51 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.taskLabel3 = new System.Windows.Forms.Label();
-            this.taskPhoneNumber = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.taskLabel5 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.taskName = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.taskDescription = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.taskDataTimePickerEnd = new System.Windows.Forms.DateTimePicker();
             this.taskDateTimePickerStart = new System.Windows.Forms.DateTimePicker();
-            this.taskLabel6 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.taskSave = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.taskEmployeeSelect = new System.Windows.Forms.ComboBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.taskPhoneNumber = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.taskFinished = new System.Windows.Forms.CheckBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel31 = new System.Windows.Forms.Panel();
             this.taskExit = new System.Windows.Forms.Button();
             this.taskDelete = new System.Windows.Forms.Button();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.taskEmployee = new System.Windows.Forms.Label();
-            this.taskEmployeeSelect = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.taskName = new System.Windows.Forms.TextBox();
-            this.taskDescription = new System.Windows.Forms.TextBox();
-            this.taskFinished = new System.Windows.Forms.CheckBox();
-            this.flowLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel11.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
+            this.taskSave = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel31.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.AutoSize = true;
             this.flowLayoutPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel4.Controls.Add(this.label1);
             this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(800, 33);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(647, 0);
             this.flowLayoutPanel4.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Dodawanie nowego zadania";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(7, 102);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(424, 57);
-            this.tableLayoutPanel1.TabIndex = 15;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.AutoSize = true;
-            this.tableLayoutPanel5.ColumnCount = 1;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel5.Controls.Add(this.taskLabel3, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.taskPhoneNumber, 0, 1);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(206, 48);
-            this.tableLayoutPanel5.TabIndex = 2;
-            // 
-            // taskLabel3
-            // 
-            this.taskLabel3.AutoSize = true;
-            this.taskLabel3.Location = new System.Drawing.Point(3, 0);
-            this.taskLabel3.Name = "taskLabel3";
-            this.taskLabel3.Padding = new System.Windows.Forms.Padding(3);
-            this.taskLabel3.Size = new System.Drawing.Size(85, 19);
-            this.taskLabel3.TabIndex = 0;
-            this.taskLabel3.Text = "Numer telefonu";
-            // 
-            // taskPhoneNumber
-            // 
-            this.taskPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.taskPhoneNumber.Location = new System.Drawing.Point(3, 22);
-            this.taskPhoneNumber.Name = "taskPhoneNumber";
-            this.taskPhoneNumber.Size = new System.Drawing.Size(200, 23);
-            this.taskPhoneNumber.TabIndex = 1;
-            this.taskPhoneNumber.Text = " ";
             // 
             // tableLayoutPanel7
             // 
@@ -143,268 +81,330 @@
             this.tableLayoutPanel7.ColumnCount = 2;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(7, 165);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(9, 203);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel7.Size = new System.Drawing.Size(0, 0);
             this.tableLayoutPanel7.TabIndex = 16;
             // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.tableLayoutPanel11);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(7, 171);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(424, 73);
-            this.flowLayoutPanel2.TabIndex = 19;
-            // 
-            // tableLayoutPanel11
-            // 
-            this.tableLayoutPanel11.ColumnCount = 3;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.04762F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.95238F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel11.Controls.Add(this.taskLabel5, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.taskDataTimePickerEnd, 1, 1);
-            this.tableLayoutPanel11.Controls.Add(this.taskDateTimePickerStart, 0, 1);
-            this.tableLayoutPanel11.Controls.Add(this.taskLabel6, 1, 0);
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 2;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.28571F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.71429F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(429, 70);
-            this.tableLayoutPanel11.TabIndex = 0;
-            // 
-            // taskLabel5
-            // 
-            this.taskLabel5.AutoSize = true;
-            this.taskLabel5.Location = new System.Drawing.Point(3, 0);
-            this.taskLabel5.Name = "taskLabel5";
-            this.taskLabel5.Padding = new System.Windows.Forms.Padding(3);
-            this.taskLabel5.Size = new System.Drawing.Size(125, 19);
-            this.taskLabel5.TabIndex = 0;
-            this.taskLabel5.Text = "Data rozpoczęcia pracy";
-            // 
-            // taskDataTimePickerEnd
-            // 
-            this.taskDataTimePickerEnd.Location = new System.Drawing.Point(205, 33);
-            this.taskDataTimePickerEnd.Name = "taskDataTimePickerEnd";
-            this.taskDataTimePickerEnd.Size = new System.Drawing.Size(204, 20);
-            this.taskDataTimePickerEnd.TabIndex = 8;
-            // 
-            // taskDateTimePickerStart
-            // 
-            this.taskDateTimePickerStart.Location = new System.Drawing.Point(3, 33);
-            this.taskDateTimePickerStart.Name = "taskDateTimePickerStart";
-            this.taskDateTimePickerStart.Size = new System.Drawing.Size(196, 20);
-            this.taskDateTimePickerStart.TabIndex = 12;
-            // 
-            // taskLabel6
-            // 
-            this.taskLabel6.AutoSize = true;
-            this.taskLabel6.Location = new System.Drawing.Point(205, 0);
-            this.taskLabel6.Name = "taskLabel6";
-            this.taskLabel6.Padding = new System.Windows.Forms.Padding(3);
-            this.taskLabel6.Size = new System.Drawing.Size(197, 19);
-            this.taskLabel6.TabIndex = 11;
-            this.taskLabel6.Text = "Przewidywana data zakończenia pracy";
-            // 
             // tableLayoutPanel10
             // 
             this.tableLayoutPanel10.AutoSize = true;
             this.tableLayoutPanel10.ColumnCount = 1;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(7, 250);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(9, 308);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 7);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 2;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(0, 0);
             this.tableLayoutPanel10.TabIndex = 17;
             // 
-            // flowLayoutPanel3
+            // label1
             // 
-            this.flowLayoutPanel3.AutoSize = true;
-            this.flowLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel3.Controls.Add(this.taskSave);
-            this.flowLayoutPanel3.Controls.Add(this.taskExit);
-            this.flowLayoutPanel3.Controls.Add(this.taskDelete);
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 421);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(800, 29);
-            this.flowLayoutPanel3.TabIndex = 20;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(642, 88);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "DANE ZADANIA";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // taskSave
+            // taskName
             // 
-            this.taskSave.Location = new System.Drawing.Point(722, 3);
-            this.taskSave.Name = "taskSave";
-            this.taskSave.Size = new System.Drawing.Size(75, 23);
-            this.taskSave.TabIndex = 0;
-            this.taskSave.Text = "Zapisz";
-            this.taskSave.UseVisualStyleBackColor = true;
-            this.taskSave.Click += new System.EventHandler(this.taskSave_Click);
+            this.taskName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.taskName.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.taskName.ForeColor = System.Drawing.Color.White;
+            this.taskName.Location = new System.Drawing.Point(84, 53);
+            this.taskName.Name = "taskName";
+            this.taskName.Size = new System.Drawing.Size(476, 32);
+            this.taskName.TabIndex = 19;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.taskName);
+            this.panel1.Location = new System.Drawing.Point(0, 85);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(644, 97);
+            this.panel1.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(91, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(469, 40);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Nazwa zadania";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // taskDescription
+            // 
+            this.taskDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.taskDescription.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.taskDescription.ForeColor = System.Drawing.Color.White;
+            this.taskDescription.Location = new System.Drawing.Point(84, 31);
+            this.taskDescription.Multiline = true;
+            this.taskDescription.Name = "taskDescription";
+            this.taskDescription.Size = new System.Drawing.Size(476, 108);
+            this.taskDescription.TabIndex = 21;
+           
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.taskDescription);
+            this.panel2.Location = new System.Drawing.Point(0, 203);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(644, 146);
+            this.panel2.TabIndex = 22;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(91, -11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(469, 40);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Opis zadania";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(60, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(257, 40);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Data rozpoczęcia";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.taskDataTimePickerEnd);
+            this.panel3.Controls.Add(this.taskDateTimePickerStart);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Location = new System.Drawing.Point(1, 341);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(644, 95);
+            this.panel3.TabIndex = 23;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(0, 94);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(644, 135);
+            this.panel4.TabIndex = 24;
+            // 
+            // taskDataTimePickerEnd
+            // 
+            this.taskDataTimePickerEnd.Location = new System.Drawing.Point(337, 66);
+            this.taskDataTimePickerEnd.Name = "taskDataTimePickerEnd";
+            this.taskDataTimePickerEnd.Size = new System.Drawing.Size(257, 22);
+            this.taskDataTimePickerEnd.TabIndex = 23;
+            // 
+            // taskDateTimePickerStart
+            // 
+            this.taskDateTimePickerStart.Location = new System.Drawing.Point(60, 66);
+            this.taskDateTimePickerStart.Name = "taskDateTimePickerStart";
+            this.taskDateTimePickerStart.Size = new System.Drawing.Size(257, 22);
+            this.taskDateTimePickerStart.TabIndex = 22;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(332, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(262, 40);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Data zakończenia";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // taskEmployeeSelect
+            // 
+            this.taskEmployeeSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.taskEmployeeSelect.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.taskEmployeeSelect.ForeColor = System.Drawing.Color.White;
+            this.taskEmployeeSelect.FormattingEnabled = true;
+            this.taskEmployeeSelect.Location = new System.Drawing.Point(60, 52);
+            this.taskEmployeeSelect.Name = "taskEmployeeSelect";
+            this.taskEmployeeSelect.Size = new System.Drawing.Size(257, 31);
+            this.taskEmployeeSelect.TabIndex = 23;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.taskPhoneNumber);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.taskEmployeeSelect);
+            this.panel5.Location = new System.Drawing.Point(1, 442);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(644, 100);
+            this.panel5.TabIndex = 24;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(3, 106);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(640, 75);
+            this.panel6.TabIndex = 27;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(337, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(257, 40);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "Numer telefonu";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // taskPhoneNumber
+            // 
+            this.taskPhoneNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.taskPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.taskPhoneNumber.ForeColor = System.Drawing.Color.White;
+            this.taskPhoneNumber.Location = new System.Drawing.Point(337, 52);
+            this.taskPhoneNumber.Name = "taskPhoneNumber";
+            this.taskPhoneNumber.Size = new System.Drawing.Size(257, 32);
+            this.taskPhoneNumber.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(60, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(257, 29);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Pracownik";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // taskFinished
+            // 
+            this.taskFinished.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.taskFinished.ForeColor = System.Drawing.Color.White;
+            this.taskFinished.Location = new System.Drawing.Point(247, 19);
+            this.taskFinished.Name = "taskFinished";
+            this.taskFinished.Size = new System.Drawing.Size(167, 60);
+            this.taskFinished.TabIndex = 25;
+            this.taskFinished.Text = "Zakończone";
+            this.taskFinished.UseVisualStyleBackColor = true;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.taskFinished);
+            this.panel7.Location = new System.Drawing.Point(0, 548);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(645, 100);
+            this.panel7.TabIndex = 26;
+            // 
+            // panel31
+            // 
+            this.panel31.Controls.Add(this.taskExit);
+            this.panel31.Controls.Add(this.taskDelete);
+            this.panel31.Controls.Add(this.taskSave);
+            this.panel31.Location = new System.Drawing.Point(1, 653);
+            this.panel31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(649, 87);
+            this.panel31.TabIndex = 27;
             // 
             // taskExit
             // 
-            this.taskExit.Location = new System.Drawing.Point(641, 3);
+            this.taskExit.BackColor = System.Drawing.Color.Red;
+            this.taskExit.FlatAppearance.BorderSize = 3;
+            this.taskExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.taskExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.taskExit.ForeColor = System.Drawing.Color.White;
+            this.taskExit.Location = new System.Drawing.Point(244, 21);
+            this.taskExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.taskExit.Name = "taskExit";
-            this.taskExit.Size = new System.Drawing.Size(75, 23);
-            this.taskExit.TabIndex = 14;
+            this.taskExit.Size = new System.Drawing.Size(156, 44);
+            this.taskExit.TabIndex = 4;
             this.taskExit.Text = "Anuluj";
-            this.taskExit.UseVisualStyleBackColor = true;
+            this.taskExit.UseVisualStyleBackColor = false;
             this.taskExit.Click += new System.EventHandler(this.taskExit_Click);
             // 
             // taskDelete
             // 
-            this.taskDelete.Location = new System.Drawing.Point(560, 3);
+            this.taskDelete.BackColor = System.Drawing.Color.Red;
+            this.taskDelete.FlatAppearance.BorderSize = 3;
+            this.taskDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.taskDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.taskDelete.ForeColor = System.Drawing.Color.White;
+            this.taskDelete.Location = new System.Drawing.Point(41, 21);
+            this.taskDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.taskDelete.Name = "taskDelete";
-            this.taskDelete.Size = new System.Drawing.Size(75, 23);
-            this.taskDelete.TabIndex = 15;
+            this.taskDelete.Size = new System.Drawing.Size(156, 44);
+            this.taskDelete.TabIndex = 5;
             this.taskDelete.Text = "Usuń";
-            this.taskDelete.UseVisualStyleBackColor = true;
+            this.taskDelete.UseVisualStyleBackColor = false;
             this.taskDelete.Click += new System.EventHandler(this.taskDelete_Click);
             // 
-            // tableLayoutPanel3
+            // taskSave
             // 
-            this.tableLayoutPanel3.AutoSize = true;
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 51);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(0, 0);
-            this.tableLayoutPanel3.TabIndex = 3;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.AutoSize = true;
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.Controls.Add(this.taskEmployee, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(69, 19);
-            this.tableLayoutPanel2.TabIndex = 2;
-            // 
-            // taskEmployee
-            // 
-            this.taskEmployee.AutoSize = true;
-            this.taskEmployee.Location = new System.Drawing.Point(3, 0);
-            this.taskEmployee.Name = "taskEmployee";
-            this.taskEmployee.Padding = new System.Windows.Forms.Padding(3);
-            this.taskEmployee.Size = new System.Drawing.Size(63, 19);
-            this.taskEmployee.TabIndex = 0;
-            this.taskEmployee.Text = "Pracownik";
-            // 
-            // taskEmployeeSelect
-            // 
-            this.taskEmployeeSelect.FormattingEnabled = true;
-            this.taskEmployeeSelect.Location = new System.Drawing.Point(3, 31);
-            this.taskEmployeeSelect.Name = "taskEmployeeSelect";
-            this.taskEmployeeSelect.Size = new System.Drawing.Size(185, 21);
-            this.taskEmployeeSelect.TabIndex = 21;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.AutoSize = true;
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.taskEmployeeSelect, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel3, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.taskName, 1, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(7, 39);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(424, 68);
-            this.tableLayoutPanel4.TabIndex = 14;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(215, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 13);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Nazwa Zadania";
-            // 
-            // taskName
-            // 
-            this.taskName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.taskName.Location = new System.Drawing.Point(215, 31);
-            this.taskName.Name = "taskName";
-            this.taskName.Size = new System.Drawing.Size(200, 23);
-            this.taskName.TabIndex = 23;
-            this.taskName.Text = " ";
-            // 
-            // taskDescription
-            // 
-            this.taskDescription.Location = new System.Drawing.Point(12, 290);
-            this.taskDescription.Multiline = true;
-            this.taskDescription.Name = "taskDescription";
-            this.taskDescription.Size = new System.Drawing.Size(765, 47);
-            this.taskDescription.TabIndex = 21;
-            // 
-            // taskFinished
-            // 
-            this.taskFinished.AutoSize = true;
-            this.taskFinished.Location = new System.Drawing.Point(50, 267);
-            this.taskFinished.Name = "taskFinished";
-            this.taskFinished.Size = new System.Drawing.Size(86, 17);
-            this.taskFinished.TabIndex = 22;
-            this.taskFinished.Text = "Zakończone";
-            this.taskFinished.UseVisualStyleBackColor = true;
+            this.taskSave.BackColor = System.Drawing.Color.Red;
+            this.taskSave.FlatAppearance.BorderSize = 0;
+            this.taskSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.taskSave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.taskSave.ForeColor = System.Drawing.Color.White;
+            this.taskSave.Location = new System.Drawing.Point(446, 21);
+            this.taskSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.taskSave.Name = "taskSave";
+            this.taskSave.Size = new System.Drawing.Size(156, 44);
+            this.taskSave.TabIndex = 3;
+            this.taskSave.Text = "Akceptuj";
+            this.taskSave.UseVisualStyleBackColor = false;
+            this.taskSave.Click += new System.EventHandler(this.taskSave_Click);
             // 
             // TaskForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.taskFinished);
-            this.Controls.Add(this.taskDescription);
-            this.Controls.Add(this.flowLayoutPanel3);
-            this.Controls.Add(this.tableLayoutPanel4);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.ClientSize = new System.Drawing.Size(647, 749);
+            this.Controls.Add(this.panel31);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.tableLayoutPanel7);
-            this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel10);
             this.Controls.Add(this.flowLayoutPanel4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TaskForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nowe zadanie";
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.flowLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel11.ResumeLayout(false);
-            this.tableLayoutPanel11.PerformLayout();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel31.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,31 +413,32 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label taskLabel3;
-        private System.Windows.Forms.TextBox taskPhoneNumber;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.Label taskLabel5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox taskName;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox taskDescription;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DateTimePicker taskDataTimePickerEnd;
         private System.Windows.Forms.DateTimePicker taskDateTimePickerStart;
-        private System.Windows.Forms.Label taskLabel6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.Button taskSave;
-        private System.Windows.Forms.Button taskExit;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label taskEmployee;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ComboBox taskEmployeeSelect;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox taskName;
-        private System.Windows.Forms.TextBox taskDescription;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox taskPhoneNumber;
         private System.Windows.Forms.CheckBox taskFinished;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.Button taskExit;
         private System.Windows.Forms.Button taskDelete;
+        private System.Windows.Forms.Button taskSave;
     }
 }
