@@ -154,7 +154,6 @@ namespace CompanyManagmentProject
             taskListView.Columns.Add("Id");
             taskListView.Columns.Add("Imię");
             taskListView.Columns.Add("Nazwisko");
-            taskListView.Columns.Add("Numer telefonu");
             taskListView.Columns.Add("Zadanie");
             taskListView.Columns.Add("Data rozpoczęcia");
             taskListView.Columns.Add("Data zakończenia");
@@ -173,7 +172,6 @@ namespace CompanyManagmentProject
                     i++.ToString(),
                     firstName,
                     lastName,
-                    phone,
                     t.name,
                     t.startDate.ToString(),
                     t.endDate.ToString(),

@@ -14,6 +14,9 @@ namespace CompanyManagmentProject
 {
     public partial class TaskForm : Form
     {
+
+
+
         private Model.Task task;
         private Form1 formParent;
         
@@ -142,5 +145,6 @@ namespace CompanyManagmentProject
         }
     }
 
-    
+
+
 }

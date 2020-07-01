@@ -43,10 +43,11 @@ namespace CompanyManagmentProject.Repo
 
 
         // MODIFIERS
-        public static void add(Employee employee)
+        public static Employee add(Employee employee)
         {
             employee.id = ++employeeId;
             employees.Add(employee);
+            return employee;
         }
 
         public static Boolean update(int id, Employee employee)
