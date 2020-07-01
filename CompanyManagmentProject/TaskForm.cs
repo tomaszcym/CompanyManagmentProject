@@ -32,6 +32,7 @@ namespace CompanyManagmentProject
                 initTask(task);
             }
         }
+
         private void initTask(Model.Task task)
         {
             this.task = task;

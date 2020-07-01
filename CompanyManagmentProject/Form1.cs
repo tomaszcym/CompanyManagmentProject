@@ -15,13 +15,11 @@ namespace CompanyManagmentProject
 {
     public partial class Form1 : Form
     {
+        public User currentUser = null;
+
         public Form1()
         {
             InitializeComponent();
-
-            // zainicjowanie repozytoriow
-            EmployeeRepository.init();
-            TaskRepository.init();
 
             renderDashboardTab();
         }
