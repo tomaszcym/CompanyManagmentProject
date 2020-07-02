@@ -15,11 +15,18 @@ namespace CompanyManagmentProject
 {
     public partial class Auth : Form
     {
+
+        private bool dragging = false;
+        private Point startPoint = new Point(0, 0);
+
         private Form1 formParent;
 
         public Auth()
         {
             InitializeComponent();
+            password.PasswordChar = '*';
+            password.MaxLength = 10;
+            username.MaxLength = 12;
             //this.formParent = form;
         }
 
@@ -43,6 +50,37 @@ namespace CompanyManagmentProject
                 MessageBox.Show("Błędne hasło lub login!");
             }
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+            
+        }
+
+        private void Auth_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            startPoint = new Point(e.X, e.Y);
+        }
+
+        private void Auth_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+
+        private void Auth_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point p = PointToScreen(e.Location);
+                Location = new Point(p.X - this.startPoint.X, p.Y - this.startPoint.Y);
+            }
+        }
+
+
+
+
+
 
         //protected override void OnFormClosed(FormClosedEventArgs e)
         //{
