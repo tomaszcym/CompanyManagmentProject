@@ -17,12 +17,12 @@ namespace CompanyManagmentProject.Repo
         public static void init()
         {
             UserRepository.add(new User("admin", "admin", Role.ADMIN));
-            UserRepository.add(new User("mkardas", "demo123"));
-            UserRepository.add(new User("awojcik", "demo123"));
-            UserRepository.add(new User("tcymerys", "demo123"));
-            UserRepository.add(new User("jkowalski", "demo123"));
-            UserRepository.add(new User("rnowak", "demo123"));
-            UserRepository.add(new User("akuchta", "demo123"));
+            UserRepository.add(new User("mkardas", "demo123")); // id 2
+            UserRepository.add(new User("awojcik", "demo123")); // id 3
+            UserRepository.add(new User("tcymerys", "demo123")); // id 4
+            UserRepository.add(new User("jkowalski", "demo123")); // id 5
+            UserRepository.add(new User("rnowak", "demo123")); // id 6
+            UserRepository.add(new User("akuchta", "demo123")); // id 7
         }
 
 

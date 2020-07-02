@@ -179,9 +179,16 @@ namespace CompanyManagmentProject
             if (Program.currentUser.role == Role.USER)
             {
                 Employee employee = EmployeeRepository.getByUserId(Program.currentUser.id);
-                if(employee != null)
-                    tasks = TaskRepository.getAllByEmployee(employee.id);
+                
                 this.newTaskButton.Hide();
+
+                if (employee != null)
+                    tasks = TaskRepository.getAllByEmployee(employee.id);
+                else
+                {
+                    MessageBox.Show("Nie masz żadnych prac!");
+                    return;
+                }
             }
             else
                 tasks = TaskRepository.getAll();
