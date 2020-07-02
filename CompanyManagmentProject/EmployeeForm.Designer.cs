@@ -78,6 +78,7 @@
             this.buttonBack = new System.Windows.Forms.Button();
             this.employeeDelete = new System.Windows.Forms.Button();
             this.employeeSave = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -102,8 +103,9 @@
             this.flowLayoutPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(750, 0);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(1000, 0);
             this.flowLayoutPanel4.TabIndex = 6;
             // 
             // panel1
@@ -112,7 +114,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(750, 81);
+            this.panel1.Size = new System.Drawing.Size(1000, 100);
             this.panel1.TabIndex = 7;
             // 
             // label1
@@ -123,9 +125,8 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(750, 81);
+            this.label1.Size = new System.Drawing.Size(1000, 100);
             this.label1.TabIndex = 0;
             this.label1.Text = "DANE PRACOWNIKA";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -138,20 +139,20 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.employeeFirstName);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(0, 81);
+            this.panel2.Location = new System.Drawing.Point(0, 100);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(375, 81);
+            this.panel2.Size = new System.Drawing.Size(500, 100);
             this.panel2.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(90, 2);
+            this.label2.Location = new System.Drawing.Point(120, 2);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 24);
+            this.label2.Size = new System.Drawing.Size(260, 30);
             this.label2.TabIndex = 11;
             this.label2.Text = "Imię";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -161,18 +162,18 @@
             this.employeeFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.employeeFirstName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.employeeFirstName.ForeColor = System.Drawing.Color.White;
-            this.employeeFirstName.Location = new System.Drawing.Point(90, 26);
+            this.employeeFirstName.Location = new System.Drawing.Point(120, 32);
             this.employeeFirstName.Margin = new System.Windows.Forms.Padding(0);
             this.employeeFirstName.Name = "employeeFirstName";
-            this.employeeFirstName.Size = new System.Drawing.Size(196, 27);
+            this.employeeFirstName.Size = new System.Drawing.Size(260, 32);
             this.employeeFirstName.TabIndex = 10;
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(0, 81);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(0, 100);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(375, 81);
+            this.panel3.Size = new System.Drawing.Size(500, 100);
             this.panel3.TabIndex = 9;
             // 
             // panel4
@@ -181,20 +182,20 @@
             this.panel4.Controls.Add(this.employeePhoneNumber);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(0, 162);
+            this.panel4.Location = new System.Drawing.Point(0, 199);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(375, 81);
+            this.panel4.Size = new System.Drawing.Size(500, 100);
             this.panel4.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(90, 2);
+            this.label3.Location = new System.Drawing.Point(120, 2);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 24);
+            this.label3.Size = new System.Drawing.Size(260, 30);
             this.label3.TabIndex = 13;
             this.label3.Text = "Numer telefonu";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -204,35 +205,35 @@
             this.employeePhoneNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.employeePhoneNumber.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.employeePhoneNumber.ForeColor = System.Drawing.Color.White;
-            this.employeePhoneNumber.Location = new System.Drawing.Point(90, 26);
+            this.employeePhoneNumber.Location = new System.Drawing.Point(120, 32);
             this.employeePhoneNumber.Margin = new System.Windows.Forms.Padding(0);
             this.employeePhoneNumber.Name = "employeePhoneNumber";
-            this.employeePhoneNumber.Size = new System.Drawing.Size(196, 27);
+            this.employeePhoneNumber.Size = new System.Drawing.Size(260, 32);
             this.employeePhoneNumber.TabIndex = 12;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(0, 81);
+            this.panel6.Location = new System.Drawing.Point(0, 100);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(375, 81);
+            this.panel6.Size = new System.Drawing.Size(500, 100);
             this.panel6.TabIndex = 10;
             // 
             // panel7
             // 
-            this.panel7.Location = new System.Drawing.Point(0, 81);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Location = new System.Drawing.Point(0, 100);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(375, 81);
+            this.panel7.Size = new System.Drawing.Size(500, 100);
             this.panel7.TabIndex = 9;
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(0, 81);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(0, 100);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(375, 81);
+            this.panel5.Size = new System.Drawing.Size(500, 100);
             this.panel5.TabIndex = 9;
             // 
             // panel8
@@ -241,20 +242,20 @@
             this.panel8.Controls.Add(this.employeePosition);
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Controls.Add(this.panel11);
-            this.panel8.Location = new System.Drawing.Point(0, 244);
+            this.panel8.Location = new System.Drawing.Point(0, 300);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(375, 81);
+            this.panel8.Size = new System.Drawing.Size(500, 64);
             this.panel8.TabIndex = 11;
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(90, 2);
+            this.label4.Location = new System.Drawing.Point(120, 2);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(195, 24);
+            this.label4.Size = new System.Drawing.Size(260, 30);
             this.label4.TabIndex = 13;
             this.label4.Text = "Stanowisko";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,46 +265,47 @@
             this.employeePosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.employeePosition.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.employeePosition.ForeColor = System.Drawing.Color.White;
-            this.employeePosition.Location = new System.Drawing.Point(90, 26);
+            this.employeePosition.Location = new System.Drawing.Point(120, 32);
             this.employeePosition.Margin = new System.Windows.Forms.Padding(0);
             this.employeePosition.Name = "employeePosition";
-            this.employeePosition.Size = new System.Drawing.Size(196, 27);
+            this.employeePosition.Size = new System.Drawing.Size(260, 32);
             this.employeePosition.TabIndex = 12;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.panel10);
-            this.panel9.Location = new System.Drawing.Point(0, 81);
+            this.panel9.Location = new System.Drawing.Point(0, 100);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(375, 81);
+            this.panel9.Size = new System.Drawing.Size(500, 100);
             this.panel9.TabIndex = 10;
             // 
             // panel10
             // 
-            this.panel10.Location = new System.Drawing.Point(0, 81);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2);
+            this.panel10.Location = new System.Drawing.Point(0, 100);
+            this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(375, 81);
+            this.panel10.Size = new System.Drawing.Size(500, 100);
             this.panel10.TabIndex = 9;
             // 
             // panel11
             // 
-            this.panel11.Location = new System.Drawing.Point(0, 81);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2);
+            this.panel11.Location = new System.Drawing.Point(0, 100);
+            this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(375, 81);
+            this.panel11.Size = new System.Drawing.Size(500, 100);
             this.panel11.TabIndex = 9;
             // 
             // panel12
             // 
+            this.panel12.Controls.Add(this.label8);
             this.panel12.Controls.Add(this.employeeDateTimePicker);
             this.panel12.Controls.Add(this.panel13);
             this.panel12.Controls.Add(this.panel15);
-            this.panel12.Location = new System.Drawing.Point(0, 325);
+            this.panel12.Location = new System.Drawing.Point(0, 364);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(375, 49);
+            this.panel12.Size = new System.Drawing.Size(500, 96);
             this.panel12.TabIndex = 12;
             // 
             // employeeDateTimePicker
@@ -311,35 +313,35 @@
             this.employeeDateTimePicker.CalendarForeColor = System.Drawing.Color.White;
             this.employeeDateTimePicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.employeeDateTimePicker.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.employeeDateTimePicker.Location = new System.Drawing.Point(90, 15);
-            this.employeeDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
+            this.employeeDateTimePicker.Location = new System.Drawing.Point(120, 53);
+            this.employeeDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.employeeDateTimePicker.Name = "employeeDateTimePicker";
-            this.employeeDateTimePicker.Size = new System.Drawing.Size(196, 20);
+            this.employeeDateTimePicker.Size = new System.Drawing.Size(260, 22);
             this.employeeDateTimePicker.TabIndex = 11;
             // 
             // panel13
             // 
             this.panel13.Controls.Add(this.panel14);
-            this.panel13.Location = new System.Drawing.Point(0, 81);
+            this.panel13.Location = new System.Drawing.Point(0, 100);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(375, 81);
+            this.panel13.Size = new System.Drawing.Size(500, 100);
             this.panel13.TabIndex = 10;
             // 
             // panel14
             // 
-            this.panel14.Location = new System.Drawing.Point(0, 81);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2);
+            this.panel14.Location = new System.Drawing.Point(0, 100);
+            this.panel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(375, 81);
+            this.panel14.Size = new System.Drawing.Size(500, 100);
             this.panel14.TabIndex = 9;
             // 
             // panel15
             // 
-            this.panel15.Location = new System.Drawing.Point(0, 81);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2);
+            this.panel15.Location = new System.Drawing.Point(0, 100);
+            this.panel15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(375, 81);
+            this.panel15.Size = new System.Drawing.Size(500, 100);
             this.panel15.TabIndex = 9;
             // 
             // panel16
@@ -347,20 +349,20 @@
             this.panel16.Controls.Add(this.employeeIsFired);
             this.panel16.Controls.Add(this.panel17);
             this.panel16.Controls.Add(this.panel19);
-            this.panel16.Location = new System.Drawing.Point(375, 325);
+            this.panel16.Location = new System.Drawing.Point(500, 400);
             this.panel16.Margin = new System.Windows.Forms.Padding(0);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(375, 49);
+            this.panel16.Size = new System.Drawing.Size(500, 60);
             this.panel16.TabIndex = 16;
             // 
             // employeeIsFired
             // 
             this.employeeIsFired.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.employeeIsFired.ForeColor = System.Drawing.Color.White;
-            this.employeeIsFired.Location = new System.Drawing.Point(125, 7);
-            this.employeeIsFired.Margin = new System.Windows.Forms.Padding(2);
+            this.employeeIsFired.Location = new System.Drawing.Point(167, 9);
+            this.employeeIsFired.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.employeeIsFired.Name = "employeeIsFired";
-            this.employeeIsFired.Size = new System.Drawing.Size(126, 32);
+            this.employeeIsFired.Size = new System.Drawing.Size(168, 39);
             this.employeeIsFired.TabIndex = 11;
             this.employeeIsFired.Text = "Zwolniony";
             this.employeeIsFired.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -369,26 +371,26 @@
             // panel17
             // 
             this.panel17.Controls.Add(this.panel18);
-            this.panel17.Location = new System.Drawing.Point(0, 81);
+            this.panel17.Location = new System.Drawing.Point(0, 100);
             this.panel17.Margin = new System.Windows.Forms.Padding(0);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(375, 81);
+            this.panel17.Size = new System.Drawing.Size(500, 100);
             this.panel17.TabIndex = 10;
             // 
             // panel18
             // 
-            this.panel18.Location = new System.Drawing.Point(0, 81);
-            this.panel18.Margin = new System.Windows.Forms.Padding(2);
+            this.panel18.Location = new System.Drawing.Point(0, 100);
+            this.panel18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(375, 81);
+            this.panel18.Size = new System.Drawing.Size(500, 100);
             this.panel18.TabIndex = 9;
             // 
             // panel19
             // 
-            this.panel19.Location = new System.Drawing.Point(0, 81);
-            this.panel19.Margin = new System.Windows.Forms.Padding(2);
+            this.panel19.Location = new System.Drawing.Point(0, 100);
+            this.panel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(375, 81);
+            this.panel19.Size = new System.Drawing.Size(500, 100);
             this.panel19.TabIndex = 9;
             // 
             // panel20
@@ -397,20 +399,20 @@
             this.panel20.Controls.Add(this.employeeSalary);
             this.panel20.Controls.Add(this.panel21);
             this.panel20.Controls.Add(this.panel23);
-            this.panel20.Location = new System.Drawing.Point(375, 244);
+            this.panel20.Location = new System.Drawing.Point(500, 300);
             this.panel20.Margin = new System.Windows.Forms.Padding(0);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(375, 81);
+            this.panel20.Size = new System.Drawing.Size(500, 100);
             this.panel20.TabIndex = 15;
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(90, 2);
+            this.label5.Location = new System.Drawing.Point(120, 2);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(195, 24);
+            this.label5.Size = new System.Drawing.Size(260, 30);
             this.label5.TabIndex = 13;
             this.label5.Text = "Pensja";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -420,35 +422,35 @@
             this.employeeSalary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.employeeSalary.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.employeeSalary.ForeColor = System.Drawing.Color.White;
-            this.employeeSalary.Location = new System.Drawing.Point(90, 26);
+            this.employeeSalary.Location = new System.Drawing.Point(120, 32);
             this.employeeSalary.Margin = new System.Windows.Forms.Padding(0);
             this.employeeSalary.Name = "employeeSalary";
-            this.employeeSalary.Size = new System.Drawing.Size(196, 27);
+            this.employeeSalary.Size = new System.Drawing.Size(260, 32);
             this.employeeSalary.TabIndex = 12;
             // 
             // panel21
             // 
             this.panel21.Controls.Add(this.panel22);
-            this.panel21.Location = new System.Drawing.Point(0, 81);
+            this.panel21.Location = new System.Drawing.Point(0, 100);
             this.panel21.Margin = new System.Windows.Forms.Padding(0);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(375, 81);
+            this.panel21.Size = new System.Drawing.Size(500, 100);
             this.panel21.TabIndex = 10;
             // 
             // panel22
             // 
-            this.panel22.Location = new System.Drawing.Point(0, 81);
-            this.panel22.Margin = new System.Windows.Forms.Padding(2);
+            this.panel22.Location = new System.Drawing.Point(0, 100);
+            this.panel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(375, 81);
+            this.panel22.Size = new System.Drawing.Size(500, 100);
             this.panel22.TabIndex = 9;
             // 
             // panel23
             // 
-            this.panel23.Location = new System.Drawing.Point(0, 81);
-            this.panel23.Margin = new System.Windows.Forms.Padding(2);
+            this.panel23.Location = new System.Drawing.Point(0, 100);
+            this.panel23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(375, 81);
+            this.panel23.Size = new System.Drawing.Size(500, 100);
             this.panel23.TabIndex = 9;
             // 
             // panel24
@@ -457,20 +459,20 @@
             this.panel24.Controls.Add(this.employeeEmail);
             this.panel24.Controls.Add(this.panel25);
             this.panel24.Controls.Add(this.panel27);
-            this.panel24.Location = new System.Drawing.Point(375, 162);
+            this.panel24.Location = new System.Drawing.Point(500, 199);
             this.panel24.Margin = new System.Windows.Forms.Padding(0);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(375, 81);
+            this.panel24.Size = new System.Drawing.Size(500, 100);
             this.panel24.TabIndex = 14;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(90, 2);
+            this.label6.Location = new System.Drawing.Point(120, 2);
             this.label6.Margin = new System.Windows.Forms.Padding(0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(195, 24);
+            this.label6.Size = new System.Drawing.Size(260, 30);
             this.label6.TabIndex = 13;
             this.label6.Text = "E-mail";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -480,35 +482,35 @@
             this.employeeEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.employeeEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.employeeEmail.ForeColor = System.Drawing.Color.White;
-            this.employeeEmail.Location = new System.Drawing.Point(90, 26);
+            this.employeeEmail.Location = new System.Drawing.Point(120, 32);
             this.employeeEmail.Margin = new System.Windows.Forms.Padding(0);
             this.employeeEmail.Name = "employeeEmail";
-            this.employeeEmail.Size = new System.Drawing.Size(196, 27);
+            this.employeeEmail.Size = new System.Drawing.Size(260, 32);
             this.employeeEmail.TabIndex = 12;
             // 
             // panel25
             // 
             this.panel25.Controls.Add(this.panel26);
-            this.panel25.Location = new System.Drawing.Point(0, 81);
+            this.panel25.Location = new System.Drawing.Point(0, 100);
             this.panel25.Margin = new System.Windows.Forms.Padding(0);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(375, 81);
+            this.panel25.Size = new System.Drawing.Size(500, 100);
             this.panel25.TabIndex = 10;
             // 
             // panel26
             // 
-            this.panel26.Location = new System.Drawing.Point(0, 81);
-            this.panel26.Margin = new System.Windows.Forms.Padding(2);
+            this.panel26.Location = new System.Drawing.Point(0, 100);
+            this.panel26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(375, 81);
+            this.panel26.Size = new System.Drawing.Size(500, 100);
             this.panel26.TabIndex = 9;
             // 
             // panel27
             // 
-            this.panel27.Location = new System.Drawing.Point(0, 81);
-            this.panel27.Margin = new System.Windows.Forms.Padding(2);
+            this.panel27.Location = new System.Drawing.Point(0, 100);
+            this.panel27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(375, 81);
+            this.panel27.Size = new System.Drawing.Size(500, 100);
             this.panel27.TabIndex = 9;
             // 
             // panel28
@@ -516,20 +518,20 @@
             this.panel28.Controls.Add(this.label7);
             this.panel28.Controls.Add(this.employeeLastName);
             this.panel28.Controls.Add(this.panel29);
-            this.panel28.Location = new System.Drawing.Point(375, 81);
+            this.panel28.Location = new System.Drawing.Point(500, 100);
             this.panel28.Margin = new System.Windows.Forms.Padding(0);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(349, 81);
+            this.panel28.Size = new System.Drawing.Size(465, 100);
             this.panel28.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(90, 2);
+            this.label7.Location = new System.Drawing.Point(120, 2);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(195, 24);
+            this.label7.Size = new System.Drawing.Size(260, 30);
             this.label7.TabIndex = 13;
             this.label7.Text = "Nazwisko";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -539,18 +541,18 @@
             this.employeeLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.employeeLastName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.employeeLastName.ForeColor = System.Drawing.Color.White;
-            this.employeeLastName.Location = new System.Drawing.Point(90, 26);
+            this.employeeLastName.Location = new System.Drawing.Point(120, 32);
             this.employeeLastName.Margin = new System.Windows.Forms.Padding(0);
             this.employeeLastName.Name = "employeeLastName";
-            this.employeeLastName.Size = new System.Drawing.Size(196, 27);
+            this.employeeLastName.Size = new System.Drawing.Size(260, 32);
             this.employeeLastName.TabIndex = 12;
             // 
             // panel29
             // 
-            this.panel29.Location = new System.Drawing.Point(0, 81);
-            this.panel29.Margin = new System.Windows.Forms.Padding(2);
+            this.panel29.Location = new System.Drawing.Point(0, 100);
+            this.panel29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(375, 81);
+            this.panel29.Size = new System.Drawing.Size(500, 100);
             this.panel29.TabIndex = 9;
             // 
             // panel31
@@ -558,10 +560,10 @@
             this.panel31.Controls.Add(this.buttonBack);
             this.panel31.Controls.Add(this.employeeDelete);
             this.panel31.Controls.Add(this.employeeSave);
-            this.panel31.Location = new System.Drawing.Point(0, 376);
-            this.panel31.Margin = new System.Windows.Forms.Padding(2);
+            this.panel31.Location = new System.Drawing.Point(0, 463);
+            this.panel31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(750, 71);
+            this.panel31.Size = new System.Drawing.Size(1000, 87);
             this.panel31.TabIndex = 18;
             // 
             // buttonBack
@@ -571,10 +573,10 @@
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonBack.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonBack.ForeColor = System.Drawing.Color.White;
-            this.buttonBack.Location = new System.Drawing.Point(316, 17);
-            this.buttonBack.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonBack.Location = new System.Drawing.Point(421, 21);
+            this.buttonBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(117, 36);
+            this.buttonBack.Size = new System.Drawing.Size(156, 44);
             this.buttonBack.TabIndex = 4;
             this.buttonBack.Text = "Anuluj";
             this.buttonBack.UseVisualStyleBackColor = false;
@@ -587,10 +589,10 @@
             this.employeeDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.employeeDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.employeeDelete.ForeColor = System.Drawing.Color.White;
-            this.employeeDelete.Location = new System.Drawing.Point(168, 17);
-            this.employeeDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.employeeDelete.Location = new System.Drawing.Point(224, 21);
+            this.employeeDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.employeeDelete.Name = "employeeDelete";
-            this.employeeDelete.Size = new System.Drawing.Size(117, 36);
+            this.employeeDelete.Size = new System.Drawing.Size(156, 44);
             this.employeeDelete.TabIndex = 5;
             this.employeeDelete.Text = "Usuń";
             this.employeeDelete.UseVisualStyleBackColor = false;
@@ -603,21 +605,33 @@
             this.employeeSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.employeeSave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.employeeSave.ForeColor = System.Drawing.Color.White;
-            this.employeeSave.Location = new System.Drawing.Point(468, 17);
-            this.employeeSave.Margin = new System.Windows.Forms.Padding(2);
+            this.employeeSave.Location = new System.Drawing.Point(624, 21);
+            this.employeeSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.employeeSave.Name = "employeeSave";
-            this.employeeSave.Size = new System.Drawing.Size(117, 36);
+            this.employeeSave.Size = new System.Drawing.Size(156, 44);
             this.employeeSave.TabIndex = 3;
             this.employeeSave.Text = "Akceptuj";
             this.employeeSave.UseVisualStyleBackColor = false;
             this.employeeSave.Click += new System.EventHandler(this.employeeSave_Click);
             // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(120, 21);
+            this.label8.Margin = new System.Windows.Forms.Padding(0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(260, 30);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Data zatrudnienia";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // EmployeeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
-            this.ClientSize = new System.Drawing.Size(750, 447);
+            this.ClientSize = new System.Drawing.Size(1000, 550);
             this.Controls.Add(this.panel31);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel12);
@@ -631,6 +645,7 @@
             this.Controls.Add(this.flowLayoutPanel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EmployeeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nowy pracownik";
@@ -713,5 +728,6 @@
         private System.Windows.Forms.Button employeeSave;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button employeeDelete;
+        private System.Windows.Forms.Label label8;
     }
 }
