@@ -35,11 +35,50 @@ namespace CompanyManagmentProject.Repo
             task4.startDate = new DateTime(2020, 8, 11, 14, 30, 00);
             task4.endDate = new DateTime(2020, 5, 20, 15, 30, 00);
             task4.finished = false;
+            Task task5 = new Task("Raport z czerwca");
+            task5.employeeId = 4;
+            task5.startDate = new DateTime(2020, 7, 1, 15, 30, 00);
+            task5.endDate = new DateTime(2020, 5, 20, 15, 30, 00);
+            task5.finished = true;
+            Task task6 = new Task("Wykopki w Jaśle");
+            task6.employeeId = 5;
+            task6.startDate = new DateTime(2020, 8, 11, 14, 30, 00);
+            task6.endDate = new DateTime(2020, 5, 20, 15, 30, 00);
+            task6.finished = true;
+            Task task7 = new Task("Rozliczenie za 2019");
+            task7.employeeId = 6;
+            task7.startDate = new DateTime(2020, 1, 3, 14, 30, 00);
+            task7.endDate = new DateTime(2020, 1, 5, 15, 30, 00);
+            task7.finished = false;
+            Task task8 = new Task("Przeporowadzenie szkolenia");
+            task8.employeeId = 4;
+            task8.startDate = new DateTime(2020, 5, 11, 12, 30, 00);
+            task8.endDate = new DateTime(2020, 5, 10, 15, 30, 00);
+            task8.finished = true;
+            Task task9 = new Task("Kontora sprzętu");
+            task9.employeeId = 5;
+            task9.startDate = new DateTime(2020, 2, 11, 14, 30, 00);
+            task9.endDate = new DateTime(2020, 2, 13, 15, 30, 00);
+            task9.finished = false;
+            Task task10 = new Task("Segregacja dokumentów");
+            task10.employeeId = 6;
+            task10.startDate = new DateTime(2020, 4, 12, 14, 30, 00);
+            task10.endDate = new DateTime(2020, 4, 15, 15, 30, 00);
+            task10.finished = true;
+
+
 
             TaskRepository.add(task1);
             TaskRepository.add(task2);
             TaskRepository.add(task3);
             TaskRepository.add(task4);
+            TaskRepository.add(task5);
+            TaskRepository.add(task6);
+            TaskRepository.add(task7);
+            TaskRepository.add(task8);
+            TaskRepository.add(task9);
+            TaskRepository.add(task10);
+
         }
 
 
