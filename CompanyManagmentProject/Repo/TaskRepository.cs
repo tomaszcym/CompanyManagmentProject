@@ -67,6 +67,11 @@ namespace CompanyManagmentProject.Repo
             return tasks;
         }
 
+        public static List<Task> getAllByEmployee(int id)
+        {
+            return tasks.FindAll(t => t.employeeId == id);
+        }
+
         public static List<Task> getByFinished(bool finished)
         {
             return tasks.FindAll(t => t.finished == finished);

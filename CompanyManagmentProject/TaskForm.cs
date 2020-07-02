@@ -25,9 +25,13 @@ namespace CompanyManagmentProject
         {
             InitializeComponent();
             this.formParent = form;
-            this.task = new Model.Task();
-
             fillSelect();
+
+            if (Program.currentUser.role == Role.USER)
+            {
+                this.taskDelete.Hide();
+                this.taskSave.Hide();
+            }
         }
         public TaskForm(Form1 form, Model.Task task = null) : this(form)
         {
@@ -35,6 +39,11 @@ namespace CompanyManagmentProject
             {
                 initTask(task);
             }
+            else
+            {
+                this.task = new Model.Task();
+            }
+            fillSelect();
         }
 
         private void initTask(Model.Task task)
@@ -62,6 +71,10 @@ namespace CompanyManagmentProject
         private void taskSave_Click(object sender, EventArgs e)
         {
             Model.Task taskToSave = this.task;
+            if (taskToSave == null)
+                taskToSave = new Model.Task();
+
+            MessageBox.Show(taskToSave.name);
 
             if (this.taskName.TextLength < 10 || this.taskDescription.TextLength < 10)
             { 
@@ -75,7 +88,7 @@ namespace CompanyManagmentProject
                 return;
             }
 
-            EmployeeSelectItem selectedEmployee = this.taskEmployeeSelect.SelectedItem as EmployeeSelectItem; 
+            EmployeeSelectItem selectedEmployee = this.taskEmployeeSelect.SelectedItem as EmployeeSelectItem;
 
             taskToSave.name = this.taskName.Text;
             taskToSave.description = this.taskDescription.Text;
@@ -86,7 +99,8 @@ namespace CompanyManagmentProject
             if(selectedEmployee != null)
                 taskToSave.employeeId = selectedEmployee.id;
 
-            if (this.task.id != 0)
+
+            if (this.task != null && this.task.id != 0)
                 Repo.TaskRepository.update(this.task.id, taskToSave);
             else
                 Repo.TaskRepository.add(taskToSave);
@@ -99,11 +113,15 @@ namespace CompanyManagmentProject
         {
             List<Employee> employees = EmployeeRepository.getAll();
 
-           
+            this.taskEmployeeSelect.Items.Clear();
             employees.ForEach(e =>
             {
                 EmployeeSelectItem item = new EmployeeSelectItem(e.id, e.firstName + " " + e.lastName);
                 this.taskEmployeeSelect.Items.Add(item);
+                if (this.task != null && e.id == this.task.employeeId)
+                {
+                    this.taskEmployeeSelect.SelectedItem = item;
+                }
             });
         }
 

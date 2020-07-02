@@ -34,7 +34,26 @@ namespace CompanyManagmentProject
                             break;
                     }
                 }
+
+                Employee employee = EmployeeRepository.getByUserId(Program.currentUser.id);
+                if(employee != null)
+                {
+                    this.currentUserNameLabel.Text = employee.firstName + "!";
+                }
+                else
+                {
+                    this.currentUserLabel.Hide();
+                    this.currentUserNameLabel.Hide();
+                }
             }
+            else
+            {
+                this.currentUserLabel.Hide();
+                this.currentUserNameLabel.Hide();
+            }
+
+            this.Text = this.Text + " | " + Program.currentUser.username;
+            
         }
 
         protected override void OnFormClosed(FormClosedEventArgs e)
@@ -70,12 +89,26 @@ namespace CompanyManagmentProject
 
         private void renderDashboardTab()
         {
-            int finished = TaskRepository.getByFinished(true).Count();
-            int unfinished = TaskRepository.getByFinished(false).Count();
+            List<Model.Task> finished = TaskRepository.getByFinished(true);
+            List<Model.Task> unfinished = TaskRepository.getByFinished(false);
 
-            overviewCounterActiveTask.Text = unfinished.ToString();
-            overviewCounterFinishTask.Text = finished.ToString();
-            overviewCounterEmployee.Text = EmployeeRepository.getAll().Count().ToString();
+            if (Program.currentUser.role == Role.ADMIN)
+            {
+                overviewCounterActiveTask.Text = unfinished.Count().ToString();
+                overviewCounterFinishTask.Text = finished.Count().ToString();
+                overviewCounterEmployee.Text = EmployeeRepository.getAll().Count().ToString();
+            }
+            else
+            {
+                this.activeTaskLabel.Text = "Twoje zadania:";
+                this.finishedTasksLabel.Text = "Twoje ukończone zadania: ";
+
+                overviewCounterActiveTask.Text = finished.FindAll(t => t.employeeId == Program.currentUser.id).Count().ToString();
+                overviewCounterFinishTask.Text = unfinished.FindAll(t => t.employeeId == Program.currentUser.id).Count().ToString();
+
+                this.employeeCountLabel.Hide();
+                this.overviewCounterEmployee.Hide();
+            }
         }
 
         private void renderCompanyDetailsTab()
@@ -92,8 +125,6 @@ namespace CompanyManagmentProject
         {
             List<Employee> employees = EmployeeRepository.getAll();
 
-           
-
             employeeListView.Clear();
             employeeListView.View = View.Details;
             employeeListView.FullRowSelect = true;
@@ -108,10 +139,9 @@ namespace CompanyManagmentProject
             employeeListView.Columns.Add("Zatrudniony (data)");
             employeeListView.Columns.Add("Zwolniony");
 
-            int i = 1;
             employees.ForEach(e => {
                 string[] row = {
-                    i++.ToString(),
+                    e.id.ToString(),
                     e.firstName,
                     e.lastName,
                     e.email,
@@ -141,10 +171,20 @@ namespace CompanyManagmentProject
             employeeForm.Show(this);
         }
 
-        //
+        
         public void renderTasksTab()
         {
-            List<Model.Task> tasks = TaskRepository.getAll();
+            List<Model.Task> tasks = null;
+
+            if (Program.currentUser.role == Role.USER)
+            {
+                Employee employee = EmployeeRepository.getByUserId(Program.currentUser.id);
+                if(employee != null)
+                    tasks = TaskRepository.getAllByEmployee(employee.id);
+                this.newTaskButton.Hide();
+            }
+            else
+                tasks = TaskRepository.getAll();
 
 
             taskListView.Clear();
@@ -159,7 +199,6 @@ namespace CompanyManagmentProject
             taskListView.Columns.Add("Data zakończenia");
             taskListView.Columns.Add("Zakończone");
 
-            int i = 1;
             tasks.ForEach(t => {
                 
                 Employee employee = EmployeeRepository.getById((int)t.employeeId);
@@ -169,7 +208,7 @@ namespace CompanyManagmentProject
                 string phone = employee != null ? employee.phone : "";
 
                 string[] row = {
-                    i++.ToString(),
+                    t.id.ToString(),
                     firstName,
                     lastName,
                     t.name,

@@ -18,6 +18,9 @@ namespace CompanyManagmentProject.Model
         public DateTime dateHired { get; set; }
         public Boolean fired { get; set; }
 
+        public int? userId { get; set; }
+        public User user { get; set; }
+
         public Employee() {
             this.dateHired = DateTime.Now;
         }

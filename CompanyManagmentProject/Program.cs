@@ -18,20 +18,20 @@ namespace CompanyManagmentProject
         static void Main()
         {
             // zainicjowanie repozytoriow
+            UserRepository.init();
             EmployeeRepository.init();
             TaskRepository.init();
-            UserRepository.init();
 
 
             // uruchomienie aplikacji
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Auth authForm = new Auth();
             authForm.Show();
 
             Application.Run();
         }
-
 
 
         public static string encryptPassword(string password)

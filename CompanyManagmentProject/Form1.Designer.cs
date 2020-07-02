@@ -34,15 +34,15 @@
             this.dashboard = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.NumberOfEmployeesCounter = new System.Windows.Forms.Label();
+            this.employeeCountLabel = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.finishedTasksLabel = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.activeTaskCounter = new System.Windows.Forms.Label();
+            this.activeTaskLabel = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -104,6 +104,8 @@
             this.overviewCompanyName = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.currentUserLabel = new System.Windows.Forms.Label();
+            this.currentUserNameLabel = new System.Windows.Forms.Label();
             this.mainTabControl.SuspendLayout();
             this.dashboard.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -180,7 +182,7 @@
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.NumberOfEmployeesCounter);
+            this.panel14.Controls.Add(this.employeeCountLabel);
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Controls.Add(this.panel16);
             this.panel14.Location = new System.Drawing.Point(0, 344);
@@ -189,18 +191,18 @@
             this.panel14.Size = new System.Drawing.Size(600, 172);
             this.panel14.TabIndex = 3;
             // 
-            // NumberOfEmployeesCounter
+            // employeeCountLabel
             // 
-            this.NumberOfEmployeesCounter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumberOfEmployeesCounter.Font = new System.Drawing.Font("Century Gothic", 25.8F);
-            this.NumberOfEmployeesCounter.ForeColor = System.Drawing.Color.White;
-            this.NumberOfEmployeesCounter.Location = new System.Drawing.Point(0, 0);
-            this.NumberOfEmployeesCounter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.NumberOfEmployeesCounter.Name = "NumberOfEmployeesCounter";
-            this.NumberOfEmployeesCounter.Size = new System.Drawing.Size(600, 172);
-            this.NumberOfEmployeesCounter.TabIndex = 4;
-            this.NumberOfEmployeesCounter.Text = "ILOŚĆ PRACOWNIKÓW:";
-            this.NumberOfEmployeesCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.employeeCountLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeCountLabel.Font = new System.Drawing.Font("Century Gothic", 25.8F);
+            this.employeeCountLabel.ForeColor = System.Drawing.Color.White;
+            this.employeeCountLabel.Location = new System.Drawing.Point(0, 0);
+            this.employeeCountLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.employeeCountLabel.Name = "employeeCountLabel";
+            this.employeeCountLabel.Size = new System.Drawing.Size(600, 172);
+            this.employeeCountLabel.TabIndex = 4;
+            this.employeeCountLabel.Text = "ILOŚĆ PRACOWNIKÓW:";
+            this.employeeCountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel15
             // 
@@ -220,7 +222,7 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.label11);
+            this.panel11.Controls.Add(this.finishedTasksLabel);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.panel13);
             this.panel11.Location = new System.Drawing.Point(0, 172);
@@ -229,18 +231,18 @@
             this.panel11.Size = new System.Drawing.Size(600, 172);
             this.panel11.TabIndex = 2;
             // 
-            // label11
+            // finishedTasksLabel
             // 
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 25.8F);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(0, 0);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(600, 172);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "ZAKOŃCZONE ZADANIA:";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.finishedTasksLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.finishedTasksLabel.Font = new System.Drawing.Font("Century Gothic", 25.8F);
+            this.finishedTasksLabel.ForeColor = System.Drawing.Color.White;
+            this.finishedTasksLabel.Location = new System.Drawing.Point(0, 0);
+            this.finishedTasksLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.finishedTasksLabel.Name = "finishedTasksLabel";
+            this.finishedTasksLabel.Size = new System.Drawing.Size(600, 172);
+            this.finishedTasksLabel.TabIndex = 5;
+            this.finishedTasksLabel.Text = "ZAKOŃCZONE ZADANIA:";
+            this.finishedTasksLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel12
             // 
@@ -260,7 +262,9 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.activeTaskCounter);
+            this.panel8.Controls.Add(this.currentUserNameLabel);
+            this.panel8.Controls.Add(this.currentUserLabel);
+            this.panel8.Controls.Add(this.activeTaskLabel);
             this.panel8.Controls.Add(this.panel10);
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Location = new System.Drawing.Point(0, 0);
@@ -269,18 +273,18 @@
             this.panel8.Size = new System.Drawing.Size(600, 172);
             this.panel8.TabIndex = 1;
             // 
-            // activeTaskCounter
+            // activeTaskLabel
             // 
-            this.activeTaskCounter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.activeTaskCounter.Font = new System.Drawing.Font("Century Gothic", 25.8F);
-            this.activeTaskCounter.ForeColor = System.Drawing.Color.White;
-            this.activeTaskCounter.Location = new System.Drawing.Point(0, 0);
-            this.activeTaskCounter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.activeTaskCounter.Name = "activeTaskCounter";
-            this.activeTaskCounter.Size = new System.Drawing.Size(600, 172);
-            this.activeTaskCounter.TabIndex = 4;
-            this.activeTaskCounter.Text = "AKTYWNE ZADANIA:";
-            this.activeTaskCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.activeTaskLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.activeTaskLabel.Font = new System.Drawing.Font("Century Gothic", 25.8F);
+            this.activeTaskLabel.ForeColor = System.Drawing.Color.White;
+            this.activeTaskLabel.Location = new System.Drawing.Point(0, 0);
+            this.activeTaskLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.activeTaskLabel.Name = "activeTaskLabel";
+            this.activeTaskLabel.Size = new System.Drawing.Size(600, 172);
+            this.activeTaskLabel.TabIndex = 4;
+            this.activeTaskLabel.Text = "AKTYWNE ZADANIA:";
+            this.activeTaskLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel10
             // 
@@ -946,6 +950,27 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // currentUserLabel
+            // 
+            this.currentUserLabel.AutoSize = true;
+            this.currentUserLabel.BackColor = System.Drawing.Color.Transparent;
+            this.currentUserLabel.ForeColor = System.Drawing.Color.White;
+            this.currentUserLabel.Location = new System.Drawing.Point(4, 3);
+            this.currentUserLabel.Name = "currentUserLabel";
+            this.currentUserLabel.Size = new System.Drawing.Size(53, 19);
+            this.currentUserLabel.TabIndex = 8;
+            this.currentUserLabel.Text = "Cześć ";
+            // 
+            // currentUserNameLabel
+            // 
+            this.currentUserNameLabel.AutoSize = true;
+            this.currentUserNameLabel.ForeColor = System.Drawing.Color.White;
+            this.currentUserNameLabel.Location = new System.Drawing.Point(62, 3);
+            this.currentUserNameLabel.Name = "currentUserNameLabel";
+            this.currentUserNameLabel.Size = new System.Drawing.Size(52, 19);
+            this.currentUserNameLabel.TabIndex = 9;
+            this.currentUserNameLabel.Text = "label8";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -969,6 +994,7 @@
             this.panel14.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.companyDetails.ResumeLayout(false);
@@ -1033,14 +1059,14 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label NumberOfEmployeesCounter;
+        private System.Windows.Forms.Label employeeCountLabel;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label finishedTasksLabel;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label activeTaskCounter;
+        private System.Windows.Forms.Label activeTaskLabel;
         private System.Windows.Forms.Label overviewCounterEmployee;
         private System.Windows.Forms.Label overviewCounterActiveTask;
         private System.Windows.Forms.Panel panel17;
@@ -1080,6 +1106,8 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.Button newEmployee;
         private System.Windows.Forms.Button newTaskButton;
+        private System.Windows.Forms.Label currentUserNameLabel;
+        private System.Windows.Forms.Label currentUserLabel;
     }
 }
 

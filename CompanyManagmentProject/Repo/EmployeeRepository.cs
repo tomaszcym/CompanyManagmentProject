@@ -35,6 +35,7 @@ namespace CompanyManagmentProject.Repo
             employee3.position = "Mechanik";
             employee3.salary = 3200;
             employee3.dateHired = new DateTime(2018, 2, 10);
+            employee3.userId = 2;
 
             EmployeeRepository.add(employee1);
             EmployeeRepository.add(employee2);
@@ -45,7 +46,38 @@ namespace CompanyManagmentProject.Repo
         // GETTERS
         public static Employee getById(int id)
         {
-            return employees.Find(e => e.id == id);
+            Employee employee = null;
+            try
+            {
+                employee = employees.Find(e => e.id == id);
+                if (employee != null && employee.userId != null)
+                {
+                    employee.user = UserRepository.getById((int)employee.userId);
+                }
+            }
+            catch (ArgumentNullException e)
+            {
+                return null;
+            }
+            return employee;
+        }
+
+        public static Employee getByUserId(int id)
+        {
+            Employee employee = null;
+            try
+            {
+                employee = employees.Find(e => e.userId == id);
+                if (employee != null)
+                {
+                    employee.user = UserRepository.getById((int)employee.userId);
+                }
+            }
+            catch (ArgumentNullException e)
+            {
+                return null;
+            }
+            return employee;
         }
 
         internal static void delete(object id)
