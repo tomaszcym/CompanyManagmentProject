@@ -103,8 +103,16 @@ namespace CompanyManagmentProject
                 this.activeTaskLabel.Text = "Twoje zadania:";
                 this.finishedTasksLabel.Text = "Twoje ukończone zadania: ";
 
-                overviewCounterActiveTask.Text = finished.FindAll(t => t.employeeId == Program.currentUser.id).Count().ToString();
-                overviewCounterFinishTask.Text = unfinished.FindAll(t => t.employeeId == Program.currentUser.id).Count().ToString();
+                Employee employee = EmployeeRepository.getByUserId(Program.currentUser.id);
+                string unfinishedTasks = "-";
+                string finishedTasks = "-";
+                if (employee != null)
+                {
+                    finishedTasks = finished.FindAll(t => t.employeeId == employee.id).Count().ToString();
+                    unfinishedTasks= unfinished.FindAll(t => t.employeeId == employee.id).Count().ToString();
+                }
+                overviewCounterActiveTask.Text = unfinishedTasks;
+                overviewCounterFinishTask.Text = finishedTasks;
 
                 this.employeeCountLabel.Hide();
                 this.overviewCounterEmployee.Hide();
