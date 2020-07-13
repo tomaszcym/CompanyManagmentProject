@@ -22,12 +22,19 @@ namespace CompanyManagmentProject
         private Employee employee;
         private Form1 formParent;
 
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="form"></param>
         public EmployeeForm(Form1 form)
         {
             InitializeComponent();
             this.formParent = form;
             this.employee = new Employee();
         }
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
         public EmployeeForm(Form1 form, Employee employee = null) : this(form)
         {
             if(employee != null)
@@ -55,6 +62,11 @@ namespace CompanyManagmentProject
             this.employeeIsFired.Checked = employee.isFired();
         }
 
+        /// <summary>
+        /// Dodawanie nowego pracownika z walidacją pól
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void employeeSave_Click(object sender, EventArgs e)
         {
 
@@ -140,7 +152,11 @@ namespace CompanyManagmentProject
                 Location = new Point(p.X - this.startPoint.X, p.Y - this.startPoint.Y);
             }
         }
-
+        /// <summary>
+        /// Usuwanie pracownika
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void employeeDelete_Click(object sender, EventArgs e)
         {
             var confirm = MessageBox.Show("Czy na pewno chcesz usunąć tego pracownika? \nZmiana jest nieodwracalna!", "Usuwanie pracownika: " + employee.firstName + " " + employee.lastName, MessageBoxButtons.YesNo);
