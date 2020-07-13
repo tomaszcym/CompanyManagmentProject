@@ -15,7 +15,6 @@ namespace CompanyManagmentProject
 {
     public partial class Auth : Form
     {
-
         private bool dragging = false;
         private Point startPoint = new Point(0, 0);
 
@@ -29,6 +28,7 @@ namespace CompanyManagmentProject
             username.MaxLength = 12;
             //this.formParent = form;
         }
+
 
         private void loginButton_Click(object sender, EventArgs e)
         {
