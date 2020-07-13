@@ -31,7 +31,7 @@ namespace CompanyManagmentProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Auth authForm = new Auth();
+            AuthForm authForm = new AuthForm();
             authForm.Show();
 
             Application.Run();

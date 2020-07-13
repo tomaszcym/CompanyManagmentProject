@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace CompanyManagmentProject
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         //public User currentUser = null;
 
@@ -22,7 +22,7 @@ namespace CompanyManagmentProject
         /// Glowne okno aplikacji
         /// Wyswietla zawartosci w zaleznosci od roli uzytkownika
         /// </summary>
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             renderDashboardTab();

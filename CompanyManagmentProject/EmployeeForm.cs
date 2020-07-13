@@ -20,13 +20,13 @@ namespace CompanyManagmentProject
 
 
         private Employee employee;
-        private Form1 formParent;
+        private MainForm formParent;
 
         /// <summary>
         /// Konstruktor
         /// </summary>
         /// <param name="form"></param>
-        public EmployeeForm(Form1 form)
+        public EmployeeForm(MainForm form)
         {
             InitializeComponent();
             this.formParent = form;
@@ -35,7 +35,7 @@ namespace CompanyManagmentProject
         /// <summary>
         /// Konstruktor
         /// </summary>
-        public EmployeeForm(Form1 form, Employee employee = null) : this(form)
+        public EmployeeForm(MainForm form, Employee employee = null) : this(form)
         {
             if(employee != null)
             {

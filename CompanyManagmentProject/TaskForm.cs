@@ -19,13 +19,13 @@ namespace CompanyManagmentProject
 
 
         private Model.Task task;
-        private Form1 formParent;
+        private MainForm formParent;
         
         /// <summary>
         /// Konstruktor TaskFrom
         /// </summary>
         /// <param name="form"></param>
-        public TaskForm(Form1 form)
+        public TaskForm(MainForm form)
         {
             InitializeComponent();
             this.formParent = form;
@@ -42,7 +42,7 @@ namespace CompanyManagmentProject
         /// </summary>
         /// <param name="form"></param>
         /// <param name="task"></param>
-        public TaskForm(Form1 form, Model.Task task = null) : this(form)
+        public TaskForm(MainForm form, Model.Task task = null) : this(form)
         {
             if (task != null)
             {

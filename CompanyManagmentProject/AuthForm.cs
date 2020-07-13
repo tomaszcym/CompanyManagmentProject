@@ -13,14 +13,14 @@ using System.Windows.Forms;
 
 namespace CompanyManagmentProject
 {
-    public partial class Auth : Form
+    public partial class AuthForm : Form
     {
         private bool dragging = false;
         private Point startPoint = new Point(0, 0);
 
-        private Form1 formParent;
+        private MainForm formParent;
 
-        public Auth()
+        public AuthForm()
         {
             InitializeComponent();
             password.PasswordChar = '*';
@@ -40,7 +40,7 @@ namespace CompanyManagmentProject
             {
                 Program.currentUser = user;
 
-                Form1 form = new Form1();
+                MainForm form = new MainForm();
                 form.Show();
 
                 this.Close();
