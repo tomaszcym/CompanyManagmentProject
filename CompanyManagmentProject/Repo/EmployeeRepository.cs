@@ -11,10 +11,22 @@ namespace CompanyManagmentProject.Repo
 {
     public static class EmployeeRepository
     {
+        /// <summary>
+        /// Lista pracownikow w aplikacji
+        /// Zastepuje baze danych
+        /// </summary>
         public static List<Employee> employees { get; set; } = new List<Employee>();
+        
+        /// <summary>
+        /// Przetrzymuje id ostatniego pracownika
+        /// Dodanie kolejnego zwieksza id
+        /// </summary>
         private static int employeeId = 0;
 
 
+        /// <summary>
+        /// Zapelnienie repozytorium przykladowymi danymi
+        /// </summary>
         public static void init()
         {
             Employee employee1 = new Employee("Mariusz", "Kardaś");
@@ -72,6 +84,12 @@ namespace CompanyManagmentProject.Repo
         }
 
         // GETTERS
+
+        /// <summary>
+        /// Zwraca pracownika o podanym id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static Employee getById(int id)
         {
             Employee employee = null;
@@ -90,6 +108,12 @@ namespace CompanyManagmentProject.Repo
             return employee;
         }
 
+
+        /// <summary>
+        /// Zwraca pracownika, ktory ma przypisanego uzytkownika o podanym id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static Employee getByUserId(int id)
         {
             Employee employee = null;
@@ -108,11 +132,11 @@ namespace CompanyManagmentProject.Repo
             return employee;
         }
 
-        internal static void delete(object id)
-        {
-            throw new NotImplementedException();
-        }
 
+        /// <summary>
+        /// Zwraca wszystkich pracownikow
+        /// </summary>
+        /// <returns></returns>
         public static List<Employee> getAll()
         {
             return employees;
@@ -121,6 +145,13 @@ namespace CompanyManagmentProject.Repo
 
 
         // MODIFIERS
+
+        /// <summary>
+        /// Nadaje id przeslanemu modelowi
+        /// Dodaje model do repozytorium
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
         public static Employee add(Employee employee)
         {
             employee.id = ++employeeId;
@@ -128,6 +159,13 @@ namespace CompanyManagmentProject.Repo
             return employee;
         }
 
+
+        /// <summary>
+        /// Aktualizuje pracownika o podanym id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="employee"></param>
+        /// <returns></returns>
         public static Boolean update(int id, Employee employee)
         {
             if(id != employee.id)
@@ -147,6 +185,12 @@ namespace CompanyManagmentProject.Repo
             }
         }
 
+
+        /// <summary>
+        /// Usuwa pracownika o danym id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static Boolean delete(int id)
         {
             try

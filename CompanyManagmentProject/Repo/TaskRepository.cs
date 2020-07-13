@@ -9,10 +9,22 @@ namespace CompanyManagmentProject.Repo
 {
     public static class TaskRepository
     {
+        /// <summary>
+        /// Lista zadan w aplikacji
+        /// Zastepuje baze danych
+        /// </summary>
         public static List<Task> tasks { get; set; } = new List<Task>();
+
+        /// <summary>
+        /// Przetrzymuje id ostatniego uzytkownika
+        /// Dodanie kolejnego zwieksza id
+        /// </summary>
         private static int taskId = 0;
 
 
+        /// <summary>
+        /// Zapelnienie repozytorium przykladowymi danymi
+        /// </summary>
         public static void init()
         {
             Task task1 = new Task("Transport Nestle Rzeszów - Nestle Kraków");
@@ -83,6 +95,12 @@ namespace CompanyManagmentProject.Repo
 
 
         // GETTERS
+
+        /// <summary>
+        /// Zwraca zadanie o podanym id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static Task getById(int id)
         {
             Task task = null;
@@ -101,16 +119,33 @@ namespace CompanyManagmentProject.Repo
             return task;
         }
 
+
+        /// <summary>
+        /// Zwraca wszystkie zadania
+        /// </summary>
+        /// <returns></returns>
         public static List<Task> getAll()
         {
             return tasks;
         }
 
+
+        /// <summary>
+        /// Zwraca wszystkie zadania, ktore maja pracownika o podanym id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static List<Task> getAllByEmployee(int id)
         {
             return tasks.FindAll(t => t.employeeId == id);
         }
 
+
+        /// <summary>
+        /// Zwraca wszystkie zadania, ktore maja pole "finished" ustawione na podana wartosc
+        /// </summary>
+        /// <param name="finished"></param>
+        /// <returns></returns>
         public static List<Task> getByFinished(bool finished)
         {
             return tasks.FindAll(t => t.finished == finished);
@@ -118,12 +153,25 @@ namespace CompanyManagmentProject.Repo
 
 
         // MODIFIERS
+
+        /// <summary>
+        /// Nadaje id przeslanemu modelowi
+        /// Dodaje model do repozytorium
+        /// </summary>
+        /// <param name="task"></param>
         public static void add(Task task)
         {
             task.id = ++taskId;
             tasks.Add(task);
         }
 
+
+        /// <summary>
+        /// Aktualizuje zadanie o danym id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="task"></param>
+        /// <returns></returns>
         public static Boolean update(int id, Task task)
         {
             if (id != task.id)
@@ -143,6 +191,12 @@ namespace CompanyManagmentProject.Repo
             }
         }
 
+
+        /// <summary>
+        /// Usuwa zadanie o danym id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static Boolean delete(int id)
         {
             try

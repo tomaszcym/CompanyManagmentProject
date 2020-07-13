@@ -10,10 +10,22 @@ namespace CompanyManagmentProject.Repo
 {
     public static class UserRepository
     {
+        /// <summary>
+        /// Lista uzytkownikow w aplikacji
+        /// Zastepuje baze danych
+        /// </summary>
         public static List<User> users { get; set; } = new List<User>();
+
+        /// <summary>
+        /// Przetrzymuje id ostatniego uzytkownika
+        /// Dodanie kolejnego zwieksza id
+        /// </summary>
         private static int userId = 0;
 
 
+        /// <summary>
+        /// Zapelnienie repozytorium przykladowymi danymi
+        /// </summary>
         public static void init()
         {
             UserRepository.add(new User("admin", "admin", Role.ADMIN));
@@ -27,6 +39,12 @@ namespace CompanyManagmentProject.Repo
 
 
         // GETTERS
+
+        /// <summary>
+        /// Zwraca uzytkownika o podanym id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static User getById(int id)
         {
             User user = null;
@@ -41,11 +59,22 @@ namespace CompanyManagmentProject.Repo
             return user;
         }
 
+        /// <summary>
+        /// Zwraca wszystkich uzytkownikow
+        /// </summary>
+        /// <returns></returns>
         public static List<User> getAll()
         {
             return users;
         }
 
+
+        /// <summary>
+        /// Sprawdza poprawnosc danych autoryzujacego sie uzytkownika
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public static User authorizeUser(string username, string password)
         {
             User user = null;
@@ -72,49 +101,16 @@ namespace CompanyManagmentProject.Repo
 
 
         // MODIFIERS
+
+        /// <summary>
+        /// Nadaje id przeslanemu modelowi
+        /// Dodaje model do repozytorium
+        /// </summary>
+        /// <param name="user"></param>
         public static void add(User user)
         {
             user.id = ++userId;
             users.Add(user);
         }
-
-        //public static Boolean update(int id, User user)
-        //{
-        //    if (id != user.id)
-        //    {
-        //        return false;
-        //    }
-
-        //    try
-        //    {
-        //        int position = users.FindIndex(i => i.id == user.id);
-        //        users[position] = user;
-        //        return true;
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return false;
-        //    }
-        //}
-
-        //public static Boolean delete(int id)
-        //{
-        //    try
-        //    {
-        //        User user = users.SingleOrDefault(t => t.id == id);
-
-        //        if (user != null)
-        //        {
-        //            users.Remove(user);
-        //            return true;
-        //        }
-        //    }
-        //    catch (ArgumentNullException e)
-        //    {
-        //        return false;
-        //    }
-        //    return false;
-        //}
-
     }
 }

@@ -34,6 +34,12 @@ namespace CompanyManagmentProject
         }
 
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public static string encryptPassword(string password)
         {
             byte[] data = System.Text.Encoding.ASCII.GetBytes(password);
