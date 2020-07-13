@@ -21,6 +21,10 @@ namespace CompanyManagmentProject
         private Model.Task task;
         private Form1 formParent;
         
+        /// <summary>
+        /// Konstruktor TaskFrom
+        /// </summary>
+        /// <param name="form"></param>
         public TaskForm(Form1 form)
         {
             InitializeComponent();
@@ -33,6 +37,11 @@ namespace CompanyManagmentProject
                 this.taskSave.Hide();
             }
         }
+        /// <summary>
+        /// Konstruktor TaskForm 
+        /// </summary>
+        /// <param name="form"></param>
+        /// <param name="task"></param>
         public TaskForm(Form1 form, Model.Task task = null) : this(form)
         {
             if (task != null)
@@ -115,7 +124,9 @@ namespace CompanyManagmentProject
             this.formParent.renderTasksTab();
             this.Close();
         }
-
+        /// <summary>
+        /// Wypełnienia selecta danymi 
+        /// </summary>
         private void fillSelect()
         {
             List<Employee> employees = EmployeeRepository.getAll();
@@ -186,6 +197,12 @@ namespace CompanyManagmentProject
         public int id { get; set; }
         public String name { get; set; }
 
+        /// <summary>
+        /// Konstruktor klasy EmployeeSelectItem
+        /// Ustawia id i nazwę 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
         public EmployeeSelectItem(int id, String name)
         {
             this.id = id;
