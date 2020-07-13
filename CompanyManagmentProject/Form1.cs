@@ -15,8 +15,13 @@ namespace CompanyManagmentProject
 {
     public partial class Form1 : Form
     {
-        public User currentUser = null;
+        //public User currentUser = null;
 
+
+        /// <summary>
+        /// Glowne okno aplikacji
+        /// Wyswietla zawartosci w zaleznosci od roli uzytkownika
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -56,18 +61,35 @@ namespace CompanyManagmentProject
             
         }
 
+        /// <summary>
+        /// Przy zamknieciu okna zamyka watek aplikacji w systemie
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnFormClosed(FormClosedEventArgs e)
         {
             base.OnFormClosed(e);
             Application.Exit();
         }
 
+
+        /// <summary>
+        /// Obsluguje przycisk nowego uzytkownika
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void newEmployee_Click(object sender, EventArgs e)
         {
             EmployeeForm employeeForm = new EmployeeForm(this);
             employeeForm.Show();
         }
 
+
+        /// <summary>
+        /// Obsluguje zdarzenie wyboru karty
+        /// Uruchamia metode w zaleznosci od kliknietej karty
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mainTabControl_Selected(object sender, TabControlEventArgs e)
         {
             switch (e.TabPage.Name.ToString())
@@ -87,6 +109,10 @@ namespace CompanyManagmentProject
             }
         }
 
+
+        /// <summary>
+        /// Renderuje zawartosc karty
+        /// </summary>
         private void renderDashboardTab()
         {
             List<Model.Task> finished = TaskRepository.getByFinished(true);
@@ -119,6 +145,9 @@ namespace CompanyManagmentProject
             }
         }
 
+        /// <summary>
+        /// Renderuje zawartosc karty
+        /// </summary>
         private void renderCompanyDetailsTab()
         {
             companyName.Text = CompanyDetails.name;
@@ -129,6 +158,9 @@ namespace CompanyManagmentProject
             companyCountry.Text = CompanyDetails.country;
         }
 
+        /// <summary>
+        /// Renderuje zawartosc karty
+        /// </summary>
         public void renderEmployeesTab()
         {
             List<Employee> employees = EmployeeRepository.getAll();
@@ -168,6 +200,11 @@ namespace CompanyManagmentProject
             });
         }
 
+
+        /// <summary>
+        /// Obsluguje klikniecie danego pracownika na liscie
+        /// Otwiera formularz z wybranym pracownikiem
+        /// </summary>
         private void employeeListView_Click(object sender, EventArgs e)
         {
             var selected = employeeListView.SelectedItems[0].SubItems[0];
@@ -179,7 +216,10 @@ namespace CompanyManagmentProject
             employeeForm.Show(this);
         }
 
-        
+
+        /// <summary>
+        /// Renderuje zawartosc karty
+        /// </summary>
         public void renderTasksTab()
         {
             List<Model.Task> tasks = null;
@@ -240,8 +280,12 @@ namespace CompanyManagmentProject
         }
 
 
-        //
 
+        /// <summary>
+        /// Obsluguje przycisk zapisu
+        /// Zapisuje dane firmy
+        /// Odswieza dane w oknie
+        /// </summary>
         private void companyDetailsSaveButton_Click(object sender, EventArgs e)
         {
             CompanyDetails.name = companyName.Text;
@@ -292,12 +336,21 @@ namespace CompanyManagmentProject
         }
 
 
+        /// <summary>
+        /// Obsluguje przycisk nowego zadania
+        /// Otwiera pusty formularz zadania
+        /// </summary>
         private void newTaskButton_Click(object sender, EventArgs e)
         {
             TaskForm taskForm = new TaskForm(this);
             taskForm.Show();
         }
 
+
+        /// <summary>
+        /// Obsluguje klikniecie danego zadania na liscie
+        /// Otwiera formularz z wybranym zadaniem
+        /// </summary>
         private void taskListView_Click(object sender, EventArgs e)
         {
             var selected = taskListView.SelectedItems[0].SubItems[0];
@@ -309,6 +362,10 @@ namespace CompanyManagmentProject
             taskForm.Show(this);
         }
 
+
+        /// <summary>
+        /// Odswieza dane firmy w oknie
+        /// </summary>
         public void updateCompanyOverview()
         {
             overviewCompanyName.Text = CompanyDetails.name;

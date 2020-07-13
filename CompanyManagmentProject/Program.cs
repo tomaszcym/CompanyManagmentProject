@@ -10,7 +10,11 @@ namespace CompanyManagmentProject
 {
     static class Program
     {
+        /// <summary>
+        /// Aktualnie zalogowany uzytkownik
+        /// </summary>
         public static User currentUser = null;
+
         /// <summary>
         /// Główny punkt wejścia dla aplikacji.
         /// </summary>
@@ -36,7 +40,7 @@ namespace CompanyManagmentProject
 
 
         /// <summary>
-        /// 
+        /// Wykonuje enkrypcje podanego stringa
         /// </summary>
         /// <param name="password"></param>
         /// <returns></returns>
