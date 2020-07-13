@@ -45,7 +45,10 @@ namespace CompanyManagmentProject
             }
             fillSelect();
         }
-
+        /// <summary>
+        /// Inicjlalizacja wszystkich zadań
+        /// </summary>
+        /// <param name="task"></param>
         private void initTask(Model.Task task)
         {
             this.task = task;
@@ -67,7 +70,11 @@ namespace CompanyManagmentProject
             this.taskFinished.Checked = task.isFinished();
 
         }
-
+        /// <summary>
+        /// Dodawanie nowego zadania
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void taskSave_Click(object sender, EventArgs e)
         {
             Model.Task taskToSave = this.task;
@@ -124,12 +131,20 @@ namespace CompanyManagmentProject
                 }
             });
         }
-
+        /// <summary>
+        /// Zamykanie aplikacji
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void taskExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        /// <summary>
+        /// Usuwanie wybranego zadania na podstawie ID
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void taskDelete_Click(object sender, EventArgs e)
         {
             var confirm = MessageBox.Show("Czy na pewno chcesz usunąć to zadanie?",
