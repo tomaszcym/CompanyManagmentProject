@@ -58,7 +58,8 @@ namespace CompanyManagmentProject
             }
 
             this.Text = this.Text + " | " + Program.currentUser.username;
-            
+
+            updateCompanyOverview();
         }
 
         /// <summary>
