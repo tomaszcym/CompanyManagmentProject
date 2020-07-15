@@ -45,7 +45,7 @@ namespace CompanyManagmentProject.Repo
         /// Zwraca uzytkownika o podanym id
         /// </summary>
         /// <param name="id">Przyjmuje ID użytkownika</param>
-        /// <returns></returns>
+        /// <returns>Zwraca uzytkownika o padanym ID</returns>
         public static User getById(int id)
         {
             User user = null;
@@ -75,7 +75,7 @@ namespace CompanyManagmentProject.Repo
         /// </summary>
         /// <param name="username">Przyjmuje nazwe użytkownika</param>
         /// <param name="password">Przyjmuje hasło użytownika</param>
-        /// <returns></returns>
+        /// <returns>Zwraca użytkowniuka lub "null"</returns>
         public static User authorizeUser(string username, string password)
         {
             User user = null;
@@ -106,7 +106,7 @@ namespace CompanyManagmentProject.Repo
         /// Nadaje id przeslanemu modelowi
         /// Dodaje model do repozytorium
         /// </summary>
-        /// <param name="user"></param>
+        /// <param name="user">Instancja obiektu User</param>
         public static void add(User user)
         {
             user.id = ++userId;

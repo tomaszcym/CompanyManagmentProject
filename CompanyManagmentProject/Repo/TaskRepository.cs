@@ -99,8 +99,8 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Zwraca zadanie o podanym id
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">Przyjmuje ID zadania</param>
+        /// <returns>Zwraca zadanie o podanym ID</returns>
         public static Task getById(int id)
         {
             Task task = null;
@@ -123,7 +123,7 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Zwraca wszystkie zadania
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Zwraca wszystkie zadania</returns>
         public static List<Task> getAll()
         {
             return tasks;
@@ -133,8 +133,8 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Zwraca wszystkie zadania, ktore maja pracownika o podanym id
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">ID pracownika do identyfikacji danych</param>
+        /// <returns>Zwraca wszystkie zadania</returns>
         public static List<Task> getAllByEmployee(int id)
         {
             return tasks.FindAll(t => t.employeeId == id);
@@ -145,7 +145,7 @@ namespace CompanyManagmentProject.Repo
         /// Zwraca wszystkie zadania, ktore maja pole "finished" ustawione na podana wartosc
         /// </summary>
         /// <param name="finished"></param>
-        /// <returns></returns>
+        /// <returns>Zwraca wszystkie zadania które mają pole "finished"</returns>
         public static List<Task> getByFinished(bool finished)
         {
             return tasks.FindAll(t => t.finished == finished);
@@ -158,7 +158,7 @@ namespace CompanyManagmentProject.Repo
         /// Nadaje id przeslanemu modelowi
         /// Dodaje model do repozytorium
         /// </summary>
-        /// <param name="task"></param>
+        /// <param name="task">Model Tasku do którego przypiszemy ID</param>
         public static void add(Task task)
         {
             task.id = ++taskId;
@@ -169,9 +169,9 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Aktualizuje zadanie o danym id
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="task"></param>
-        /// <returns></returns>
+        /// <param name="id">Id na podstwie którego wybierzemy odpoiwednie zadanie</param>
+        /// <param name="task">Model zadaia</param>
+        /// <returns>Zwraca "true" jeśli zostanie zaktualizowane zadanie o podanym ID, lub "false" jeśli dojdzie do niepowodzenia</returns>
         public static Boolean update(int id, Task task)
         {
             if (id != task.id)
@@ -195,8 +195,8 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Usuwa zadanie o danym id
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">Id na podstawie którego określamy zadanie</param>
+        /// <returns>Zwraca "true" jeśli zostanie usunięte zadanie o podanym ID, lub "false" jeśli dojdzie do niepowodzenia</returns>
         public static Boolean delete(int id)
         {
             try

@@ -116,7 +116,7 @@ namespace CompanyManagmentProject.Repo
         /// Zwraca pracownika, ktory ma przypisanego uzytkownika o podanym id
         /// </summary>
         /// <param name="id"></param>
-        /// <returns></returns>
+        /// <returns>Zwraca użytkownika, którego ID przesłaliśmy do funkcji</returns>
         public static Employee getByUserId(int id)
         {
             Employee employee = null;
@@ -139,7 +139,7 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Zwraca wszystkich pracownikow
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Zwraca wszystkich pracowników</returns>
         public static List<Employee> getAll()
         {
             return employees;
@@ -150,11 +150,11 @@ namespace CompanyManagmentProject.Repo
         // MODIFIERS
 
         /// <summary>
-        /// Nadaje id przeslanemu modelowi
+        /// Nadaje id przesłanemu modelowi
         /// Dodaje model do repozytorium
         /// </summary>
-        /// <param name="employee"></param>
-        /// <returns></returns>
+        /// <param name="employee">Model do którego zostanie przypisane ID</param>
+        /// <returns>Zwrtaca modele z przypisanym ID</returns>
         public static Employee add(Employee employee)
         {
             employee.id = ++employeeId;
@@ -166,9 +166,9 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Aktualizuje pracownika o podanym id
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="employee"></param>
-        /// <returns></returns>
+        /// <param name="id">Id pracownika</param>
+        /// <param name="employee">Model Employee</param>
+        /// <returns>Zwraca wartość "true" jeśli poprawnie zaktualizowaliśmy pracownika lub "false" jeśli dojdzie do niepowodzenia</returns>
         public static Boolean update(int id, Employee employee)
         {
             if(id != employee.id)
@@ -192,8 +192,8 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Usuwa pracownika o danym id
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">ID pracownika</param>
+        /// <returns>Zwraca wartość "true" jeśli poprawnie usuneliśmy pracownika lub "false" jeśli dojdzie do niepowodzenia</returns>
         public static Boolean delete(int id)
         {
             try
