@@ -88,8 +88,8 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Zwraca pracownika o podanym id
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">identyfikator modelu</param>
+        /// <returns>pracownik</returns>
         public static Employee getById(int id)
         {
             Employee employee = null;
