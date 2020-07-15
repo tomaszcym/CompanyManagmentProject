@@ -21,16 +21,31 @@ namespace CompanyManagmentProject.Model
         public int? userId { get; set; }
         public User user { get; set; }
 
+
+        /// <summary>
+        /// Domyślny konstruktor bezparametrowy
+        /// Ustawia datę obiektu na aktualną
+        /// </summary>
         public Employee() {
             this.dateHired = DateTime.Now;
         }
 
+        /// <summary>
+        /// Konstruktor pomocniczy
+        /// </summary>
+        /// <param name="firstName">Reprezentuje imie modelu</param>
+        /// <param name="lastName">Reprezentuje nazwisko modelu</param>
         public Employee(String firstName, String lastName) : this()
         {
             this.firstName = firstName;
             this.lastName = lastName;
         }
 
+
+        /// <summary>
+        /// Zwraca wartosc - czy pracownik zostal zwolniony czy nie
+        /// </summary>
+        /// <returns>Wartosc pola fires modelu</returns>
         public Boolean isFired()
         {
             return this.fired;

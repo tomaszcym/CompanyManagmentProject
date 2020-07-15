@@ -19,22 +19,35 @@ namespace CompanyManagmentProject
         private Point startPoint = new Point(0, 0);
 
 
+        /// <summary>
+        /// Edytowany pracownik w formularzu
+        /// </summary>
         private Employee employee;
+
+        /// <summary>
+        /// Nadrzędny formularz (rodzic)
+        /// </summary>
         private MainForm formParent;
 
         /// <summary>
         /// Konstruktor
         /// </summary>
-        /// <param name="form"></param>
+        /// <param name="form">Formularz nadrzędny (rodzic)</param>
         public EmployeeForm(MainForm form)
         {
             InitializeComponent();
             this.formParent = form;
             this.employee = new Employee();
         }
+
         /// <summary>
         /// Konstruktor
         /// </summary>
+        /// <param name="form">Formularz nadrzędny (rodzic)</param>
+        /// <param name="employee">
+        /// Model pracownika (w celu wyświetlenia bądź aktualizacji)
+        /// null - w przypadku dodania nowego pracownika
+        /// </param>
         public EmployeeForm(MainForm form, Employee employee = null) : this(form)
         {
             if(employee != null)
@@ -43,6 +56,11 @@ namespace CompanyManagmentProject
             }
         }
 
+        /// <summary>
+        /// Uzupełnienie kontrolek danymi
+        /// Puste jeśli employee to null
+        /// </summary>
+        /// <param name="employee">Model przekazanego pracownika w konstruktorze</param>
         private void initEmployee(Employee employee)
         {
             this.employee = employee;
@@ -65,8 +83,8 @@ namespace CompanyManagmentProject
         /// <summary>
         /// Dodawanie nowego pracownika z walidacją pól
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Obiekt wywołujący zdarzenie</param>
+        /// <param name="e">Akrumenty zdarzenia</param>
         private void employeeSave_Click(object sender, EventArgs e)
         {
 
@@ -144,6 +162,7 @@ namespace CompanyManagmentProject
             dragging = false;
         }
 
+
         private void label1_MouseMove(object sender, MouseEventArgs e)
         {
             if (dragging)
@@ -155,8 +174,8 @@ namespace CompanyManagmentProject
         /// <summary>
         /// Usuwanie pracownika
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Obiekt wywołujący zdarzenie</param>
+        /// <param name="e">Akrumenty zdarzenia</param>
         private void employeeDelete_Click(object sender, EventArgs e)
         {
             var confirm = MessageBox.Show("Czy na pewno chcesz usunąć tego pracownika? \nZmiana jest nieodwracalna!", "Usuwanie pracownika: " + employee.firstName + " " + employee.lastName, MessageBoxButtons.YesNo);

@@ -18,8 +18,11 @@ namespace CompanyManagmentProject
         private bool dragging = false;
         private Point startPoint = new Point(0, 0);
 
-        private MainForm formParent;
+        //private MainForm formParent;
 
+        /// <summary>
+        /// Domyślny konstruktow bezparametrowy
+        /// </summary>
         public AuthForm()
         {
             InitializeComponent();
@@ -30,6 +33,12 @@ namespace CompanyManagmentProject
         }
 
 
+
+        /// <summary>
+        /// Obsługuje przycisk logowania
+        /// </summary>
+        /// <param name="sender">Obiekt wywołujący zdarzenie</param>
+        /// <param name="e">Akrumenty zdarzenia</param>
         private void loginButton_Click(object sender, EventArgs e)
         {
             string username = this.username.Text;
@@ -54,7 +63,6 @@ namespace CompanyManagmentProject
         private void exitButton_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
-            
         }
 
         private void Auth_MouseDown(object sender, MouseEventArgs e)

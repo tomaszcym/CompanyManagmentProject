@@ -65,7 +65,7 @@ namespace CompanyManagmentProject
         /// <summary>
         /// Przy zamknieciu okna zamyka watek aplikacji w systemie
         /// </summary>
-        /// <param name="e"></param>
+        /// <param name="e">Akrumenty zdarzenia zamknięcia okna</param>
         protected override void OnFormClosed(FormClosedEventArgs e)
         {
             base.OnFormClosed(e);
@@ -76,8 +76,8 @@ namespace CompanyManagmentProject
         /// <summary>
         /// Obsluguje przycisk nowego uzytkownika
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Obiekt wywołujący zdarzenie</param>
+        /// <param name="e">Akrumenty zdarzenia</param>
         private void newEmployee_Click(object sender, EventArgs e)
         {
             EmployeeForm employeeForm = new EmployeeForm(this);
@@ -89,8 +89,8 @@ namespace CompanyManagmentProject
         /// Obsluguje zdarzenie wyboru karty
         /// Uruchamia metode w zaleznosci od kliknietej karty
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Obiekt wywołujący zdarzenie</param>
+        /// <param name="e">Akrumenty zdarzenia</param>
         private void mainTabControl_Selected(object sender, TabControlEventArgs e)
         {
             switch (e.TabPage.Name.ToString())
@@ -206,6 +206,8 @@ namespace CompanyManagmentProject
         /// Obsluguje klikniecie danego pracownika na liscie
         /// Otwiera formularz z wybranym pracownikiem
         /// </summary>
+        /// <param name="sender">Obiekt wywołujący zdarzenie</param>
+        /// <param name="e">Akrumenty eventu</param>
         private void employeeListView_Click(object sender, EventArgs e)
         {
             var selected = employeeListView.SelectedItems[0].SubItems[0];
@@ -287,6 +289,8 @@ namespace CompanyManagmentProject
         /// Zapisuje dane firmy
         /// Odswieza dane w oknie
         /// </summary>
+        /// <param name="sender">Obiekt wywołujący zdarzenie</param>
+        /// <param name="e">Akrumenty eventu</param>
         private void companyDetailsSaveButton_Click(object sender, EventArgs e)
         {
             CompanyDetails.name = companyName.Text;
@@ -341,6 +345,8 @@ namespace CompanyManagmentProject
         /// Obsluguje przycisk nowego zadania
         /// Otwiera pusty formularz zadania
         /// </summary>
+        /// <param name="sender">Obiekt wywołujący zdarzenie</param>
+        /// <param name="e">Akrumenty eventu</param>
         private void newTaskButton_Click(object sender, EventArgs e)
         {
             TaskForm taskForm = new TaskForm(this);
@@ -352,6 +358,8 @@ namespace CompanyManagmentProject
         /// Obsluguje klikniecie danego zadania na liscie
         /// Otwiera formularz z wybranym zadaniem
         /// </summary>
+        /// <param name="sender">Obiekt wywołujący zdarzenie</param>
+        /// <param name="e">Akrumenty eventu</param>
         private void taskListView_Click(object sender, EventArgs e)
         {
             var selected = taskListView.SelectedItems[0].SubItems[0];
