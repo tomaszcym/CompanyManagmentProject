@@ -44,7 +44,7 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Zwraca uzytkownika o podanym id
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">Przyjmuje ID użytkownika</param>
         /// <returns></returns>
         public static User getById(int id)
         {
@@ -63,7 +63,7 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Zwraca wszystkich uzytkownikow
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Zwraca wszystkich pracowników</returns>
         public static List<User> getAll()
         {
             return users;
@@ -73,8 +73,8 @@ namespace CompanyManagmentProject.Repo
         /// <summary>
         /// Sprawdza poprawnosc danych autoryzujacego sie uzytkownika
         /// </summary>
-        /// <param name="username"></param>
-        /// <param name="password"></param>
+        /// <param name="username">Przyjmuje nazwe użytkownika</param>
+        /// <param name="password">Przyjmuje hasło użytownika</param>
         /// <returns></returns>
         public static User authorizeUser(string username, string password)
         {
@@ -99,7 +99,6 @@ namespace CompanyManagmentProject.Repo
                 return null;
             }
         }
-
 
         // MODIFIERS
 
